@@ -9,3 +9,7 @@
 ### JSON
 
 - [File Naming](json/file-naming.md)
+
+### Number Systems
+
+- [Bit Byte Conversion](num-systems/bit-byte-conversions.md)
