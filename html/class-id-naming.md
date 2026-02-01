@@ -4,14 +4,20 @@
 
 kebap-case
 
+### Example
+
 ```text
 class="nav-bar"
 class="button-primary"
 ```
 
+---
+
 ## Id
 
 camelCase
+
+### Example
 
 ```text
 id="mainHeader"
