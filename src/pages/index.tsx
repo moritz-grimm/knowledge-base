@@ -1,44 +1,45 @@
-import type {ReactNode} from 'react';
-import clsx from 'clsx';
+import type { ReactNode } from 'react';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Heading from '@theme/Heading';
-
 import styles from './index.module.css';
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
+    return (
+        <div className={styles.container}>
+            <h1 className={styles.title}>Knowledge Base</h1>
+
+            <div className={styles.intro}>
+                <p>A collection of my notes, code snippets, and insights from my career as a developer.</p>
+            </div>
+
+            <div className={styles.about}>
+                <h2>About this page</h2>
+                <p>Here I document my learning progress, experiments, and solutions to various development topics. The focus is on JavaScript/TypeScript, web technologies, and everything I encounter on my way to becoming a better developer everyday.</p>
+                <p>This knowledge base is less of a perfect tutorial and more of a living working document, including mistakes that I learn from.</p>
+            </div>
+
+            <div className={styles.about}>
+                <h2>About me</h2>
+                <p>I am a second-year apprentice application developer specializing in JavaScript and Java. In my spare time, I develop my own projects using JavaScript/TypeScript, HTML, and CSS, and experiment with Rust, APIs, and everything else related to software.</p>
+                <p>I develop software not only for school or work, but because I enjoy building new things, solving problems independently, and constantly learning new things.</p>
+            </div>
+
+            <Link to="/docs/" className={styles.cta}>
+                To the Docs →
+            </Link>
+
         </div>
-      </div>
-    </header>
-  );
+    );
 }
 
 export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
-    </Layout>
-  );
+    const { siteConfig } = useDocusaurusContext();
+    return (
+        <Layout
+            title={siteConfig.title}
+            description={siteConfig.tagline}>   
+            <HomepageHeader />
+        </Layout>
+    );
 }
