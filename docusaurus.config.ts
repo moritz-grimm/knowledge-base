@@ -69,6 +69,10 @@ const config: Config = {
           label: 'Knowledge',
         },
         {
+            type: "localeDropdown",
+            position: "right"
+        },
+        {
           href: 'https://github.com/moritz-grimm/knowledge-base',
           position: 'right',
           className: 'header-github-link',

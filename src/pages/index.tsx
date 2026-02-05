@@ -3,6 +3,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import styles from './index.module.css';
+import Translate from '@docusaurus/Translate';
 
 function HomepageHeader() {
     return (
@@ -10,7 +11,7 @@ function HomepageHeader() {
             <h1 className={styles.title}>Knowledge Base</h1>
 
             <div className={styles.intro}>
-                <p>A collection of my notes, code snippets, and insights from my career as a developer.</p>
+                <p><Translate id="landingpage.tagline" description="Tagline below the title on the landingpage">A collection of my notes, code snippets, and insights from my career as a developer.</Translate></p>
             </div>
 
             <div className={styles.about}>

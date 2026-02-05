@@ -1,0 +1,30 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.Fundamentals": {
+    "message": "Grundlagen",
+    "description": "The label for category 'Fundamentals' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Tools": {
+    "message": "Tools",
+    "description": "The label for category 'Tools' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.git": {
+    "message": "git",
+    "description": "The label for category 'git' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.typescript": {
+    "message": "typescript",
+    "description": "The label for category 'typescript' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.web": {
+    "message": "web",
+    "description": "The label for category 'web' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.html": {
+    "message": "html",
+    "description": "The label for category 'html' in sidebar 'docs'"
+  }
+}
