@@ -79,41 +79,19 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Fundamentals',
-              to: '/docs/fundamentals',
-            },
-            {
-              label: 'Tools',
-              to: '/docs/Tools',
-            },
-          ],
-        },
-        {
-          title: 'Socials',
-          items: [
-            {
-              label: 'E-Mail',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
+          title: 'Links',
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/moritz-grimm/knowledge-base',
+              href: 'https://github.com/moritz-grimm',
+            },
+            {
+                label: "NPM",
+                href: "https://www.npmjs.com/~moritz-grimm"
+            },
+            {
+                label: "This Repo",
+                href: "https://github.com/moritz-grimm/knowledge-base"
             },
           ],
         },
