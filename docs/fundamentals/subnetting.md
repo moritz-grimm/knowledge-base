@@ -30,16 +30,16 @@ The Subnet Mask tells the computer which part of the IP is the **Network** (Stre
 
 ### CIDR Notation (Classless Inter-Domain Routing)
 
-CIDR (e.g., `/24`) simply counts the number of **active bits (Ones)** in the mask from left to right.
+CIDR (e.g., `/24`) simply counts the number of **active bits** in the mask from left to right.
 
-| CIDR | Subnet Mask (Decimal) | Binary Mask (First Octets) | Hosts per Subnet* |
-| ---- | --------------------- | -------------------------- | ----------------- |
-| /8   | 255.0.0.0             | `11111111.00000000...`     | 16,777,214        |
-| /16  | 255.255.0.0           | `11111111.11111111...`     | 65,534            |
-| /24  | 255.255.255.0         | `11111111...11111111.0`    | 254               |
-| /25  | 255.255.255.128       | `11111111...1.10000000`    | 126               |
-| /26  | 255.255.255.192       | `11111111...1.11000000`    | 62                |
-| /30  | 255.255.255.252       | `11111111...1.11111100`    | 2                 |
+| CIDR | Decimal Subnet Mask | Binary Subnet Mask (First Octets) | Hosts per Subnet* |
+| ---- | ------------------- | --------------------------------- | ----------------- |
+| /8   | 255.0.0.0           | `11111111.00000000...`            | 16,777,214        |
+| /16  | 255.255.0.0         | `11111111.11111111...`            | 65,534            |
+| /24  | 255.255.255.0       | `11111111...11111111.0`           | 254               |
+| /25  | 255.255.255.128     | `11111111...1.10000000`           | 126               |
+| /26  | 255.255.255.192     | `11111111...1.11000000`           | 62                |
+| /30  | 255.255.255.252     | `11111111...1.11111100`           | 2                 |
 
 **Note:** Total addresses minus 2 (1 for Network ID, 1 for Broadcast).
 
@@ -135,7 +135,7 @@ The IP `192.168.10.150` belongs to the `.128` Subnet.
 | **/24** | .0        | 256          | 254          | Standard LAN (Home/Office)       |
 | **/25** | .128      | 128          | 126          | Splitting a LAN in half          |
 | **/26** | .192      | 64           | 62           | Department networks              |
-| **/27** | .224      | 32           | 30           | Small Teams / DMZ                |
+| **/27** | .224      | 32           | 30           | Small Teams                      |
 | **/28** | .240      | 16           | 14           | Very small groups                |
 | **/29** | .248      | 8            | 6            | Transfer nets (Router-to-Router) |
 | **/30** | .252      | 4            | 2            | Point-to-Point Links             |
