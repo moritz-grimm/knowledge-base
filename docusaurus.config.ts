@@ -58,7 +58,20 @@ const config: Config = {
         {
             debug: false
         }
-    ]
+    ],
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      ({
+        hashed: true,
+        language: ["en", "de"],
+        indexBlog: false,
+        indexPages: true,
+        removeDefaultStopWordFilter: ["en", "de"],
+        removeDefaultStemmer: true,
+        fuzzyMatchingDistance: 2
+      }),
+    ],
   ],
 
   themeConfig: {
@@ -79,6 +92,10 @@ const config: Config = {
           sidebarId: 'docs',
           position: 'left',
           label: 'Knowledge',
+        },
+        {
+            type: "search",
+            position: "right"
         },
         {
             type: "localeDropdown",
