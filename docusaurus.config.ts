@@ -94,11 +94,11 @@ const config: Config = {
           label: 'Knowledge',
         },
         {
-            type: "search",
+            type: "localeDropdown",
             position: "right"
         },
         {
-            type: "localeDropdown",
+            type: "search",
             position: "right"
         },
         {
