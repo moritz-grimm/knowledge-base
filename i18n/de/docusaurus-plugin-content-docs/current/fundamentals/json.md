@@ -2,7 +2,7 @@
 
 ## File Naming
 
-### Answer: kebab-case
+### Antwort: kebab-case
 
 ```text
 user-data.json
@@ -10,13 +10,13 @@ api-config.json
 database-schema.json
 ```
 
-#### Why kebab-case?
+#### Warum kebab-case?
 
-- **Cross-platform safe**: No issues with case-insensitive file systems (Windows/macOS)
-- **Better readability** in file lists and explorers
-- **URL-friendly**: If files are served over HTTP
+- **Cross-platform kompatibel**: No issues with case-insensitive file systems (Windows/macOS)
+- **Bessere Lesbarkeit**: in file lists and explorers
+- **URL-freundlich**: If files are served over HTTP
 
-#### Don't confuse
+#### Nicht verwechseln
 
-- **File name**: `user-config.json` (kebab-case) ✓
-- **Keys in JSON**: `"userId": 123` (camelCase) ✓
+- **Dateibennenung**: `user-config.json` (kebab-case) ✓
+- **Keys in einem JSON**: `"userId": 123` (camelCase) ✓

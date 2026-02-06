@@ -1,10 +1,10 @@
-# Class & ID Naming Conventions
+# Klassen & Id Namenskonventionen
 
-## Class
+## Klassen
 
 kebap-case
 
-### Example
+### Beispiel
 
 ```text
 class="nav-bar"
@@ -17,7 +17,7 @@ class="button-primary"
 
 camelCase
 
-### Example
+### Beispiel
 
 ```text
 id="mainHeader"

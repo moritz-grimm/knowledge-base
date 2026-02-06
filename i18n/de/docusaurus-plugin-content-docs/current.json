@@ -11,20 +11,28 @@
     "message": "Tools",
     "description": "The label for category 'Tools' in sidebar 'docs'"
   },
-  "sidebar.docs.category.git": {
-    "message": "git",
-    "description": "The label for category 'git' in sidebar 'docs'"
+  "sidebar.docs.category.Git": {
+    "message": "Git",
+    "description": "The label for category 'Git' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Commercial": {
+    "message": "Kaufmännisches",
+    "description": "The label for category 'Commercial' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Diagrams": {
+    "message": "Diagramme",
+    "description": "The label for category 'Diagrams' in sidebar 'docs'"
   },
   "sidebar.docs.category.typescript": {
-    "message": "typescript",
+    "message": "Typescript",
     "description": "The label for category 'typescript' in sidebar 'docs'"
   },
   "sidebar.docs.category.web": {
-    "message": "web",
+    "message": "Web",
     "description": "The label for category 'web' in sidebar 'docs'"
   },
   "sidebar.docs.category.html": {
-    "message": "html",
+    "message": "HTML",
     "description": "The label for category 'html' in sidebar 'docs'"
   }
 }

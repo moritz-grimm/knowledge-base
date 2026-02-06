@@ -15,21 +15,20 @@ function HomepageHeader() {
             </div>
 
             <div className={styles.about}>
-                <h2>About this page</h2>
-                <p>Here I document my learning progress, experiments, and solutions to various development topics. The focus is on JavaScript/TypeScript, web technologies, and everything I encounter on my way to becoming a better developer everyday.</p>
-                <p>This knowledge base is less of a perfect tutorial and more of a living working document, including mistakes that I learn from.</p>
+                <h2><Translate id="landingpage.about.title" description="Title of the 'About this page' section">About this page</Translate></h2>
+                <p><Translate id="landingpage.about.description1" description="First paragraph describing the knowledge base">Here I document my learning progress, experiments, and solutions to various development topics. The focus is on JavaScript/TypeScript, web technologies, and everything I encounter on my way to becoming a better developer everyday.</Translate></p>
+                <p><Translate id="landingpage.about.description2" description="Second paragraph describing the knowledge base">This knowledge base is less of a perfect tutorial and more of a living working document, including mistakes that I learn from.</Translate></p>
             </div>
 
             <div className={styles.about}>
-                <h2>About me</h2>
-                <p>I am a second-year apprentice application developer specializing in JavaScript and Java. In my spare time, I develop my own projects using JavaScript/TypeScript, HTML, and CSS, and experiment with Rust, APIs, and everything else related to software.</p>
-                <p>I develop software not only for school or work, but because I enjoy building new things, solving problems independently, and constantly learning new things.</p>
+                <h2><Translate id="landingpage.aboutme.title" description="Title of the 'About me' section">About me</Translate></h2>
+                <p><Translate id="landingpage.aboutme.description1" description="First paragraph about the about me section">I am a second-year apprentice application developer specializing in JavaScript and Java. In my spare time, I develop my own projects using JavaScript/TypeScript, HTML, and CSS, and experiment with Rust, APIs, and everything else related to software.</Translate></p>
+                <p><Translate id="landingpage.aboutme.description2" description="Second paragraph about the about me section">I develop software not only for school or work, but because I enjoy building new things, solving problems independently, and constantly learning new things.</Translate></p>
             </div>
 
             <Link to="/docs/" className={styles.cta}>
-                To the Docs →
+                <Translate id="landingpage.cta" description="Call-to-action button text linking to the documentation">To the Docs →</Translate>
             </Link>
-
         </div>
     );
 }
@@ -39,7 +38,7 @@ export default function Home(): ReactNode {
     return (
         <Layout
             title={siteConfig.title}
-            description={siteConfig.tagline}>   
+            description={siteConfig.tagline}>
             <HomepageHeader />
         </Layout>
     );
