@@ -55,7 +55,6 @@ Wieviele Geräte passen in ein Netzwerk?
 Formel: 2^(Host-Bits) - 2 = Nutzbare Hosts
 
 Host-Bits = 32 - (CIDR)
-
 ```
 
 #### Beispiel: /24 Netzwerk
@@ -72,7 +71,7 @@ Host-Bits = 32 - (CIDR)
 
 ---
 
-### 2. Die "magische Nummer" herausfinde (Größe jedes Subnetzes)
+### 2. Die "magische Nummer" herausfinden (Größe jedes Subnetzes)
 
 Die magische Nummer hilft dir, Subnetzbereiche im Kopf zu berechnen. Sie gibt die Schrittweite Erhöhung der Netzwerke an.
 
@@ -82,10 +81,6 @@ Schau dir das letzte Bit an welches auf '1' steht in der Subnetzmaske. Der Wert 
 
 Methode 2 (Substraktion):
 256 - (Letztes nicht null Oktet der Subnetzmaske) = Magische Nummer
-
-Method 3:
-2^(Host-Bits) = Größe jedes Subnetzes
-
 ```
 
 #### Beispiel: /26 Maske (255.255.255.192)

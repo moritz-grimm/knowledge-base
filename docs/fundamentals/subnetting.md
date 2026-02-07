@@ -55,7 +55,6 @@ How many devices fit into a subnet?
 Formula: 2^(Host-Bits) - 2 = Usable Hosts
 
 Host-Bits = 32 - (CIDR)
-
 ```
 
 #### Example: /24 Network
@@ -82,10 +81,6 @@ Look at the last bit set to '1' in the subnetmask. Its value is the Magic Number
 
 Method 2 (Subtraction):
 256 - (Last non-zero octet of the mask) = Magic Number
-
-Method 3:
-2^(Host-Bits) = Size of each Subnet
-
 ```
 
 #### Example: /26 Mask (255.255.255.192)
