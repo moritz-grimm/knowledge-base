@@ -141,6 +141,7 @@ Die IP `192.168.10.150` gehört zum `.128` Subnetz.
 ## Häufige Fehler
 
 * **Netzwerk-ID/Broadcast vergessen:** Immer 2 subtrahieren um die *nutzbaren* Hosts zu bekommen.
+* **Falsches hochzählen:** Subnetzbereiche sind inklusive. Das erste Subnetz endet daher bei `Startadresse + Blockgröße − 1`. Sobald das erste Subnetz korrekt bestimmt ist, können die Endadressen der folgenden Subnetze entweder durch Addieren der Blockgröße zur vorherigen Endadresse berechnet werden oder durch erneute Anwendung der Formel `Startadresse + Blockgröße − 1` unter Verwendung der jeweiligen Netzadresse des Subnetzes.
 * **Falsches Oktett:** Ein `/18` Subnetz verändert sich im *3.* Oktett, nicht im 4.
 * `/8 - /15`: Änderung im 2. Oktett.
 * `/16 - /23`: Änderung im 3. Oktett.

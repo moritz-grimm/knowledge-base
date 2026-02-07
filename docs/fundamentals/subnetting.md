@@ -141,6 +141,7 @@ The IP `192.168.10.150` belongs to the `.128` Subnet.
 ## Common Pitfalls
 
 * **Forgetting ID/Broadcast:** Always subtract 2 to get *usable* hosts.
+* **Wrong stepping:** Subnet ranges are inclusive. The first subnet therefore ends at `start + block size − 1`. Once the first subnet is correct, subsequent subnet ends can be calculated either by adding the block size to the previous subnet end, or by applying the same `start + block size − 1` formula using the network address of each subnet.
 * **Wrong Octet:** A `/18` subnet changes in the *3rd* octet, not the 4th.
 * `/8 - /15`: Change in 2nd Octet
 * `/16 - /23`: Change in 3rd Octet
