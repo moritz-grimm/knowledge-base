@@ -26,9 +26,6 @@ const config: Config = {
 
     onBrokenLinks: 'throw',
 
-    // Even if you don't use internationalization, you can use this field to set
-    // useful metadata like html lang. For example, if your site is Chinese, you
-    // may want to replace "en" with "zh-Hans".
     i18n: {
         defaultLocale: 'en',
         locales: ['en', 'de'],
@@ -77,6 +74,12 @@ const config: Config = {
     themeConfig: {
         // Replace with your project's social card
         image: 'img/docusaurus-social-card.jpg',
+        metadata: [
+            {
+                name: "description",
+                content: "My knowledge base as a developer apprentice: I document my learning process, experiments, and solutions in JavaScript/TypeScript, web technologies & everything else i encounter on my journey"
+            }
+        ],
         colorMode: {
             respectPrefersColorScheme: true,
         },
@@ -105,6 +108,7 @@ const config: Config = {
                     href: 'https://github.com/moritz-grimm/knowledge-base',
                     position: 'right',
                     className: 'header-github-link',
+                    "aria-label": "Link to the Github repository of this website"
                 },
             ],
         },

@@ -37,8 +37,8 @@ export default function Home(): ReactNode {
     const { siteConfig } = useDocusaurusContext();
     return (
         <Layout
-            title={siteConfig.title}
-            description={siteConfig.tagline}>
+            title="Knowledge Base"
+            description="My knowledge base as a developer apprentice: I document my learning process, experiments, and solutions in JavaScript/TypeScript, web technologies & everything else i encounter on my journey">
             <HomepageHeader />
         </Layout>
     );
