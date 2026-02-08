@@ -55,10 +55,11 @@ CIDR (e.g., `/24`) simply counts the number of **active bits** in the mask from 
 
 ### 1. Calculating Subnet Size (Number of Hosts)
 
-How many devices fit into a subnet?
+How many **total IP addresses** does a subnet contain (across all octets)?
 
 ```text
-Formula: 2^(Host-Bits) - 2 = Usable Hosts
+Formula (Total Addresses): 2^(Host-Bits) = Total Addresses
+Formula (Usable Hosts): 2^(Host-Bits) - 2 = Usable Hosts
 
 Host-Bits = 32 - (CIDR)
 ```
@@ -77,11 +78,13 @@ Host-Bits = 32 - (CIDR)
 
 ---
 
-### 2. Finding the "Magic Number" (Size of each Subnet)
+### 2. Finding the "Magic Number" (Block Size in the Interesting Octet)
 
-The Magic Number helps you calculate subnet ranges mentally. It represents the increment (step size) of the networks.
+The Magic Number represents the **step size** within the octet where subnetting occurs.
 
-```markdown
+**Important:** The Magic Number only applies to the "interesting octet" (the octet where the subnet mask is neither 0 nor 255).
+
+```text
 Method 1 (Binary Place):
 Look at the last bit set to '1' in the subnetmask. Its value is the Magic Number.
 
@@ -89,11 +92,85 @@ Method 2 (Subtraction):
 256 - (Last non-zero octet of the mask) = Magic Number
 ```
 
-#### Example: /26 Mask (255.255.255.192)
+#### Which octet is "interesting"?
 
-* **Interesting Octet:** 192
-* **Calculation:** 256 - 192 = **64**
-* **Result:** The networks increase in steps of 64 (0, 64, 128, 192).
+- `/24 - /32`: **4th octet** changes
+- `/16 - /23`: **3rd octet** changes
+- `/8 - /15`: **2nd octet** changes
+
+#### Relationship between Methods 1 & 2
+
+- **For `/24+` (4th octet subnetting):** Magic Number = 2^(Host-Bits) ✔
+- **For `/23-` (earlier octet subnetting):** They're different:
+  - **Calculating Subnet Sizes:** Total Addresses spans multiple octets
+  - **Finding the "Magic Number":** Magic Number is only the step size in one octet
+
+#### Example: /26 Mask => 255.255.255.192 - 4th Octet Subnetting
+
+- **Interesting Octet:** 192
+- **Calculation:** 256 - 192 = **64**
+- **Result:** The networks increase in steps of 64 (0, 64, 128, 192).
+
+#### Example: `/18` Mask => 255.255.192.0 - 3rd Octet Subnetting
+
+**Total Size:**
+
+- Host-Bits: 32 - 18 = 14
+- Total Addresses: 2^14 = **16,384**
+
+**Magic Number (Step Size in 3rd Octet):**
+
+- Mask: `255.255.192.0`
+- Interesting Octet: 3rd (192)
+- Magic Number: 256 - 192 = **64**
+- Meaning: 3rd octet increments by 64 (0, 64, 128, 192)
+
+**How they connect:**
+
+- The 64 is the step in the 3rd octet
+- Each step contains 256 addresses (full 4th octet)
+- Total: 64 × 256 = 16,384 ✓
+
+---
+
+### 3. Calculating Number of Subnets
+
+When you subnet a network, you "borrow" bits from the Host portion to create more networks.
+
+```text
+Formula: 2^(Borrowed Bits) = Number of Subnets
+
+Borrowed Bits = New CIDR - Original CIDR
+```
+
+#### Example: From /24 to /26
+
+**Scenario:** You have `192.168.1.0/24` and want to split it into `/26` subnets.
+
+1. **Original Network:** `/24` (256 addresses total)
+2. **New Subnet Size:** `/26`
+3. **Borrowed Bits:** 26 - 24 = **2 Bits**
+4. **Number of Subnets:** 2² = **4 Subnets**
+
+**Result:** You get 4 subnets, each with 64 addresses (62 usable hosts).
+
+| Subnet # | Network ID    | First Host    | Last Host     | Broadcast     |
+| -------- | ------------- | ------------- | ------------- | ------------- |
+| 1        | 192.168.1.0   | 192.168.1.1   | 192.168.1.62  | 192.168.1.63  |
+| 2        | 192.168.1.64  | 192.168.1.65  | 192.168.1.126 | 192.168.1.127 |
+| 3        | 192.168.1.128 | 192.168.1.129 | 192.168.1.190 | 192.168.1.191 |
+| 4        | 192.168.1.192 | 192.168.1.193 | 192.168.1.254 | 192.168.1.255 |
+
+#### Example: From /16 to /24
+
+**Scenario:** ISP gives you `10.0.0.0/16`, you want `/24` networks for departments.
+
+1. **Original:** `/16`
+2. **New:** `/24`
+3. **Borrowed Bits:** 24 - 16 = **8 Bits**
+4. **Number of Subnets:** 2⁸ = **256 Subnets**
+
+**Result:** You can create 256 department networks (10.0.0.0/24, 10.0.1.0/24, ..., 10.0.255.0/24).
 
 ---
 
