@@ -1,5 +1,11 @@
 ---
+title: Subnetting (IPv4)
 description: "Subnetting Basics, Calculations & Examples (IPv4)"
+keywords: 
+    - Subnetting
+    - IPv4
+last_update:
+    author: moritz-grimm
 ---
 
 # Subnetting (IPv4)
