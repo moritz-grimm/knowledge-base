@@ -180,18 +180,18 @@ Borrowed Bits = New CIDR - Original CIDR
 
 ### Step 1: Find the Magic Number (Block Size)
 
-* Mask is `/26`. The change happens in the 4th Octet.
-* Mask in 4th Octet: `192`
-* Magic Number: `256 - 192 = 64`
+- Mask is `/26`. The change happens in the 4th Octet.
+- Mask in 4th Octet: `192`
+- Magic Number: `256 - 192 = 64`
 
 ### Step 2: Determine Subnet Ranges
 
 Increment by 64 until you pass the IP address (`150`).
 
-* Subnet 1: `0 - 63`
-* Subnet 2: `64 - 127`
-* Subnet 3: `128 - 191`  (150 falls into this range)
-* Subnet 4: `192 - 255`
+- Subnet 1: `0 - 63`
+- Subnet 2: `64 - 127`
+- Subnet 3: `128 - 191`  (150 falls into this range)
+- Subnet 4: `192 - 255`
 
 ### Step 3: Calculate Addresses
 
@@ -223,11 +223,10 @@ The IP `192.168.10.150` belongs to the `.128` Subnet.
 
 ## Common Pitfalls
 
-* **Forgetting ID/Broadcast:** Always subtract 2 to get *usable* hosts.
-* **Wrong stepping:** Subnet ranges are inclusive. The first subnet therefore ends at `start + block size − 1`. Once the first subnet is correct, subsequent subnet ends can be calculated either by adding the block size to the previous subnet end, or by applying the same `start + block size − 1` formula using the network address of each subnet.
-* **Wrong Octet:** A `/18` subnet changes in the *3rd* octet, not the 4th.
-* `/8 - /15`: Change in 2nd Octet
-* `/16 - /23`: Change in 3rd Octet
-* `/24 - /32`: Change in 4th Octet
-
-* **Even/Odd:** Network IDs are usually even numbers; Broadcasts are usually odd numbers.
+- **Forgetting ID/Broadcast:** Always subtract 2 to get *usable* hosts.
+- **Wrong stepping:** Subnet ranges are inclusive. The first subnet therefore ends at `start + block size − 1`. Once the first subnet is correct, subsequent subnet ends can be calculated either by adding the block size to the previous subnet end, or by applying the same `start + block size − 1` formula using the network address of each subnet.
+- **Even/Odd:** Network IDs are usually even numbers; Broadcasts are usually odd numbers.
+- **Wrong Octet:** A `/18` subnet changes in the *3rd* octet, not the 4th.
+- `/8 - /15`: Change in 2nd Octet
+- `/16 - /23`: Change in 3rd Octet
+- `/24 - /32`: Change in 4th Octet
