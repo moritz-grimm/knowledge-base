@@ -38,7 +38,7 @@ export default function Home(): ReactNode {
     return (
         <Layout
             title="Knowledge Base"
-            description="My knowledge base as a developer apprentice: I document my learning process, experiments, and solutions in JavaScript/TypeScript, web technologies & everything else i encounter on my journey">
+            description="My developer knowledge base documenting my learning process and solutions in JavaScript, TypeScript, web technologies, and everything I encounter on my journey">
             <HomepageHeader />
         </Layout>
     );
