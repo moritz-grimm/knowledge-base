@@ -347,7 +347,7 @@
     "description": "Title of the 'About me' section"
   },
   "landingpage.aboutme.description1": {
-    "message": "Ich bin Auszubildender im zweiten Lehrjahr zum Anwendungsentwickler mit den Schwerpunkten JavaScript und Java. In meiner Freizeit entwickle ich eigene Projekte mit JavaScript/TypeScript, HTML und CSS und experimentiere mit Rust, APIs und allem anderen, was mit Software zu tun hat.",
+    "message": "Ich bin Auszubildender im zweiten Lehrjahr zum Anwendungsentwickler mit den Schwerpunkten JavaScript/Typescript & HTML, CSS. In meiner Freizeit entwickle ich eigene Projekte und experimentiere mit allem anderen, was mit Software zu tun hat.",
     "description": "First paragraph about the about me section"
   },
   "landingpage.aboutme.description2": {

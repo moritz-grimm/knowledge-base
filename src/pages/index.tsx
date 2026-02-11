@@ -22,7 +22,7 @@ function HomepageHeader() {
 
             <div className={styles.about}>
                 <h2><Translate id="landingpage.aboutme.title" description="Title of the 'About me' section">About me</Translate></h2>
-                <p><Translate id="landingpage.aboutme.description1" description="First paragraph about the about me section">I am a second-year apprentice application developer specializing in JavaScript and Java. In my spare time, I develop my own projects using JavaScript/TypeScript, HTML, and CSS, and experiment with Rust, APIs, and everything else related to software.</Translate></p>
+                <p><Translate id="landingpage.aboutme.description1" description="First paragraph about the about me section">I am a second-year apprentice developer specializing in JavaScript/Typescript, HTML & CSS. In my spare time, I work on my own projects and experiment with everything else related to software.</Translate></p>
                 <p><Translate id="landingpage.aboutme.description2" description="Second paragraph about the about me section">I develop software not only for school or work, but because I enjoy building new things, solving problems independently, and constantly learning new things.</Translate></p>
             </div>
 
