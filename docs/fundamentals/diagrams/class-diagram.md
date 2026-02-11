@@ -1,5 +1,0 @@
----
-draft: true
----
-
-# Class Diagram
