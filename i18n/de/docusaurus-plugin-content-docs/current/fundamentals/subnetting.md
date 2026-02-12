@@ -1,5 +1,11 @@
 ---
-description: "Subnetting Basics, Calculations & Examples (IPv4)"
+title: Subnetting (IPv4)
+description: "Subnetting Grundlagen, Berechnungen & Beispiele (IPv4)"
+keywords: 
+    - Subnetting
+    - IPv4
+last_update:
+    author: moritz-grimm
 ---
 
 # Subnetting (IPv4)
@@ -49,9 +55,10 @@ CIDR (e.g., `/24`) zählt einfach die Anzahl der **aktiven Bits** in der Maske v
 
 ### 1. Subnetzgrößen berechnen (Anzahl der Hosts)
 
-Wieviele Geräte passen in ein Netzwerk?
+Wie viele **Adressen** ein Subnetz gesamt hat (Über alle Okteten verteilt)
 
 ```text
+Formel (Gesamtadressen): 2^(Host-Bits) = Gesamtadressen
 Formel: 2^(Host-Bits) - 2 = Nutzbare Hosts
 
 Host-Bits = 32 - (CIDR)
@@ -73,9 +80,11 @@ Host-Bits = 32 - (CIDR)
 
 ### 2. Die "magische Nummer" herausfinden (Größe jedes Subnetzes)
 
-Die magische Nummer hilft dir, Subnetzbereiche im Kopf zu berechnen. Sie gibt die Schrittweite Erhöhung der Netzwerke an.
+Die magische Nummer gibt die **Schrittgröße** an, in mit der im Oktett, in dem gesubnet wird, gearbeitet wird.
 
-```markdown
+**Wichtig:** Die magische Nummer kann nur auf das "interessante Oktett" angewandt werden (Das Oktett wo die Maske weder 0 noch 255 ist)
+
+```text
 Methode 1 (Binär):
 Schau dir das letzte Bit an welches auf '1' steht in der Subnetzmaske. Der Wert dieses Bits ist die magische Nummer.
 
@@ -83,11 +92,85 @@ Methode 2 (Substraktion):
 256 - (Letztes nicht null Oktet der Subnetzmaske) = Magische Nummer
 ```
 
-#### Beispiel: /26 Maske (255.255.255.192)
+#### Welches Oktett ist das "interessante"?
 
-* **Relevantes Oktet:** 192
-* **Berechnung:** 256 - 192 = **64**
-* **Ergebnis:** Die Netzwerk erhöhen sich in 64'er Schritten (0, 64, 128, 192).
+- `/24 - /32`: **4th octet** verändert sich
+- `/16 - /23`: **3rd octet** verändert sich
+- `/8 - /15`: **2nd octet** verändert sich
+
+#### Verbindung zwischen Methode [1](#1-subnetzgrößen-berechnen-anzahl-der-hosts) & [2](#2-die-magische-nummer-herausfinden-größe-jedes-subnetzes)
+
+- **Für `/24+` (4. Oktett Subnetting):** magische Nummer = 2^(Host-Bits) ✔
+- **Für `/23-` (3. oder früheres Oktett Subnetting):** Sie sind unterschiedlich:
+  - **Subnetzgrößen berechnen:** Gesamtadressen spannen über mehrere Oktetten
+  - **Die "magische Nummer" finden:** Die magische Nummer ist nur die **Schrittgröße** in einem Oktett
+
+#### Beispiel: /26 Maske => 255.255.255.192 - 4. Oktett Subnetting
+
+- **Relevantes Oktet:** 192
+- **Berechnung:** 256 - 192 = **64**
+- **Ergebnis:** Die Netzwerk erhöhen sich in 64'er Schritten (0, 64, 128, 192).
+
+#### Beispiel: `/18` Maske => 255.255.192.0 - 3. Oktett Subnetting
+
+**Gesamtgröße:**
+
+- Host-Bits: 32 - 18 = 14
+- Gesamtadressen: 2^14 = **16,384**
+
+**Magische Nummer (Schrittgröße im 3. Oktett):**
+
+- Maske: `255.255.192.0`
+- Interessantes Oktett: 3. (192)
+- Magische Nummer: 256 - 192 = **64**
+- Bedeutung: 3. Oktett erhört sich um 64 (0, 64, 128, 192)
+
+**Was beide miteinander zu tun haben:**
+
+- Die 64 ist die Schrittgröße im 3. Oktett
+- Jeder Schritt enhält 256 Adressen (Volles 4. Oktett)
+- Gesamt: 64 × 256 = 16,384 ✔
+
+---
+
+### 3. Anzahl der Subnetze berechnen
+
+Wenn man ein Netzwerk unterteilt, "leiht" man sich Bits vom Host-Teil, um weitere Netzwerk zu erstellen.
+
+```text
+Formel: 2^(Geliehene Bits) = Anzahl der Subnetze
+
+Geliehene Bits = Neue CIDR - Original CIDR
+```
+
+#### Beispiel: Von /24 zu /26
+
+**Szenario:** Du hast das Netzwerk `192.168.1.0/24` und willst es in ein `/26` Subnetz aufteilen.
+
+1. **Original Netzwerk:** `/24` (256 Adressen gesamt)
+2. **Neue Subnet Größe:** `/26`
+3. **Geliehene Bits:** 26 - 24 = **2 Bits**
+4. **Anzahl von Subnetzen:** 2² = **4 Subnets**
+
+**Ergebnis:** Man bekommt 4 Subnetze, jeweils mit 64 Adressen (62 nutzbaren Hosts).
+
+| Subnetz # | Netzwerk-ID   | Erster Host   | Letzter Host  | Broadcast     |
+| --------- | ------------- | ------------- | ------------- | ------------- |
+| 1         | 192.168.1.0   | 192.168.1.1   | 192.168.1.62  | 192.168.1.63  |
+| 2         | 192.168.1.64  | 192.168.1.65  | 192.168.1.126 | 192.168.1.127 |
+| 3         | 192.168.1.128 | 192.168.1.129 | 192.168.1.190 | 192.168.1.191 |
+| 4         | 192.168.1.192 | 192.168.1.193 | 192.168.1.254 | 192.168.1.255 |
+
+#### Beispiel: Von /16 zu /24
+
+**Szenario:** Dein ISP stellt dir das Netzwerk `10.0.0.0/16`, du willst jedoch `/24` Netzwerke für verschiedene Abteilungen.
+
+1. **Original:** `/16`
+2. **Neu:** `/24`
+3. **Geliehene Bits:** 24 - 16 = **8 Bits**
+4. **Anzahl an Subnetzen:** 2⁸ = **256 Subnetze**
+
+**Ergebnis:** Es können 256 Abteilungsnetzwerke erstellt werden (10.0.0.0/24, 10.0.1.0/24, ..., 10.0.255.0/24).
 
 ---
 
@@ -97,18 +180,18 @@ Methode 2 (Substraktion):
 
 ### Schritt 1: Die magische Nummer finden
 
-* Die Subnetzmaske ist `/26`. Die Änderung betrifft das 4. Oktett.
-* Subnetzmaske im 4. Oktett: `192`
-* Magische Nummer: `256 - 192 = 64`
+- Die Subnetzmaske ist `/26`. Die Änderung betrifft das 4. Oktett.
+- Subnetzmaske im 4. Oktett: `192`
+- Magische Nummer: `256 - 192 = 64`
 
 ### Schritt 2: Die Subnetzbereiche festlegen
 
 Erhöhe um 64, bis du die IP-Adresse `150` überschreitest.
 
-* Subnetz 1: `0 - 63`
-* Subnetz 2: `64 - 127`
-* Subnetz 3: `128 - 191`  (150 fällt in diesen Bereich)
-* Subnetz 4: `192 - 255`
+- Subnetz 1: `0 - 63`
+- Subnetz 2: `64 - 127`
+- Subnetz 3: `128 - 191`  (150 fällt in diesen Bereich)
+- Subnetz 4: `192 - 255`
 
 ### Schritt 3: Adressen berechnen
 
@@ -140,11 +223,10 @@ Die IP `192.168.10.150` gehört zum `.128` Subnetz.
 
 ## Häufige Fehler
 
-* **Netzwerk-ID/Broadcast vergessen:** Immer 2 subtrahieren um die *nutzbaren* Hosts zu bekommen.
-* **Falsches hochzählen:** Subnetzbereiche sind inklusive. Das erste Subnetz endet daher bei `Startadresse + Blockgröße − 1`. Sobald das erste Subnetz korrekt bestimmt ist, können die Endadressen der folgenden Subnetze entweder durch Addieren der Blockgröße zur vorherigen Endadresse berechnet werden oder durch erneute Anwendung der Formel `Startadresse + Blockgröße − 1` unter Verwendung der jeweiligen Netzadresse des Subnetzes.
-* **Falsches Oktett:** Ein `/18` Subnetz verändert sich im *3.* Oktett, nicht im 4.
-* `/8 - /15`: Änderung im 2. Oktett.
-* `/16 - /23`: Änderung im 3. Oktett.
-* `/24 - /32`: Änderung im 4. Oktett.
-
-* **Gerade/Ungerade:** Netzwerk-IDs sind normallerweise gerade Nummern; Broadcasts sind normalerweise ungerade.
+- **Netzwerk-ID/Broadcast vergessen:** Immer 2 subtrahieren um die *nutzbaren* Hosts zu bekommen.
+- **Falsches Hochzählen:** Subnetzbereiche sind inklusive. Das erste Subnetz endet daher bei `Startadresse + Blockgröße − 1`. Sobald das erste Subnetz korrekt bestimmt ist, können die Endadressen der folgenden Subnetze entweder durch Addieren der Blockgröße zur vorherigen Endadresse berechnet werden oder durch erneute Anwendung der Formel `Startadresse + Blockgröße − 1` unter Verwendung der jeweiligen Netzadresse des Subnetzes.
+- **Gerade/Ungerade:** Netzwerk-IDs sind normalerweise gerade Nummern; Broadcasts sind normalerweise ungerade.
+- **Falsches Oktett:** Ein `/18` Subnetz verändert sich im *3.* Oktett, nicht im 4.
+- `/8 - /15`: Änderung im 2. Oktett.
+- `/16 - /23`: Änderung im 3. Oktett.
+- `/24 - /32`: Änderung im 4. Oktett.
