@@ -55,7 +55,7 @@ CIDR (e.g., `/24`) simply counts the number of **active bits** in the mask from 
 
 ### 1. Calculating Subnet Size (Number of Hosts)
 
-How many **total IP addresses** does a subnet contain (across all octets)?
+How many **total IP addresses** does a subnet contain (across all octets)
 
 ```text
 Formula (Total Addresses): 2^(Host-Bits) = Total Addresses
@@ -98,7 +98,7 @@ Method 2 (Subtraction):
 - `/16 - /23`: **3rd octet** changes
 - `/8 - /15`: **2nd octet** changes
 
-#### Relationship between Methods 1 & 2
+#### Relationship between Methods [1](#1-calculating-subnet-size-number-of-hosts) & [2](#2-finding-the-magic-number-block-size-in-the-interesting-octet)
 
 - **For `/24+` (4th octet subnetting):** Magic Number = 2^(Host-Bits) ✔
 - **For `/23-` (earlier octet subnetting):** They're different:
@@ -129,7 +129,7 @@ Method 2 (Subtraction):
 
 - The 64 is the step in the 3rd octet
 - Each step contains 256 addresses (full 4th octet)
-- Total: 64 × 256 = 16,384 ✓
+- Total: 64 × 256 = 16,384 ✔
 
 ---
 
