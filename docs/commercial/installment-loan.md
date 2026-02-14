@@ -1,5 +1,6 @@
 ---
 title: Installment Loan
+description: Definition, formula and example of an installment loan
 ---
 
 # Installment Loan

@@ -1,5 +1,6 @@
 ---
 title: Ratendarlehen
+description: Definition, Formel und Beispiel eines Ratendarlehens
 ---
 
 # Ratendarlehen
@@ -13,11 +14,11 @@ Dieses Beispiel veranschaulicht ein Modell mit **fester Tilgung**, bei dem der K
 ## Formel
 
 ```text
-Jährlicher Zinssatz = Schulden * Zinsrate  
+Jährlicher Zinssatz = Schulden * Zinssatz  
 
 Tilgungszahlung = Gesamtschulden / Kreditlaufzeit  
 
-Annuität  (Jährliche Zahlung) = Zinsen + Tilgung  
+Annuität (Jährliche Zahlung) = Zinsen + Tilgung  
 
 Verbleibende Schulden = Vorherige Schulden − Tilgung
 ```
