@@ -23,16 +23,20 @@
     "message": "Diagramme",
     "description": "The label for category 'Diagrams' in sidebar 'docs'"
   },
-  "sidebar.docs.category.typescript": {
+  "sidebar.docs.category.UML": {
+    "message": "UML",
+    "description": "The label for category 'UML' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Typescript": {
     "message": "Typescript",
-    "description": "The label for category 'typescript' in sidebar 'docs'"
+    "description": "The label for category 'Typescript' in sidebar 'docs'"
   },
-  "sidebar.docs.category.web": {
+  "sidebar.docs.category.Web": {
     "message": "Web",
-    "description": "The label for category 'web' in sidebar 'docs'"
+    "description": "The label for category 'Web' in sidebar 'docs'"
   },
-  "sidebar.docs.category.html": {
+  "sidebar.docs.category.HTML": {
     "message": "HTML",
-    "description": "The label for category 'html' in sidebar 'docs'"
+    "description": "The label for category 'HTML' in sidebar 'docs'"
   }
 }
