@@ -3,9 +3,17 @@
     "message": "Next",
     "description": "The label for version current"
   },
-  "sidebar.docs.category.Fundamentals": {
+  "sidebar.docs.category.Kaufmännisches": {
+    "message": "Kaufmännisches",
+    "description": "The label for category 'Kaufmännisches' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Grundlagen": {
     "message": "Grundlagen",
-    "description": "The label for category 'Fundamentals' in sidebar 'docs'"
+    "description": "The label for category 'Grundlagen' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.UML": {
+    "message": "UML",
+    "description": "The label for category 'UML' in sidebar 'docs'"
   },
   "sidebar.docs.category.Tools": {
     "message": "Tools",
@@ -14,18 +22,6 @@
   "sidebar.docs.category.Git": {
     "message": "Git",
     "description": "The label for category 'Git' in sidebar 'docs'"
-  },
-  "sidebar.docs.category.Commercial": {
-    "message": "Kaufmännisches",
-    "description": "The label for category 'Commercial' in sidebar 'docs'"
-  },
-  "sidebar.docs.category.Diagrams": {
-    "message": "Diagramme",
-    "description": "The label for category 'Diagrams' in sidebar 'docs'"
-  },
-  "sidebar.docs.category.UML": {
-    "message": "UML",
-    "description": "The label for category 'UML' in sidebar 'docs'"
   },
   "sidebar.docs.category.Typescript": {
     "message": "Typescript",
