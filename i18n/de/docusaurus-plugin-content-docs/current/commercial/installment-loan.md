@@ -5,7 +5,7 @@ description: Definition, Formel und Beispiel eines Ratendarlehens
 
 # Ratendarlehen
 
-## Was ist ein Ratendarlehen
+## Was ist ein Ratendarlehen?
 
 Ein Ratendarlehen ist eine Art von Darlehen, welches über einen bestimmten Zeitraum mit einer festgelegten Anzahl von planmäßigen Zahlungen zurückgezahlt wird. Im Gegensatz zu revolvierenden Krediten (z.B Kreditkarten) wird das Darlehen am Ende der Laufzeit vollständig zurückgezahlt.
 
