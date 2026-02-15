@@ -1,3 +1,14 @@
+---
+title: "JSON Dateibennenung"
+description: "JSON-Dateibenennungs-Konventionen und Best Practices für konsistente, plattformkompatible Dateibenennungen"
+keywords:
+  - "JSON"
+  - "Dateibennenung"
+  - "kebab-case"
+  - "Namenskonventionen"
+  - "Best Practices"
+---
+
 # JSON
 
 ## File Naming

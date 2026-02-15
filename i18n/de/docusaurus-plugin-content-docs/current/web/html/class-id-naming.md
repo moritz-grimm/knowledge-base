@@ -1,3 +1,16 @@
+---
+title: "Klassen & Id Namenskonventionen"
+description: "HTML Klassen- und ID-Namenskonventionen mit kebab-case für Klassen und camelCase für IDs"
+keywords:
+  - "HTML"
+  - "CSS"
+  - "Namenskonventionen"
+  - "Klassen"
+  - "IDs"
+  - "kebab-case"
+  - "camelCase"
+---
+
 # Klassen & Id Namenskonventionen
 
 ## Klassen

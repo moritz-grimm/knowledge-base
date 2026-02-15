@@ -1,3 +1,14 @@
+---
+title: "JSON File Naming"
+description: "JSON file naming conventions and best practices for consistent and cross-platform compatible file naming"
+keywords:
+  - "JSON"
+  - "File Naming"
+  - "kebab-case"
+  - "Naming Conventions"
+  - "Best Practices"
+---
+
 # JSON
 
 ## File Naming

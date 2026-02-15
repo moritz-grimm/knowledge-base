@@ -1,5 +1,14 @@
 ---
+title: "Bit, Byte & Unit Conversions"
 description: "Bit, Byte & Kibi Basics"
+keywords:
+  - "Bit"
+  - "Byte"
+  - "Data Units"
+  - "Conversion"
+  - "Binary"
+  - "Decimal"
+  - "Storage"
 ---
 
 # Bit, Byte & Unit Conversions

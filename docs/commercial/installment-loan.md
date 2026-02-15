@@ -1,6 +1,12 @@
 ---
 title: Installment Loan
 description: Definition, formula and example of an installment loan
+keywords:
+  - "Installment Loan"
+  - "Finance"
+  - "Loan Calculation"
+  - "Interest"
+  - "Amortization"
 ---
 
 # Installment Loan
