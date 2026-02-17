@@ -127,13 +127,13 @@ Combines RAID 1 (mirroring) and RAID 0 (striping): data is mirrored in pairs, th
 
 ## Comparison
 
-| Level   | Min. Disks | Fault Tolerance | Usable Capacity | Performance              |
-| ------- | ---------- | --------------- | --------------- | ------------------------ |
-| RAID 0  | 2          | 0 disks         | 100%            | Very high reads & writes |
-| RAID 1  | 2          | n-1 disks       | 50%             | Fast reads, slow writes  |
-| RAID 5  | 3          | 1 disk          | (n-1)/n         | Fast reads, slow writes  |
-| RAID 6  | 4          | 2 disks         | (n-2)/n         | Fast reads, slower writes|
-| RAID 10 | 4          | 1 per pair      | 50%             | Very high reads & writes |
+| Level                                               | Min. Disks | Fault Tolerance | Usable Capacity | Performance               |
+| --------------------------------------------------- | ---------- | --------------- | --------------- | ------------------------- |
+| [RAID 0](#raid-0--striping)                         | 2          | 0 disks         | 100%            | Very high reads & writes  |
+| [RAID 1](#raid-1--mirroring)                        | 2          | n-1 disks       | 50%             | Fast reads, slow writes   |
+| [RAID 5](#raid-5--striping-with-distributed-parity) | 3          | 1 disk          | (n-1)/n         | Fast reads, slow writes   |
+| [RAID 6](#raid-6--striping-with-double-parity)      | 4          | 2 disks         | (n-2)/n         | Fast reads, slower writes |
+| [RAID 10](#raid-10--striping--mirroring)            | 4          | 1 per pair      | 50%             | Very high reads & writes  |
 
 ## Important Notes
 

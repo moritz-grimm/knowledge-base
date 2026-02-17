@@ -127,13 +127,13 @@ Kombiniert [RAID 1](#raid-1--mirroring) (Mirroring) und [RAID 0](#raid-0--stripi
 
 ## Vergleich
 
-| Level   | Min. Festplatten | Fehlertoleranz    | Nutzbare Kapazität | Performance                      |
-| ------- | ---------------- | ----------------- | ------------------ | -------------------------------- |
-| RAID 0  | 2                | 0 Festplatten     | 100%               | Sehr hohe Reads & Writes         |
-| RAID 1  | 2                | n-1 Festplatten   | 50%                | Schnelle Reads, Writes wie 1 Disk|
-| RAID 5  | 3                | 1 Festplatte      | (n-1)/n            | Schnelle Reads, langsame Writes  |
-| RAID 6  | 4                | 2 Festplatten     | (n-2)/n            | Schnelle Reads, langsamere Writes|
-| RAID 10 | 4                | 1 pro Paar        | 50%                | Sehr hohe Reads & Writes         |
+| Level                                              | Min. Festplatten | Fehlertoleranz  | Nutzbare Kapazität | Performance                       |
+| -------------------------------------------------- | ---------------- | --------------- | ------------------ | --------------------------------- |
+| [RAID 0](#raid-0--striping)                        | 2                | 0 Festplatten   | 100%               | Sehr hohe Reads & Writes          |
+| [RAID 1](#raid-1--mirroring)                       | 2                | n-1 Festplatten | 50%                | Schnelle Reads, Writes wie 1 Disk |
+| [RAID 5](#raid-5--striping-mit-distributed-parity) | 3                | 1 Festplatte    | (n-1)/n            | Schnelle Reads, langsame Writes   |
+| [RAID 6](#raid-6--striping-mit-doppelter-parität)  | 4                | 2 Festplatten   | (n-2)/n            | Schnelle Reads, langsamere Writes |
+| [RAID 10](#raid-10--striping--mirroring)           | 4                | 1 pro Paar      | 50%                | Sehr hohe Reads & Writes          |
 
 ## Wichtige Hinweise
 
