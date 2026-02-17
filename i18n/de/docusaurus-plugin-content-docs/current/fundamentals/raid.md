@@ -35,8 +35,7 @@ Daten werden in Blöcke aufgeteilt und auf allen Disks parallel geschrieben.
 
 **Nachteile:**
 
-- Keinerlei Fehlertoleranz
-- Ein Festplattenversagen vernichtet alle Daten
+- Keine Redundanz, ein Festplattenausfall zerstört alle Daten
 
 ## RAID 1 – Mirroring
 
@@ -131,7 +130,7 @@ Kombiniert [RAID 1](#raid-1--mirroring) (Mirroring) und [RAID 0](#raid-0--stripi
 | Level   | Min. Festplatten | Fehlertoleranz    | Nutzbare Kapazität | Performance                      |
 | ------- | ---------------- | ----------------- | ------------------ | -------------------------------- |
 | RAID 0  | 2                | 0 Festplatten     | 100%               | Sehr hohe Reads & Writes         |
-| RAID 1  | 2                | n-1 Festplatten   | 50%                | Schnelle Reads, langsame Writes  |
+| RAID 1  | 2                | n-1 Festplatten   | 50%                | Schnelle Reads, Writes wie 1 Disk|
 | RAID 5  | 3                | 1 Festplatte      | (n-1)/n            | Schnelle Reads, langsame Writes  |
 | RAID 6  | 4                | 2 Festplatten     | (n-2)/n            | Schnelle Reads, langsamere Writes|
 | RAID 10 | 4                | 1 pro Paar        | 50%                | Sehr hohe Reads & Writes         |
