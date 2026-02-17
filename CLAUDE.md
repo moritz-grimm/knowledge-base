@@ -116,6 +116,7 @@ Uses `@easyops-cn/docusaurus-search-local` plugin for local search (no external 
 - **Lists**: Every list in `.md` files must be surrounded by a blank line (before and after) for proper formatting and readability
 - **Code Blocks**: Fenced code blocks should always have a language specified
 - **Multiplication sign**: Use `x` (the letter) instead of `×` (the Unicode symbol) for multiplication in formulas, to keep content easily searchable
+- **Trailing New Line**: Files should end with a single newline character
 
 ## Technical Details
 
