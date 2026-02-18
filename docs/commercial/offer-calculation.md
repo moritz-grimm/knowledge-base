@@ -19,34 +19,34 @@ The offer calculation determines the sales price of a product based on the purch
 
 ### Purchase Side
 
-| Operation | Item                                          | Note                          |
-| --------- | --------------------------------------------- | ----------------------------- |
-|           | List purchase price (Listeneinkaufspreis)     | Supplier's catalog price      |
-| −         | Supplier discount (Lieferantenrabatt)         | % reduction on list price     |
-| =         | Net purchase price (Zieleinkaufspreis)        |                               |
-| −         | Supplier cash discount (Lieferantenskonto)    | % reduction for early payment |
-| =         | Cash purchase price (Bareinkaufspreis)        |                               |
-| +         | Procurement costs (Bezugskosten)              | Shipping, customs             |
-| =         | **Cost price (Bezugspreis / Einstandspreis)** | True cost of the goods        |
+| Operation | Item                   | Note                          |
+| --------- | ---------------------- | ----------------------------- |
+|           | List purchase price    | Supplier's catalog price      |
+| −         | Supplier discount      | % reduction on list price     |
+| =         | Net purchase price     |                               |
+| −         | Supplier cash discount | % reduction for early payment |
+| =         | Cash purchase price    |                               |
+| +         | Procurement costs      | Shipping, customs             |
+| =         | **Cost price**         | True cost of the goods        |
 
 ### Sales Side
 
-| Operation | Item                                                      | Note                                               |
-| --------- | --------------------------------------------------------- | -------------------------------------------------- |
-|           | Cost price (Einstandspreis)                               | Carried over from above                            |
-| +         | Overhead surcharge (Handlungsgemeinkosten)                | Operating costs, rent, staff, etc.                 |
-| =         | Break-even price (Selbstkostenpreis)                      |                                                    |
-| +         | Profit markup (Gewinnzuschlag)                            | Desired profit margin                              |
-| =         | Cash selling price (Barverkaufspreis)                     |                                                    |
-| +         | Customer cash discount (Kundenskonto)                     | Added back: allows customer early-payment discount |
-| =         | Net selling price (Zielverkaufspreis)                     |                                                    |
-| +         | Customer discount (Kundenrabatt)                          | Added back: allows customer to receive a discount  |
-| =         | List selling price net (Listenverkaufspreis netto)        |                                                    |
-| +         | VAT (Umsatzsteuer / MwSt.)                                | e.g. 19% in Germany                                |
-| =         | **List selling price gross (Listenverkaufspreis brutto)** | Final price for the customer                       |
+| Operation | Item                         | Note                                               |
+| --------- | ---------------------------- | -------------------------------------------------- |
+|           | Cost price                   | Carried over from above                            |
+| +         | Overhead surcharge           | Operating costs, rent, staff, etc.                 |
+| =         | Break-even price             |                                                    |
+| +         | Profit markup                | Desired profit margin                              |
+| =         | Cash selling price           |                                                    |
+| +         | Customer cash discount       | Added back: allows customer early-payment discount |
+| =         | Net selling price            |                                                    |
+| +         | Customer discount            | Added back: allows customer to receive a discount  |
+| =         | List selling price net       |                                                    |
+| +         | VAT                          | e.g. 19% in Germany                                |
+| =         | **List selling price gross** | Final price for the customer                       |
 
 ## Notes
 
-- Skonto and Rabatt are **added back** on the sales side because they represent potential deductions the customer may claim — the sales price must cover them
+- Skonto and Rabatt are **added back** on the sales side because they represent potential deductions the customer may claim, the sales price must cover them
 - Overhead surcharge is typically expressed as a percentage of the cost price, based on the company's actual operating costs
 - The calculation can be performed forward (from purchase price to selling price) or backward (from a target selling price to derive required purchase price)
