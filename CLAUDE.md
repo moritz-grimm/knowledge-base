@@ -117,6 +117,7 @@ Uses `@easyops-cn/docusaurus-search-local` plugin for local search (no external 
 - **Code Blocks**: Fenced code blocks should always have a language specified
 - **Multiplication sign**: Use `x` (the letter) instead of `×` (the Unicode symbol) for multiplication in formulas, to keep content easily searchable
 - **Trailing New Line**: Files should end with a single newline character
+- **Arrow Symbol**: Instead of the `→` (the Unicode symbol) use the combination of the equal sign and the greater-than sing `=>`
 
 ## Technical Details
 
@@ -124,4 +125,4 @@ Uses `@easyops-cn/docusaurus-search-local` plugin for local search (no external 
 - **Framework**: Docusaurus 3.9.2
 - **React**: Version 19
 - **TypeScript**: ~5.6.2
-- **Production URL**: https://knowledge.moritz-grimm.dev
+- **Production URL**: <https://knowledge.moritz-grimm.dev>
