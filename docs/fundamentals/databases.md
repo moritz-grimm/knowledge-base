@@ -20,7 +20,7 @@ A database is an organized collection of structured data managed by a Database M
 
 ## Relational Databases (SQL)
 
-Data is stored in **tables** with rows and columns. Tables are linked through **foreign keys**, forming a structured schema.
+Data is stored in **tables** with rows and columns. Each dataset is uniquely identifieable with a **Primary Key** and Tables are linked through **foreign keys**, forming a structured schema.
 
 - Data is queried using **SQL** (Structured Query Language)
 - Schema is defined upfront and enforced by the database
@@ -30,13 +30,13 @@ Data is stored in **tables** with rows and columns. Tables are linked through **
 
 ### Key Concepts
 
-**Normalization** – Organizing tables to reduce data redundancy:
+**Normalization** - Organizing tables to reduce data redundancy:
 
 - **1NF**: Atomic values, no repeating groups
 - **2NF**: No partial dependencies on composite keys
 - **3NF**: No transitive dependencies
 
-**ACID Properties** – Guarantees for reliable transactions:
+**ACID Properties** - Guarantees for reliable transactions:
 
 - **Atomicity**: A transaction either fully succeeds or fully fails
 - **Consistency**: Data always moves from one valid state to another
@@ -50,7 +50,7 @@ Designed for flexible, scalable storage of unstructured or semi-structured data.
 | Type          | Description                                 | Example Systems  |
 | ------------- | ------------------------------------------- | ---------------- |
 | Document      | Stores JSON-like documents                  | MongoDB, CouchDB |
-| Key-Value     | Simple key → value pairs                    | Redis, DynamoDB  |
+| Key-Value     | Simple key => value pairs                   | Redis, DynamoDB  |
 | Column-Family | Optimized for columnar reads/writes         | Apache Cassandra |
 | Graph         | Nodes and edges for relationship-heavy data | Neo4j            |
 
