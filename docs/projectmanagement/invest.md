@@ -31,7 +31,7 @@ Every story must deliver clear value to the end user or the business. If a story
 
 ### E – Estimable
 
-The team must be able to estimate the effort required to implement the story. Stories that cannot be estimated are usually too vague, too large, or too poorly understood.
+The team must be able to estimate the effort required to implement the story. Stories that cannot be estimated are usually too vague, too large.
 
 ### S – Small
 
@@ -43,11 +43,11 @@ A story must have clear acceptance criteria that allow the team to verify whethe
 
 ## Summary
 
-| Letter | Criterion   | Key Question                                    |
-| ------ | ----------- | ----------------------------------------------- |
-| I      | Independent | Can this be implemented without other stories?  |
-| N      | Negotiable  | Are the details still open to discussion?       |
-| V      | Valuable    | Does this deliver value to the user?            |
-| E      | Estimable   | Can we estimate the effort to implement this?   |
-| S      | Small       | Can this be completed within one sprint?        |
-| T      | Testable    | Do we have clear acceptance criteria?           |
+| Letter | Criterion                      | Key Question                                   |
+| ------ | ------------------------------ | ---------------------------------------------- |
+| I      | [Independent](#i--independent) | Can this be implemented without other stories? |
+| N      | [Negotiable](#n--negotiable)   | Is it debatable until it can be implemented?   |
+| V      | [Valuable](#v--valuable)       | Does this deliver value to the user?           |
+| E      | [Estimable](#e--estimable)     | Can we estimate the effort to implement this?  |
+| S      | [Small](#s--small)             | Can this be completed within one sprint?       |
+| T      | [Testable](#t--testable)       | Do we have clear acceptance criteria?          |
