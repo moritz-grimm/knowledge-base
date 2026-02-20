@@ -102,8 +102,15 @@ Uses `@easyops-cn/docusaurus-search-local` plugin for local search (no external 
    ---
    ```
 
-3. For German translation, create corresponding file in `i18n/de/docusaurus-plugin-content-docs/current/` with same structure
-4. Update `i18n/de/docusaurus-plugin-content-docs/current.json` if needed for metadata translations but run `npm run write-translations:de` previously to autogenerate them
+3. For German translation, create the corresponding file in `i18n/de/docusaurus-plugin-content-docs/current/` with the same structure
+4. Run `npm run write-translations:de` to autogenerate metadata, then update `i18n/de/docusaurus-plugin-content-docs/current.json` if needed
+
+### Translation Guidelines
+
+- Frontmatter (`title`, `description`, `keywords`) must be translated into the target language
+- Contents of fenced code blocks and inline code (backtick-wrapped) must NOT be translated
+- Link targets (URLs, relative paths) must not be translated; link display text should be translated
+- All links present in the source must also be present in the translation, and vice versa
 
 ### File Naming
 
@@ -115,9 +122,12 @@ Uses `@easyops-cn/docusaurus-search-local` plugin for local search (no external 
 - **Headings**: Every heading in `.md` files must be surrounded by a blank line (before and after) for proper formatting and readability
 - **Lists**: Every list in `.md` files must be surrounded by a blank line (before and after) for proper formatting and readability
 - **Code Blocks**: Fenced code blocks should always have a language specified
-- **Multiplication sign**: Use `x` (the letter) instead of `×` (the Unicode symbol) for multiplication in formulas, to keep content easily searchable
-- **Trailing New Line**: Files should end with a single newline character
-- **Arrow Symbol**: Instead of the `→` (the Unicode symbol) use the combination of the equal sign and the greater-than sing `=>`
+- **Multiplication sign**: Use `x` (the letter) instead of `×` (Unicode symbol) for multiplication in formulas, to keep content easily searchable
+- **Arrow symbol**: Use `=>` (equal sign + greater-than sign) instead of `→` (Unicode symbol)
+- **Decimal separator**: German uses `,` (e.g. `0,43`), English uses `.` (e.g. `0.43`)
+- **Separators**: Prefer `,` over `-` where grammatically possible (e.g. "sicher, zuverlässig" instead of "sicher - zuverlässig")
+- **German abbreviations**: Capitalise correctly, e.g. `z.B.` not `z.b.`
+- **Trailing newline**: Files must end with exactly one newline character
 
 ## Technical Details
 
