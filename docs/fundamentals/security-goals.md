@@ -1,24 +1,21 @@
 ---
 title: IT Security Goals
-description: The four core IT security goals – confidentiality, integrity, availability, and authenticity – and what they mean in practice.
+description: The four core IT security goals, confidentiality, integrity, availability, authenticity, and what they mean in practice.
 keywords:
     - Security Goals
-    - Schutzziele
     - Confidentiality
     - Integrity
     - Availability
     - Authenticity
-    - IT Security
-    - CIA Triad
 ---
 
 # IT Security Goals
 
 ## Overview
 
-IT security is built on four core goals (Schutzziele) that define what a secure system must guarantee. The first three form the **CIA triad**; authenticity is frequently added as a fourth goal.
+IT security is built on four core goals that define what a secure system must guarantee.
 
-## Confidentiality (Vertraulichkeit)
+## Confidentiality
 
 Information is only accessible to authorized parties.
 
@@ -26,7 +23,7 @@ Information is only accessible to authorized parties.
 - Achieved through encryption, access controls, and need-to-know principles
 - **Example**: Only the intended recipient can read an encrypted email
 
-## Integrity (Integrität)
+## Integrity
 
 Information is accurate and has not been tampered with.
 
@@ -34,7 +31,7 @@ Information is accurate and has not been tampered with.
 - Achieved through hash functions, digital signatures, and checksums
 - **Example**: A downloaded file whose hash matches the published value has not been altered
 
-## Availability (Verfügbarkeit)
+## Availability
 
 Systems and data are accessible when needed by authorized users.
 
@@ -42,7 +39,7 @@ Systems and data are accessible when needed by authorized users.
 - Achieved through redundancy, backups, DDoS protection, and fault-tolerant infrastructure
 - **Example**: A web service protected against DDoS attacks remains reachable during an attack
 
-## Authenticity (Authentizität)
+## Authenticity
 
 The identity of a communication partner or the origin of data can be verified.
 
@@ -52,7 +49,7 @@ The identity of a communication partner or the origin of data can be verified.
 
 ## Summary
 
-| Goal            | Question                                 | Key Mechanism              |
+| Goal            | Question                                 | Solutions                  |
 | --------------- | ---------------------------------------- | -------------------------- |
 | Confidentiality | Who can access this?                     | Encryption, access control |
 | Integrity       | Has this been tampered with?             | Hashes, digital signatures |
