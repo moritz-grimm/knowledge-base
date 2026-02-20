@@ -9,6 +9,7 @@ keywords:
     - Critical Path
     - Project Planning
     - Project Management
+draft: true
 ---
 
 # Network Plan (CPM)

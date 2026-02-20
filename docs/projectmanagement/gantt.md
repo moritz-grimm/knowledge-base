@@ -6,6 +6,7 @@ keywords:
     - Project Planning
     - Project Management
     - Schedule
+draft: true
 ---
 
 # Gantt Chart
