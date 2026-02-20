@@ -34,4 +34,4 @@ Read both files passed as $ARGUMENTS and compare them thoroughly. Check the foll
 - Code blocks must have a language specifier
 
 ## Output
-Report every issue found with file, line number, the problematic text, and the correction. Then apply all fixes.
+Report every issue found with file, line number, the problematic text, and the correction as a table. Then apply all fixes.
