@@ -1,10 +1,4 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
+/* Default Docusaurus Theme */
 :root {
     --ifm-color-primary: #2e8555;
     --ifm-color-primary-dark: #29784c;
@@ -17,7 +11,6 @@
     --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
     --ifm-color-primary: #25c2a0;
     --ifm-color-primary-dark: #21af90;
@@ -43,5 +36,157 @@
 }
 
 html[data-theme='dark'] .header-github-link::before {
+    filter: invert(1);
+}
+
+/* Homepage Theme */
+html[data-theme-style='homepage'] {
+    /* Primary colors - lime */
+    --ifm-color-primary: #c8ff00;
+    --ifm-color-primary-dark: #b4e600;
+    --ifm-color-primary-darker: #a0cc00;
+    --ifm-color-primary-darkest: #7da300;
+    --ifm-color-primary-light: #d2ff33;
+    --ifm-color-primary-lighter: #dcff66;
+    --ifm-color-primary-lightest: #e6ff99;
+
+    /* Background colors */
+    --ifm-background-color: #0a0a0a;
+    --ifm-background-surface-color: #111111;
+
+    --ifm-font-family-base: 'Inter', -apple-system, sans-serif;
+    --ifm-heading-font-family: 'Inter', -apple-system, sans-serif;
+
+    --ifm-font-color-base: #e8e8e8;
+    --ifm-font-color-secondary: #777777;
+    --ifm-heading-color: #e8e8e8;
+
+    --homepage-border: rgba(200, 255, 0, 0.12); 
+    --ifm-hr-border-color: var(--homepage-border);
+    --ifm-toc-border-color: var(--homepage-border);
+    --ifm-color-emphasis-300: var(--homepage-border);
+
+    /* Code */
+    --ifm-code-font-size: 95%;
+    --ifm-code-background: #151515;
+    --ifm-code-border-radius: 0;
+    --docusaurus-highlighted-code-line-bg: rgba(200, 255, 0, 0.1);
+    --prism-background-color: #111111;
+
+    /* Cards */
+    --ifm-card-background-color: #151515;
+
+    --ifm-link-color: #c8ff00;
+    --ifm-link-hover-color: #d2ff33;
+
+    --ifm-navbar-background-color: #0a0a0a;
+    --ifm-navbar-shadow: 0 1px 0 0 var(--homepage-border);
+    --ifm-navbar-link-color: #e8e8e8;
+    --ifm-navbar-link-hover-color: #c8ff00;
+
+    --ifm-footer-background-color: #0a0a0a;
+    --ifm-footer-color: #777777;
+    --ifm-footer-link-color: #e8e8e8;
+    --ifm-footer-link-hover-color: #c8ff00;
+    --ifm-footer-title-color: #c8ff00;
+
+    /* Table of contents */
+    --ifm-color-content-secondary: #777777;
+
+    --ifm-alert-background-color: #151515;
+
+    /* Misc */
+    --ifm-hover-overlay: rgba(200, 255, 0, 0.05);
+    --ifm-menu-color: #e8e8e8;
+    --ifm-menu-color-active: #c8ff00;
+    --ifm-menu-color-background-active: rgba(200, 255, 0, 0.1);
+    --ifm-menu-color-background-hover: rgba(200, 255, 0, 0.05);
+    --ifm-breadcrumb-color-active: #c8ff00;
+    --ifm-tabs-color-active: #c8ff00;
+    --ifm-tabs-color-active-border: #c8ff00;
+    --ifm-pagination-nav-color-hover: #c8ff00;
+    --ifm-color-info-dark: #c8ff00;
+
+    --docsearch-primary-color: #c8ff00;
+}
+
+html[data-theme-style='homepage'] .navbar {
+    border-bottom: 1px solid var(--homepage-border);
+}
+
+html[data-theme-style='homepage'] .footer {
+    border-top: 1px solid var(--homepage-border);
+    --ifm-footer-background-color: #0a0a0a;
+    background-color: #0a0a0a;
+}
+
+html[data-theme-style='homepage'] .menu__list .menu__list {
+    border-left: 1px solid var(--homepage-border);
+}
+
+/* Code blocks */
+html[data-theme-style='homepage'] pre {
+    background-color: #111111 !important;
+    border: 1px solid var(--homepage-border);
+    border-radius: 0;
+}
+
+html[data-theme-style='homepage'] code {
+    background-color: #151515;
+    border: 1px solid var(--homepage-border);
+    border-radius: 0;
+    color: #c8ff00;
+}
+
+html[data-theme-style='homepage'] pre code {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+}
+
+/* Tables */
+html[data-theme-style='homepage'] table {
+    border-collapse: collapse;
+}
+
+html[data-theme-style='homepage'] table th {
+    background-color: #151515;
+    color: #c8ff00;
+    border-color: var(--homepage-border);
+}
+
+html[data-theme-style='homepage'] table td {
+    border-color: var(--homepage-border);
+}
+
+/* Pagination Nav */
+html[data-theme-style='homepage'] .pagination-nav__link {
+    border-color: var(--homepage-border);
+    background-color: #111111;
+}
+
+html[data-theme-style='homepage'] .pagination-nav__link:hover {
+    border-color: rgba(200, 255, 0, 0.3);
+}
+
+/* Scrollbar */
+html[data-theme-style='homepage'] ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+html[data-theme-style='homepage'] ::-webkit-scrollbar-track {
+    background: #0a0a0a;
+}
+
+html[data-theme-style='homepage'] ::-webkit-scrollbar-thumb {
+    background: rgba(200, 255, 0, 0.2);
+}
+
+html[data-theme-style='homepage'] ::-webkit-scrollbar-thumb:hover {
+    background: rgba(200, 255, 0, 0.4);
+}
+
+html[data-theme-style='homepage'] .header-github-link::before {
     filter: invert(1);
 }

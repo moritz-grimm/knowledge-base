@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
     title: 'Knowledge Base',
-    favicon: 'img/favicon.ico',
+    favicon: 'img/favicon.svg',
 
     // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
     future: {
@@ -87,7 +87,7 @@ const config: Config = {
             title: 'Knowledge Base',
             logo: {
                 alt: 'My GitHub Profile Picture',
-                src: 'img/gh-profile-picture.png',
+                src: 'img/favicon.svg',
             },
             items: [
                 {

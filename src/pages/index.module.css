@@ -1,3 +1,4 @@
+/* Default Docusaurus Theme */
 .container {
   max-width: 650px;
   width: 100%;
@@ -97,4 +98,26 @@
   .title {
     margin-bottom: 2rem;
   }
+}
+
+/* Homepage Theme */
+:global(html[data-theme-style='homepage']) .title {
+  font-family: 'Inter', -apple-system, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+:global(html[data-theme-style='homepage']) .cta {
+  background: #c8ff00;
+  color: #0a0a0a !important;
+  border-color: #c8ff00;
+  font-family: 'Space Mono', monospace;
+}
+
+:global(html[data-theme-style='homepage']) .cta:hover {
+  background: #d2ff33;
+  border-color: #d2ff33;
+  color: #0a0a0a !important;
+  box-shadow: 0 4px 16px rgba(200, 255, 0, 0.2);
 }
