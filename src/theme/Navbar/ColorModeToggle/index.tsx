@@ -36,7 +36,11 @@ function getStoredThemeStyle(): ThemeStyle | null {
     return localStorage.getItem(STORAGE_KEY) as ThemeStyle | null;
 }
 
-export default function ColorModeToggle(): React.ReactNode {
+interface Props {
+    className?: string;
+}
+
+export default function ColorModeToggle({ className }: Props): React.ReactNode {
     const { colorMode, setColorMode } = useColorMode();
     const [isOpen, setIsOpen] = useState(false);
     const [activeStyle, setActiveStyle] = useState<ThemeStyle>(() => {
@@ -92,7 +96,7 @@ export default function ColorModeToggle(): React.ReactNode {
     const activeOption = themeOptions.find(o => o.value === activeStyle) ?? themeOptions[0];
 
     return (
-        <div className={styles.wrapper} ref={dropdownRef}>
+        <div className={`${styles.wrapper}${className ? ` ${className}` : ''}`} ref={dropdownRef}>
             <button
                 className={styles.toggle}
                 onClick={() => setIsOpen(prev => !prev)}

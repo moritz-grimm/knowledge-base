@@ -1,7 +1,5 @@
 .wrapper {
     position: relative;
-    display: flex;
-    align-items: center;
 }
 
 .toggle {
@@ -99,4 +97,14 @@
     align-items: center;
     width: 18px;
     justify-content: center;
+}
+
+@media (max-width: 996px) {
+    .label {
+        display: none;
+    }
+
+    .toggle {
+        padding: 0.4rem;
+    }
 }
