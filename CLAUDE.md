@@ -127,7 +127,7 @@ Uses `@easyops-cn/docusaurus-search-local` plugin for local search (no external 
 - **Decimal separator**: German uses `,` (e.g. `0,43`), English uses `.` (e.g. `0.43`)
 - **Separators**: Prefer `,` over `-` where grammatically possible (e.g. "sicher, zuverlässig" instead of "sicher - zuverlässig")
 - **German abbreviations**: Capitalise correctly, e.g. `z.B.` not `z.b.`
-- **Trailing newline**: Files must end with exactly one newline character
+- **Trailing newline**: Every `.md` file must end with exactly one newline character
 
 ## Technical Details
 
