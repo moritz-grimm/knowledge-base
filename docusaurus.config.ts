@@ -123,7 +123,7 @@ const config: Config = {
                             href: 'https://github.com/moritz-grimm',
                         },
                         {
-                            label: 'My Website',
+                            label: 'My Homepage',
                             href: 'https://www.moritz-grimm.dev'
                         },
                         {

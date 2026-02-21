@@ -3,10 +3,6 @@
     "message": "Next",
     "description": "The label for version current"
   },
-  "sidebar.docs.category.Kaufmännisches": {
-    "message": "Kaufmännisches",
-    "description": "The label for category 'Kaufmännisches' in sidebar 'docs'"
-  },
   "sidebar.docs.category.Grundlagen": {
     "message": "Grundlagen",
     "description": "The label for category 'Grundlagen' in sidebar 'docs'"
@@ -38,5 +34,13 @@
   "sidebar.docs.category.Cloud Computing": {
     "message": "Cloud Computing",
     "description": "The label for category 'Cloud Computing' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Wirtschaftliches": {
+    "message": "Wirtschaftliches",
+    "description": "The label for category 'Wirtschaftliches' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Projektmanagement": {
+    "message": "Projektmanagement",
+    "description": "The label for category 'Projektmanagement' in sidebar 'docs'"
   }
 }
