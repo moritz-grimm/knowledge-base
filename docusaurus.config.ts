@@ -123,8 +123,8 @@ const config: Config = {
                             href: 'https://github.com/moritz-grimm',
                         },
                         {
-                            label: "NPM",
-                            href: "https://www.npmjs.com/~moritz-grimm"
+                            label: 'My Website',
+                            href: 'https://www.moritz-grimm.dev'
                         },
                         {
                             label: "This Repo",
