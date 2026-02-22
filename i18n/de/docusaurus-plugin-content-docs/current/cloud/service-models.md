@@ -20,9 +20,61 @@ Cloud-Computing-Dienste werden typischerweise in drei Haupt-Service-Modelle kate
 
 | Service-Modell                                | Du verwaltest                                           | Anbieter verwaltet                                                               | Beispiele                                    |
 | --------------------------------------------- | ------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------- |
+| **[On-Premise](#on-premise)**                 | Alles                                                   | Nichts                                                                           | Eigenes Datencenter, Lokaler Serverraum      |
 | **[IaaS](#infrastructure-as-a-service-iaas)** | Betriebssystem, Middleware, Runtime, Daten, Anwendungen | Virtualisierung, Server, Speicher, Netzwerk                                      | AWS EC2, Azure VMs, Google Compute Engine    |
 | **[PaaS](#platform-as-a-service-paas)**       | Daten, Anwendungen                                      | Runtime, Middleware, Betriebssystem, Virtualisierung, Server, Speicher, Netzwerk | Heroku, Google App Engine, Azure App Service |
 | **[SaaS](#software-as-a-service-saas)**       | Nur Konfiguration                                       | Alles                                                                            | Gmail, Salesforce, Microsoft 365, Dropbox    |
+
+---
+
+## On-Premise
+
+### Definition
+
+On-premise (auch oft "on-prem" genannt) bedeutet das Betreiben und Managen der gesamten IT-Infrastruktur lokal in den eigenen Einrichtungen. Es sind keine Cloud-Anbieter involviert. Dein Unternehmen besitzt, betreibt und verwaltet alles, von der physischen Hardware bis zu den Anwendungen.
+
+### Was du bekommst
+
+- Physische Server und Hardware
+- Komplette Kontrolle über alle Layer
+- Daten bleiben innerhalb der eigenen Einrichtung
+- Keine Abhängigkeiten von anderen Anbietern
+
+### Verantwortlichkeiten
+
+**Du verwaltest:**
+
+- Physische Hardware (Server, Speicher, Netzwerk)
+- Virtualisierung
+- Betriebssysteme
+- Middleware
+- Runtime-Umgebungen
+- Anwendungen
+- Daten
+- Security, Backups, Wiederherstellung im Katastrophenfall
+
+### Anwendungsfälle
+
+- **Strenge Compliance-Anforderungen**: Branchen mit strikten Datenverordnungen (z.B. Regierungen, Gesundheitswesen, Finanzwesen)
+- **Legacy-Systeme**: Anwendungen, die nicht in die Cloud migriert werden können
+- **Low-Latency-Anforderungen**: Systeme mit Anforderungen an niedrige Netzwerklatenz
+- **Datensouveränität**: Sensible Daten, die vollständig im Haus bleiben müssen
+
+### Vorteile
+
+- Vollständige Kontrolle über Hardware und Software
+- Daten verlassen niemals die eigenen Einrichtungen
+- Keine wiederkehrenden Cloud-Kosten
+- Keine Abhängigkeit von einer Internetverbindung
+- Leichtere Einhaltung strenger Datenvorschriften
+
+### Nachteile
+
+- Hohe Anfangsinvestitionen (Hardware, Gebäude, Kühlung)
+- Erfordert dediziertes IT-Personal zur Wartung
+- Skalierung erfordert Kauf und Installation von neuer Hardware
+- Selbstverantwortlich für alle Updates, Patches und Security
+- Hardware kann veralten
 
 ---
 
@@ -239,4 +291,5 @@ Eine beliebte Analogie vergleicht Cloud-Service-Modelle mit Pizza-Bestellung:
 
 ### Backend as a Service (BaaS)
 
-- Das Backend wird gemanaged während du dich um das Frontend kümmerst
+- Das Backend wird verwaltet, während du dich um das Frontend kümmerst
+- Beispiele: Supabase, Firebase

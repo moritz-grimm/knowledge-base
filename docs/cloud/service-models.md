@@ -20,9 +20,61 @@ Cloud computing services are typically categorized into three main service model
 
 | Service Model                                                               | You Manage                                  | Provider Manages                                                      | Examples                                             |
 | --------------------------------------------------------------------------- | ------------------------------------------- | --------------------------------------------------------------------- | ---------------------------------------------------- |
+| **[On-Premise](#on-premise)**                                               | Everything                                  | Nothing                                                               | Own data center, local servers                       |
 | **[IaaS](#infrastructure-as-a-service-iaas)** (Infrastructure as a Service) | OS, Middleware, Runtime, Data, Applications | Virtualization, Servers, Storage, Networking                          | AWS EC2, Azure VMs, Google Compute Engine            |
 | **[PaaS](#platform-as-a-service-paas)** (Platform as a Service)             | Data, Applications                          | Runtime, Middleware, OS, Virtualization, Servers, Storage, Networking | Heroku, Google App Engine, Azure App Service, Vercel |
 | **[SaaS](#software-as-a-service-saas)** (Software as a Service)             | Configuration only                          | Everything                                                            | Gmail, Salesforce, Microsoft 365, Dropbox            |
+
+---
+
+## On-Premise
+
+### Definition
+
+On-premise (also called "on-prem") means running and managing all IT infrastructure locally within your own facilities. There is no cloud provider involved - your organization owns, operates, and maintains everything from the physical hardware to the applications.
+
+### What You Get
+
+- Physical servers and hardware
+- Complete control over all layers
+- Data stays within your own facilities
+- No dependency on external providers
+
+### Responsibilities
+
+**You manage:**
+
+- Physical hardware (servers, storage, networking)
+- Virtualization
+- Operating systems
+- Middleware
+- Runtime environments
+- Applications
+- Data
+- Security, backups, disaster recovery
+
+### Use Cases
+
+- **Strict Compliance Requirements**: Industries with strict data regulations (e.g. government, healthcare, finance)
+- **Legacy Systems**: Applications that cannot be migrated to the cloud
+- **Low-Latency Needs**: Systems requiring minimal network latency
+- **Full Data Sovereignty**: Keeping sensitive data entirely in-house
+
+### Advantages
+
+- Full control over hardware and software
+- Data never leaves your premises
+- No recurring cloud subscription costs
+- No dependency on internet connectivity
+- Easier compliance with strict data regulations
+
+### Disadvantages
+
+- High upfront capital costs (hardware, facilities, cooling)
+- Requires dedicated IT staff for maintenance
+- Scaling requires purchasing and installing new hardware
+- You are responsible for all updates, patches, and security
+- Hardware can become outdated
 
 ---
 
