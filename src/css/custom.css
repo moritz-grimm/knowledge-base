@@ -196,3 +196,7 @@ html[data-theme-style='homepage'] .header-github-link::before {
 html[data-theme-style='homepage'] [class*="suggestion"][class*="cursor"] {
     border: 1px solid #c8ff00;
 }
+
+html[data-theme-style='homepage'] [class*="suggestion"] mark {
+    color: #c8ff00 !important;
+}
