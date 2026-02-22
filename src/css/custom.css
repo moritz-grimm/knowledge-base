@@ -107,7 +107,8 @@ html[data-theme-style='homepage'] {
     --ifm-pagination-nav-color-hover: #c8ff00;
     --ifm-color-info-dark: #c8ff00;
 
-    --docsearch-primary-color: #c8ff00;
+    /* Search Box */
+    --search-local-highlight-color: var(--ifm-color-emphasis-100);
 }
 
 html[data-theme-style='homepage'] .navbar {
@@ -189,4 +190,13 @@ html[data-theme-style='homepage'] ::-webkit-scrollbar-thumb:hover {
 
 html[data-theme-style='homepage'] .header-github-link::before {
     filter: invert(1);
+}
+
+/* Search Box */
+html[data-theme-style='homepage'] [class*="suggestion"][class*="cursor"] {
+    border: 1.5px solid #c8ff00;
+}
+
+html[data-theme-style='homepage'] [class*="suggestion"] mark {
+    color: #c8ff00 !important;
 }
