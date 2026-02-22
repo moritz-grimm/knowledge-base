@@ -108,6 +108,9 @@ html[data-theme-style='homepage'] {
     --ifm-color-info-dark: #c8ff00;
 
     --docsearch-primary-color: #ff2600;
+
+    /* Search dropdown */
+    --search-local-hit-active-color: #0a0a0a;
 }
 
 html[data-theme-style='homepage'] .navbar {
