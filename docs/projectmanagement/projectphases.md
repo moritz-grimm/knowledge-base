@@ -36,7 +36,7 @@ In the planning phase the team creates a detailed roadmap for how the project wi
 - Define the project scope and deliverables
 - Create a work breakdown structure (WBS)
 - Estimate time, costs, and resources
-- Build a schedule (e.g. using a [Gantt chart](./gantt.md) or [network plan](./network-plan.md))
+- Build a schedule (e.g. using a Gantt chart<!-- (./gantt.md) --> or network plan<!--(./network-plan.md)-->)
 - Define milestones and quality criteria
 - Plan risk mitigation strategies
 - Assign roles and responsibilities
