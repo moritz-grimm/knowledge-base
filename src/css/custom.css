@@ -107,7 +107,8 @@ html[data-theme-style='homepage'] {
     --ifm-pagination-nav-color-hover: #c8ff00;
     --ifm-color-info-dark: #c8ff00;
 
-    --search-local-hit-active-color: #0a0a0a;
+    --search-local-hit-active-color: #e8e8e8;
+    --search-local-highlight-color: var(--ifm-color-emphasis-100);
 }
 
 html[data-theme-style='homepage'] .navbar {
@@ -189,4 +190,9 @@ html[data-theme-style='homepage'] ::-webkit-scrollbar-thumb:hover {
 
 html[data-theme-style='homepage'] .header-github-link::before {
     filter: invert(1);
+}
+
+/* Search: selected suggestion border instead of background change */
+html[data-theme-style='homepage'] [class*="suggestion"][class*="cursor"] {
+    border: 1px solid #c8ff00;
 }
