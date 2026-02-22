@@ -108,6 +108,7 @@ html[data-theme-style='homepage'] {
     --ifm-color-info-dark: #c8ff00;
 
     --search-local-hit-active-color: #e8e8e8;
+    --search-local-input-active-border-color: #c8ff00;
 }
 
 html[data-theme-style='homepage'] .navbar {
@@ -191,7 +192,7 @@ html[data-theme-style='homepage'] .header-github-link::before {
     filter: invert(1);
 }
 
-/* Search: hover/active suggestion background */
+/* Search: hover/active suggestion background
 html[data-theme-style='homepage'] [class*="suggestion"][class*="cursor"] {
     background-color: #2a2a2a !important;
-}
+} */
