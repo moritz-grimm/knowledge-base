@@ -192,11 +192,10 @@ html[data-theme-style='homepage'] .header-github-link::before {
     filter: invert(1);
 }
 
-/* Search: selected suggestion border instead of background change */
 html[data-theme-style='homepage'] [class*="suggestion"][class*="cursor"] {
-    border: 1px solid #c8ff00;
+    border: 1.5px solid #c8ff00;
 }
 
 html[data-theme-style='homepage'] [class*="suggestion"] mark {
-    color: #c8ff00 !important;
+    color: #c8ff00;
 }
