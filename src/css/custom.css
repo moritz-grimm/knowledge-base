@@ -107,7 +107,8 @@ html[data-theme-style='homepage'] {
     --ifm-pagination-nav-color-hover: #c8ff00;
     --ifm-color-info-dark: #c8ff00;
 
-    --search-local-hit-active-color: #0a0a0a;
+    --search-local-highlight-color: rgba(200, 255, 0, 0.25);
+    --search-local-hit-active-color: #e8e8e8;
 }
 
 html[data-theme-style='homepage'] .navbar {
