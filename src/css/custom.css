@@ -107,7 +107,7 @@ html[data-theme-style='homepage'] {
     --ifm-pagination-nav-color-hover: #c8ff00;
     --ifm-color-info-dark: #c8ff00;
 
-    --search-local-hit-active-color: #e8e8e8;
+    /* Search Box */
     --search-local-highlight-color: var(--ifm-color-emphasis-100);
 }
 
