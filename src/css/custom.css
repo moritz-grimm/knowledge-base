@@ -107,7 +107,6 @@ html[data-theme-style='homepage'] {
     --ifm-pagination-nav-color-hover: #c8ff00;
     --ifm-color-info-dark: #c8ff00;
 
-    --search-local-highlight-color: #2a2a2a;
     --search-local-hit-active-color: #e8e8e8;
 }
 
@@ -190,4 +189,9 @@ html[data-theme-style='homepage'] ::-webkit-scrollbar-thumb:hover {
 
 html[data-theme-style='homepage'] .header-github-link::before {
     filter: invert(1);
+}
+
+/* Search: hover/active suggestion background */
+html[data-theme-style='homepage'] [class*="suggestion"][class*="cursor"] {
+    background-color: #2a2a2a !important;
 }
