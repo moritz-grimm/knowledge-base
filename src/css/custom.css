@@ -107,7 +107,7 @@ html[data-theme-style='homepage'] {
     --ifm-pagination-nav-color-hover: #c8ff00;
     --ifm-color-info-dark: #c8ff00;
 
-    --docsearch-primary-color: #c8ff00;
+    --docsearch-primary-color: #ff2600;
 }
 
 html[data-theme-style='homepage'] .navbar {
