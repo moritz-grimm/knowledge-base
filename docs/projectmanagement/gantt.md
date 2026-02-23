@@ -5,8 +5,6 @@ keywords:
     - Gantt Chart
     - Project Planning
     - Project Management
-    - Schedule
-draft: true
 ---
 
 # Gantt Chart
@@ -19,19 +17,26 @@ A Gantt chart is a horizontal bar chart that visualizes a project schedule over 
 
 - **Rows**: individual tasks or work packages
 - **Columns**: time scale (days, weeks, months)
-- **Bars**: duration of each task; positioned according to start and end dates
+- **Bars**: duration of individual tasks based on their start and end dates
 - **Dependencies**: arrows or overlaps can indicate task dependencies
+
+## Characteristics
+
+- Easy to understand and create, even for non-technical stakeholders
+- Well suited for short-term projects with a manageable number of tasks
+- Focuses on time-based planning rather than resource allocation
+- Typically used for waterfall or phase-based projects
+- Static representation: reflects a planned snapshot, not real-time progress
 
 ## Advantages
 
-- Easy to read and communicate to stakeholders at any level
+- Easy to read and communicate to stakeholders
 - Provides a clear overview of the overall project timeline
 - Shows which tasks run in parallel and which are sequential
 - Simple to create and maintain for small to medium projects
 
 ## Disadvantages
 
-- Does not explicitly model task dependencies or logical relationships
 - Does not identify the critical path
 - Can become unwieldy for large projects with many tasks
 - Changes to one task require manual adjustment of dependent tasks
