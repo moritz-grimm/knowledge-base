@@ -30,13 +30,13 @@ Data is stored in **tables** with rows and columns. Each dataset is uniquely ide
 
 ### Key Concepts
 
-**Normalization** - Organizing tables to reduce data redundancy:
+**Normalization**: Organizing tables to reduce data redundancy:
 
 - **1NF**: Atomic values, no repeating groups
 - **2NF**: No partial dependencies on composite keys
 - **3NF**: No transitive dependencies
 
-**ACID Properties** - Guarantees for reliable transactions:
+**ACID Properties**: Guarantees for reliable transactions:
 
 - **Atomicity**: A transaction either fully succeeds or fully fails
 - **Consistency**: Data always moves from one valid state to another

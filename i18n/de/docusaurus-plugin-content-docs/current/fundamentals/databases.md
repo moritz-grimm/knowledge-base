@@ -30,13 +30,13 @@ Daten werden in **Tabellen** gespeichert mit Zeilen und Spalten. Jeder Datensatz
 
 ### Kernkonzepte
 
-**Normalisierung** - Tabellen organisieren um Datenredundanz zu reduzieren:
+**Normalisierung**: Tabellen organisieren um Datenredundanz zu reduzieren:
 
 - **1NF**: Atomare Werte, keine sich wiederholenden Gruppen
 - **2NF**: Keine partiellen Abhängigkeiten von zusammengesetzten Schlüsseln
 - **3NF**: Keine transitiven Abhängigkeiten
 
-**ACID Properties** - Eine Garantie für zuverlässige Transaktionen:
+**ACID Properties**: Eine Garantie für zuverlässige Transaktionen:
 
 - **Atomicity**: Eine Transaktion wird entweder komplett durchgeführt oder bricht ab
 - **Consistency**: Daten bewegen sich immer nur von einem validen Zustand zu einem anderen
