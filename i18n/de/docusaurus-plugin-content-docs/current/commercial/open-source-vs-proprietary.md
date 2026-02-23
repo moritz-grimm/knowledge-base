@@ -59,7 +59,7 @@ keywords:
 - **Keine Transparenz**: Niemand drittes kann den Code auf Sicherheit oder Qualität untersuchen
 - **Flexibilität**: Begrenzte Möglichkeiten zur Anpassung oder Erweiterung über die vom Anbieter gesetzen Grenzen hinaus
 
-## Beispiele
+### Beispiele
 
 - Microsoft Office
 - Windows, iOS, MacOS

@@ -59,7 +59,7 @@ keywords:
 - **No transparency**: cannot audit the source code for security or quality
 - **Restrictions**: limited ability to customize or extend beyond what the vendor allows
 
-## Examples
+### Examples
 
 - Microsoft Office
 - Windows, iOS, MacOS
