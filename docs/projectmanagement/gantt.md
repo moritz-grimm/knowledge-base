@@ -40,3 +40,25 @@ A Gantt chart is a horizontal bar chart that visualizes a project schedule over 
 - Does not identify the critical path
 - Can become unwieldy for large projects with many tasks
 - Changes to one task require manual adjustment of dependent tasks
+
+## Example
+
+A small team is tasked with building a landing page for a product launch in five weeks. The project manager creates a Gantt chart to plan the timeline:
+
+1. **Requirements** (Week 1): The team gathers requirements from the marketing department, defines the page content, and agrees on the scope
+2. **Design** (Week 1 to 2): The designer starts creating mockups while requirements are being finalized, overlapping slightly with the first phase
+3. **Implementation** (Week 2 to 4): Once the design direction is clear, developers begin building the page. This is the longest phase
+4. **Testing** (Week 4): QA starts testing completed sections while development is still ongoing
+5. **Deployment** (Week 5): After final approval, the page is deployed to production ahead of the launch date
+
+The Gantt chart makes it easy for the team to see which phases overlap, where handoffs happen, and whether the five-week deadline is realistic.
+
+```text
+| Task           |  Week 1 | Week 2 | Week 3 | Week 4  | Week 5 |
+| -------------- | ------- | ------ | ------ | ------- | ------ |
+| Requirements   |███████  |        |        |         |        |
+| Design         |     ████|████    |        |         |        |
+| Implementation |         |  ██████|████████|█████    |        |
+| Testing        |         |        |        |  ███████|        |
+| Deployment     |         |        |        |         |████████|
+```
