@@ -289,6 +289,11 @@ Eine beliebte Analogie vergleicht Cloud-Service-Modelle mit Pizza-Bestellung:
 - Container-Orchestrierungsplattformen
 - Beispiele: Amazon ECS, Google Kubernetes Engine, Azure Kubernetes Service
 
+### Desktop as a Service (DaaS)
+
+- Virtuelle Desktops über die Cloud bereitgestellt
+- Beispiele: Amazon WorkSpaces, Azure Virtual Desktop, Citrix DaaS
+
 ### Backend as a Service (BaaS)
 
 - Das Backend wird verwaltet, während du dich um das Frontend kümmerst

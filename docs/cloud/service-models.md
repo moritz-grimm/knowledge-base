@@ -289,6 +289,11 @@ Beyond the core three, there are specialized service models:
 - Container orchestration platforms
 - Examples: Amazon ECS, Google Kubernetes Engine, Azure Kubernetes Service
 
+### Desktop as a Service (DaaS)
+
+- Virtual desktops delivered via the cloud
+- Examples: Amazon WorkSpaces, Azure Virtual Desktop, Citrix DaaS
+
 ### Backend as a Service (BaaS)
 
 - Manages the backend while you take care of the frontend
