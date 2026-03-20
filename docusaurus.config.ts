@@ -71,6 +71,14 @@ const config: Config = {
         ],
     ],
 
+    scripts: [
+        {
+            src: "https://analytics.moritz-grimm.dev/script.js",
+            defer: true,
+            "data-website-id": "a58b3d8f-fb79-4773-915d-cf0ef393c7fe"
+        }
+    ],
+
     themeConfig: {
         // Replace with your project's social card
         image: 'img/docusaurus-social-card.jpg',
