@@ -127,17 +127,26 @@ const config: Config = {
                     title: 'Links',
                     items: [
                         {
-                            label: 'GitHub',
-                            href: 'https://github.com/moritz-grimm',
-                        },
-                        {
                             label: 'My Homepage',
                             href: 'https://www.moritz-grimm.dev'
                         },
                         {
+                            label: "Status",
+                            href: "https://status.moritz-grimm.dev/status/default"
+                        },
+                        {
+                            label: 'GitHub',
+                            href: 'https://github.com/moritz-grimm',
+                        },
+                        
+                        {
                             label: "This Repo",
                             href: "https://github.com/moritz-grimm/knowledge-base"
                         },
+                        {
+                            label: "Impressum",
+                            href: "https://www.moritz-grimm.dev/impressum.html"
+                        }
                     ],
                 },
             ],
