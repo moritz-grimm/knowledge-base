@@ -146,6 +146,10 @@ const config: Config = {
                         {
                             label: "Impressum",
                             href: "https://www.moritz-grimm.dev/impressum.html"
+                        },
+                        {
+                            label: "Privacy Policy",
+                            href: "https://www.moritz-grimm.dev/privacy-policy.html"
                         }
                     ],
                 },
