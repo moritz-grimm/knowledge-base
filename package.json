@@ -1,55 +1,57 @@
 {
-  "name": "knowledge-base",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "docusaurus": "docusaurus",
-    "start": "docusaurus start",
-    "start:de": "docusaurus start --locale de",
-    "build": "docusaurus build",
-    "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy",
-    "clear": "docusaurus clear",
-    "serve": "docusaurus serve",
-    "write-translations": "docusaurus write-translations",
-    "write-translations:de": "docusaurus write-translations --locale de",
-    "write-heading-ids": "docusaurus write-heading-ids",
-    "typecheck": "tsc",
-    "markdownlint": "npx markdownlint-cli2 **/*.md #node_modules",
-    "markdownlint:fix": "npx markdownlint-cli2 --fix **/*.md #node_modules"
-  },
-  "dependencies": {
-    "@docusaurus/core": "3.9.2",
-    "@docusaurus/plugin-sitemap": "^3.9.2",
-    "@docusaurus/plugin-vercel-analytics": "^3.9.2",
-    "@docusaurus/preset-classic": "3.9.2",
-    "@easyops-cn/docusaurus-search-local": "^0.53.0",
-    "@mdx-js/react": "^3.0.0",
-    "clsx": "^2.0.0",
-    "prism-react-renderer": "^2.3.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
-  },
-  "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.9.2",
-    "@docusaurus/tsconfig": "3.9.2",
-    "@docusaurus/types": "3.9.2",
-    "markdownlint-cli2": "^0.21.0",
-    "typescript": "~5.6.2"
-  },
-  "browserslist": {
-    "production": [
-      ">0.5%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 3 chrome version",
-      "last 3 firefox version",
-      "last 5 safari version"
-    ]
-  },
-  "engines": {
-    "node": ">=20.0"
-  }
+    "name": "knowledge-base",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "build": "docusaurus build",
+        "clear": "docusaurus clear",
+        "deploy": "docusaurus deploy",
+        "docusaurus": "docusaurus",
+        "markdownlint": "npx markdownlint-cli2 **/*.md #node_modules",
+        "markdownlint:fix": "npx markdownlint-cli2 --fix **/*.md #node_modules",
+        "serve": "docusaurus serve",
+        "start": "docusaurus start",
+        "start:de": "docusaurus start --locale de",
+        "swizzle": "docusaurus swizzle",
+        "typecheck": "tsc",
+        "write-heading-ids": "docusaurus write-heading-ids",
+        "write-translations": "docusaurus write-translations",
+        "write-translations:de": "docusaurus write-translations --locale de"
+    },
+    "browserslist": {
+        "production": [
+            ">0.5%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 3 chrome version",
+            "last 3 firefox version",
+            "last 5 safari version"
+        ]
+    },
+    "dependencies": {
+        "@docusaurus/core": "3.9.2",
+        "@docusaurus/plugin-sitemap": "^3.9.2",
+        "@docusaurus/plugin-vercel-analytics": "^3.9.2",
+        "@docusaurus/preset-classic": "3.9.2",
+        "@easyops-cn/docusaurus-search-local": "^0.53.0",
+        "@mdx-js/react": "^3.0.0",
+        "clsx": "^2.0.0",
+        "prism-react-renderer": "^2.3.0",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0"
+    },
+    "devDependencies": {
+        "@moritz-grimm/eslint-config": "^2.0.0",
+        "@docusaurus/module-type-aliases": "3.9.2",
+        "@docusaurus/tsconfig": "3.9.2",
+        "@docusaurus/types": "3.9.2",
+        "@octokit/types": "^16.0.0",
+        "markdownlint-cli2": "^0.21.0",
+        "typescript": "~5.6.2"
+    },
+    "engines": {
+        "node": ">=20.0"
+    }
 }
