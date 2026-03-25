@@ -79,6 +79,33 @@ const config: Config = {
         },
     ],
 
+    headTags: [
+        {
+            tagName: "script",
+            attributes: {
+                type: "application/ld+json",
+            },
+            innerHTML: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "name": "Knowledge Base",
+                "url": "https://knowledge.moritz-grimm.dev",
+                "inLanguage": ["en", "de"],
+                "author": {
+                    "@type": "Person",
+                    "name": "Moritz Grimm",
+                    "givenName": "Moritz",
+                    "familyName": "Grimm",
+                    "url": "https://www.moritz-grimm.dev",
+                    "jobTitle": "Developer",
+                    "knowsAbout": ["JavaScript", "TypeScript", "Node.js", "HTML", "CSS"],
+                    "knowsLanguage": ["de", "en"],
+                    "sameAs": ["https://github.com/moritz-grimm", "https://www.moritz-grimm.dev", "https://api.moritz-grimm.dev"],
+                },
+            }),
+        },
+    ],
+
     themeConfig: {
         // Replace with your project's social card
         image: "img/docusaurus-social-card.jpg",
@@ -87,12 +114,40 @@ const config: Config = {
                 name: "description",
                 content: "My knowledge base as a developer apprentice: I document my learning process, experiments, and solutions in JavaScript/TypeScript, web technologies & everything else i encounter on my journey",
             },
+            {
+                name: "twitter:card",
+                content: "summary",
+            },
+            {
+                name: "twitter:title",
+                content: "Knowledge Base | Moritz Grimm",
+            },
+            {
+                name: "twitter:description",
+                content: "My knowledge base as a developer apprentice: I document my learning process, experiments, and solutions in JavaScript/TypeScript, web technologies & everything else I encounter on my journey",
+            },
+            {
+                property: "og:type",
+                content: "website",
+            },
+            {
+                property: "og:url",
+                content: "https://knowledge.moritz-grimm.dev",
+            },
+            {
+                property: "og:title",
+                content: "Knowledge Base | Moritz Grimm",
+            },
+            {
+                property: "og:description",
+                content: "My knowledge base as a developer apprentice: I document my learning process, experiments, and solutions in JavaScript/TypeScript, web technologies & everything else I encounter on my journey",
+            },
         ],
         colorMode: {
             respectPrefersColorScheme: true,
         },
         navbar: {
-            title: "Knowledge Base",
+            title: "MORITZ // KNOWLEDGE BASE",
             logo: {
                 alt: "My GitHub Profile Picture",
                 src: "img/favicon.svg",
