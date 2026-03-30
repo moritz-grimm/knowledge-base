@@ -5,7 +5,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-    title: "Knowledge Base",
+    title: "MORITZ // KNOWLEDGE BASE",
     favicon: "img/favicon.svg",
 
     // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -147,7 +147,7 @@ const config: Config = {
             respectPrefersColorScheme: true,
         },
         navbar: {
-            title: "MORITZ // KNOWLEDGE BASE",
+            title: "Knowledge Base",
             logo: {
                 alt: "My GitHub Profile Picture",
                 src: "img/favicon.svg",
