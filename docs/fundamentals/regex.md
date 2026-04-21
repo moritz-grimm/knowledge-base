@@ -283,3 +283,51 @@ ISO date (YYYY-MM-DD):  \d{4}-\d{2}-\d{2}
 Hex color code:         #[0-9a-fA-F]{3,8}
 URL (simplified):       https?://[^\s]+
 ```
+
+### JavaScript Functions
+
+JavaScript provides two main ways to apply a regex to a string: `.test()` and `.match()`.
+
+#### `test()`
+
+Returns `true` or `false` - use it when you only need to know **whether** a pattern matches.
+
+```javascript
+const pattern = /\d{3}/;
+pattern.test("abc 123"); // true
+pattern.test("no digits"); // false
+```
+
+#### `match()`
+
+Returns the matched substrings (or `null`) - use it when you need to **extract** data from the string.
+
+Without the `g` flag, `match()` returns the first match plus captured groups:
+
+```javascript
+const result = "2026-03-18".match(/(\d{4})-(\d{2})-(\d{2})/);
+// result[0] => "2026-03-18"  (full match)
+// result[1] => "2026"        (group 1)
+// result[2] => "03"          (group 2)
+// result[3] => "18"          (group 3)
+```
+
+With the `g` flag, `match()` returns all matches but **no captured groups**:
+
+```javascript
+"cat bat sat".match(/[a-z]at/g);
+// => ["cat", "bat", "sat"]
+```
+
+If nothing matches, `match()` returns `null` and **not** an empty array:
+
+```javascript
+"hello".match(/\d+/); // null
+```
+
+#### When to Use Which
+
+| Goal                        | Function  |
+| --------------------------- | --------- |
+| Check if a pattern matches  | `test()`  |
+| Extract the matched strings | `match()` |
