@@ -76,6 +76,7 @@ const config: Config = {
             src: "https://analytics.moritz-grimm.dev/script.js",
             defer: true,
             "data-website-id": "a58b3d8f-fb79-4773-915d-cf0ef393c7fe",
+            "data-performance": "true",
         },
     ],
 
