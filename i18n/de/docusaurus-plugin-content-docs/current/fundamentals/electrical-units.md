@@ -39,11 +39,19 @@ Die drei Einheiten sind alle in folgender Beziehung miteinander **P = U x I**. W
 
 ## Ohmsches Gesetz
 
-Das Ohmsche Gesetz beschreibt den Widerstand **R** (gemessen in Ohms, Ω) und verbindet ihn mit Spannung und Strom:
+Das Ohmsche Gesetz beschreibt den Widerstand **R** (gemessen in Ohms, Ω) und verbindet ihn mit Spannung und Strom.
 
-- **U = R x I**
-- **R = U / I**
-- **I = U / R**
+Das gleiche Dreiecksprinzip lässt sich auch hier anwenden:
+
+```text
+      U
+    -----
+    R | I
+```
+
+- **U = R x I** (Spannung = Widerstand x Stromstärke)
+- **R = U / I** (Widerstand = Spannung / Stromstärke)
+- **I = U / R** (Stromstärke = Spannung / Widerstand)
 
 ## Kombinierte Formeln
 

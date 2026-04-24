@@ -39,11 +39,19 @@ The three quantities are related by the formula **P = U x I**. Covering the quan
 
 ## Ohm's Law
 
-Ohm's Law introduces resistance **R** (measured in Ohms, Ω) and connects it to voltage and current:
+Ohm's Law introduces resistance **R** (measured in Ohms, Ω) and connects it to voltage and current.
 
-- **U = R x I**
-- **R = U / I**
-- **I = U / R**
+The same triangle approach applies here:
+
+```text
+      U
+    -----
+    R | I
+```
+
+- **U = R x I** (Voltage = Resistance x Current)
+- **R = U / I** (Resistance = Voltage / Current)
+- **I = U / R** (Current = Voltage / Resistance)
 
 ## Combined Formulas
 
