@@ -1,6 +1,6 @@
 ---
-title: Electrical Units – Power, Voltage, and Current
-description: The relationship between power (P), voltage (U), and current (I) in electrical circuits, including the power triangle and Ohm's law.
+title: Electrical Units – Power, Voltage, Current, and Energy
+description: The relationship between power (P), voltage (U), current (I), resistance (R), and electrical work/energy (W). Including the power triangle, Ohm's law, and kilowatt-hours.
 keywords:
     - Electrical Units
     - Power
@@ -11,6 +11,11 @@ keywords:
     - Ampere
     - Ohm's Law
     - Power Triangle
+    - Electrical Work
+    - Energy
+    - Joule
+    - Kilowatt-hour
+    - kWh
 ---
 
 # Electrical Units – Power, Voltage, and Current
@@ -78,4 +83,48 @@ I = P / U = 100 W / 230 V ≈ 0.43 A
 
 ```text
 U = R x I = 50 Ω x 3 A = 150 V
+```
+
+## Electrical Work (Energy)
+
+Electrical work **W** (often called energy, sometimes written as **E**) is the amount of energy a device consumes or produces over time. The SI unit is the **Joule (J)**, but in everyday electrical use it is more commonly given in **Watt-hours (Wh)** or **Kilowatt-hours (kWh)**.
+
+The basic formula is:
+
+- **W = P x t** (Work = Power x Time)
+
+Replacing **P** with **U x I** gives a form that calculates **W** directly from **U**, **I**, and **t**, without needing to calculate **P** first:
+
+- **W = U x I x t**
+
+### Common Units of Energy
+
+| Unit          | Symbol | Equals                 |
+| ------------- | ------ | ---------------------- |
+| Joule         | J      | 1 W x 1 s              |
+| Watt-hour     | Wh     | 3,600 J                |
+| Kilowatt-hour | kWh    | 1,000 Wh = 3,600,000 J |
+
+:::info
+The symbol **W** is used for both the unit "Watt" (a unit of power) and the quantity "work". Context usually makes the meaning clear; some sources use **E** for "work" to avoid confusion.
+:::
+
+### Examples
+
+**Example 1:** A 60 W light bulb runs for 5 hours. How much energy does it consume?
+
+```text
+W = P x t = 60 W x 5 h = 300 Wh = 0.3 kWh
+```
+
+**Example 2:** A device draws 2 A at 230 V for 30 minutes. How much energy does it use?
+
+```text
+W = U x I x t = 230 V x 2 A x 0.5 h = 230 Wh
+```
+
+**Example 3:** An electricity bill shows 250 kWh consumed at €0.30 per kWh. What is the total cost?
+
+```text
+Cost = 250 kWh x €0.30/kWh = €75.00
 ```
