@@ -36,7 +36,7 @@ ln target.txt linkname.txt
 
 ### Properties
 
-- Both names share the same inode and file size
+- Both names share the same inode
 - Removing one name does not affect the other
 - Cannot span filesystems, both names must live on the same partition
 - Cannot link directories (with rare exceptions reserved for the system)
@@ -86,29 +86,29 @@ cat softlink.txt    # error: No such file or directory
 
 ## Hard vs Soft Links
 
-| Property                       | Hard Link           | Soft Link            |
-| ------------------------------ | ------------------- | -------------------- |
-| Points to                      | inode               | path                 |
-| Own inode?                     | No (same as target) | Yes                  |
-| Can cross filesystems?         | No                  | Yes                  |
-| Can link directories?          | No                  | Yes                  |
-| Can target a missing file?     | No                  | Yes (becomes broken) |
-| Survives target deletion?      | Yes                 | No (link breaks)     |
-| Created with                   | `ln`                | `ln -s`              |
+| Property                   | Hard Link           | Soft Link |
+| -------------------------- | ------------------- | --------- |
+| Points to                  | inode               | path      |
+| Own inode?                 | No (same as target) | Yes       |
+| Can cross filesystems?     | No                  | Yes       |
+| Can link directories?      | No                  | Yes       |
+| Can target a missing file? | No                  | Yes       |
+| Survives target deletion?  | Yes                 | No        |
+| Created with               | `ln`                | `ln -s`   |
 
 ## Common `ln` Options
 
-| Command              | Description                                                            |
-| -------------------- | ---------------------------------------------------------------------- |
-| `ln target name`     | Create a hard link                                                     |
-| `ln -s target name`  | Create a symbolic (soft) link                                          |
-| `ln -f target name`  | Remove (overwrite) an existing destination file                        |
-| `ln -i target name`  | Prompt before overwriting an existing destination                      |
+| Command              | Description                                                                       |
+| -------------------- | --------------------------------------------------------------------------------- |
+| `ln target name`     | Create a hard link                                                                |
+| `ln -s target name`  | Create a symbolic (soft) link                                                     |
+| `ln -f target name`  | Remove (overwrite) an existing destination file                                   |
+| `ln -i target name`  | Prompt before overwriting an existing destination                                 |
 | `ln -b target name`  | Back up an existing destination before replacing it (appends `~` to the filename) |
-| `ln -v target name`  | Print the name of each linked file (verbose)                           |
-| `ln -sf target name` | Force-replace an existing link of the same name                        |
-| `readlink name`      | Show the path a symbolic link points to                                |
-| `readlink -f name`   | Resolve all symlinks to the canonical absolute path                    |
+| `ln -v target name`  | Print the name of each linked file (verbose)                                      |
+| `ln -sf target name` | Force-replace an existing link of the same name                                   |
+| `readlink name`      | Show the path a symbolic link points to                                           |
+| `readlink -f name`   | Resolve all symlinks to the canonical absolute path                               |
 
 ## When to Use Which
 
