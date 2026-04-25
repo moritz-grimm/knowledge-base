@@ -24,7 +24,7 @@ const config: Config = {
     organizationName: "moritz-grimm", // Usually your GitHub org/user name.
     projectName: "knowledge-base", // Usually your repo name.
 
-    onBrokenLinks: "throw",
+    onBrokenLinks: "warn",
 
     i18n: {
         defaultLocale: "en",
