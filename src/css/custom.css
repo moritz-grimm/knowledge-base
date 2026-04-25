@@ -95,6 +95,15 @@ html[data-theme-style='homepage'] {
 
     --ifm-alert-background-color: #151515;
 
+    /* Admonitions (info, tip) */
+    --ifm-color-info-contrast-background: #151515;
+    --ifm-color-info-contrast-foreground: #e8e8e8;
+    --ifm-color-info: #c8ff00;
+    --ifm-color-success-contrast-background: rgba(200, 255, 0, 0.08);
+    --ifm-color-success-contrast-foreground: #e8e8e8;
+    --ifm-color-success: #c8ff00;
+    --ifm-color-success-dark: #c8ff00;
+
     /* Misc */
     --ifm-hover-overlay: rgba(200, 255, 0, 0.05);
     --ifm-menu-color: #e8e8e8;
