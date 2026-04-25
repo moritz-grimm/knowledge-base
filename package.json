@@ -7,6 +7,8 @@
         "clear": "docusaurus clear",
         "deploy": "docusaurus deploy",
         "docusaurus": "docusaurus",
+        "lint": "npx eslint",
+        "lint: fix": "npx eslint --fix",
         "markdownlint": "npx markdownlint-cli2 **/*.md #node_modules",
         "markdownlint:fix": "npx markdownlint-cli2 --fix **/*.md #node_modules",
         "serve": "docusaurus serve",
@@ -47,7 +49,7 @@
         "@docusaurus/module-type-aliases": "^3.10.0",
         "@docusaurus/tsconfig": "^3.10.0",
         "@docusaurus/types": "^3.10.0",
-        "@moritz-grimm/eslint-config": "^2.0.0",
+        "@moritz-grimm/eslint-config": "^2.2.0",
         "@octokit/types": "^16.0.0",
         "markdownlint-cli2": "^0.21.0",
         "typescript": "~5.6.2"
