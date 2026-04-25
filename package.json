@@ -31,10 +31,11 @@
         ]
     },
     "dependencies": {
-        "@docusaurus/core": "3.9.2",
-        "@docusaurus/plugin-sitemap": "^3.9.2",
-        "@docusaurus/plugin-vercel-analytics": "^3.9.2",
-        "@docusaurus/preset-classic": "3.9.2",
+        "@docusaurus/core": "^3.10.0",
+        "@docusaurus/faster": "^3.10.0",
+        "@docusaurus/plugin-sitemap": "^3.10.0",
+        "@docusaurus/plugin-vercel-analytics": "^3.10.0",
+        "@docusaurus/preset-classic": "^3.10.0",
         "@easyops-cn/docusaurus-search-local": "^0.53.0",
         "@mdx-js/react": "^3.0.0",
         "clsx": "^2.0.0",
@@ -43,10 +44,10 @@
         "react-dom": "^19.0.0"
     },
     "devDependencies": {
+        "@docusaurus/module-type-aliases": "^3.10.0",
+        "@docusaurus/tsconfig": "^3.10.0",
+        "@docusaurus/types": "^3.10.0",
         "@moritz-grimm/eslint-config": "^2.0.0",
-        "@docusaurus/module-type-aliases": "3.9.2",
-        "@docusaurus/tsconfig": "3.9.2",
-        "@docusaurus/types": "3.9.2",
         "@octokit/types": "^16.0.0",
         "markdownlint-cli2": "^0.21.0",
         "typescript": "~5.6.2"

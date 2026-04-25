@@ -57,7 +57,7 @@ const config: Config = {
             },
         ],
         [
-            require.resolve("@easyops-cn/docusaurus-search-local"),
+            "@easyops-cn/docusaurus-search-local",
             /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
             ({
                 hashed: true,
