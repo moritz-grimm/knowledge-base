@@ -28,7 +28,7 @@ const config: Config = {
 
     i18n: {
         defaultLocale: "en",
-        locales: ["en", "de"],
+        locales: [ "en", "de" ],
     },
 
     presets: [
@@ -61,10 +61,10 @@ const config: Config = {
             /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
             ({
                 hashed: true,
-                language: ["en", "de"],
+                language: [ "en", "de" ],
                 indexBlog: false,
                 indexPages: true,
-                removeDefaultStopWordFilter: ["en", "de"],
+                removeDefaultStopWordFilter: [ "en", "de" ],
                 removeDefaultStemmer: true,
                 fuzzyMatchingDistance: 2,
             }),
@@ -91,7 +91,7 @@ const config: Config = {
                 "@type": "WebSite",
                 "name": "Knowledge Base",
                 "url": "https://knowledge.moritz-grimm.dev",
-                "inLanguage": ["en", "de"],
+                "inLanguage": [ "en", "de" ],
                 "author": {
                     "@type": "Person",
                     "name": "Moritz Grimm",
@@ -99,9 +99,9 @@ const config: Config = {
                     "familyName": "Grimm",
                     "url": "https://www.moritz-grimm.dev",
                     "jobTitle": "Developer",
-                    "knowsAbout": ["JavaScript", "TypeScript", "Node.js", "HTML", "CSS"],
-                    "knowsLanguage": ["de", "en"],
-                    "sameAs": ["https://github.com/moritz-grimm", "https://www.moritz-grimm.dev", "https://api.moritz-grimm.dev"],
+                    "knowsAbout": [ "JavaScript", "TypeScript", "Node.js", "HTML", "CSS" ],
+                    "knowsLanguage": [ "de", "en" ],
+                    "sameAs": [ "https://github.com/moritz-grimm", "https://www.moritz-grimm.dev", "https://api.moritz-grimm.dev" ],
                 },
             }),
         },

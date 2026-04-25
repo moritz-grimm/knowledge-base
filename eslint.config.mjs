@@ -3,5 +3,5 @@ import { globalIgnores } from "eslint/config";
 
 export default [
     ...eslintConfig,
-    globalIgnores([".docusaurus/"]),
+    globalIgnores([ ".docusaurus/" ]),
 ];

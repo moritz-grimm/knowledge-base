@@ -1,11 +1,11 @@
 import { type ReactNode, useEffect, useState } from "react";
 
 type LastUpdatedResponse = {
-    lastUpdated: string,
+    lastUpdated: string;
 };
 
 function useLastCommitDate(): string | null {
-    const [date, setDate] = useState<string | null>(null);
+    const [ date, setDate ] = useState<string | null>(null);
 
     useEffect(() => {
         async function fetchDate(): Promise<void> {
