@@ -18,7 +18,7 @@ keywords:
     - kWh
 ---
 
-# Electrical Units – Power, Voltage, and Current
+# Electrical Units – Power, Voltage, Current, and Energy
 
 ## The Three Core Units
 
@@ -106,7 +106,7 @@ Replacing **P** with **U x I** gives a form that calculates **W** directly from 
 | Kilowatt-hour | kWh    | 1,000 Wh = 3,600,000 J |
 
 :::info
-The symbol **W** is used for both the unit "Watt" (a unit of power) and the quantity "work". Context usually makes the meaning clear; some sources use **E** for "work" to avoid confusion.
+The symbol **W** is used for both the unit "Watt" (a unit of power) and the quantity "work". Context usually makes the meaning clear. Some sources use **E** for "work" to avoid confusion.
 :::
 
 ### Examples
