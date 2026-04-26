@@ -13,6 +13,10 @@ keywords:
   - "Groups"
 ---
 
+:::info
+This page has not been translated into German yet
+:::
+
 # Regular Expressions
 
 ## Overview

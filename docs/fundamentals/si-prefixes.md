@@ -18,6 +18,10 @@ keywords:
     - Femto
 ---
 
+:::info
+This page has not been translated into German yet
+:::
+
 # SI Prefixes
 
 SI prefixes are standardized multipliers attached to a base unit to express very large or very small quantities.  
