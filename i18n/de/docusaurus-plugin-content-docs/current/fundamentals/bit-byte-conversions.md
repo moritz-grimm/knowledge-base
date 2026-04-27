@@ -4,14 +4,22 @@ description: "Bit, Byte & Kibi Basics"
 keywords:
   - "Bit"
   - "Byte"
-  - "Dateneinheiten"
-  - "Konvertierung"
-  - "Binär"
-  - "Dezimal"
-  - "Speicher"
+  - "Data Units"
+  - "Conversion"
+  - "Binary"
+  - "Decimal"
+  - "Storage"
 ---
 
 # Bit, Byte & Unit Conversions
+
+:::info
+This page has not been translated into German yet
+:::
+
+:::info
+The decimal prefixes used here (kilo, mega, giga…) are the standard [SI prefixes](./si-prefixes.md) applied to bytes. The binary prefixes (kibi, mebi, gibi…) are the IEC equivalents specifically for powers of 2.
+:::
 
 ## Bit & Byte Basics
 
@@ -182,3 +190,7 @@ Alternative (precise):
 - **Don't mix units:** `1 GB ≠ 1 GiB` (1 GB = 0.931 GiB)
 - **Marketing trick:** A "500 GB" hard drive is actually ~465.66 GiB
 - **Network speeds:** 100 Mb/s ≠ 100 MB/s (100 Mb/s = 12.5 MB/s)
+
+## See Also
+
+- [SI Prefixes](./si-prefixes.md): the general metric prefixes (kilo, mega, giga, milli, micro, etc.) applied to any unit, not just bytes
