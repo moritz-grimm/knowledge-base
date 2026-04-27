@@ -1,6 +1,6 @@
 ---
 title: SI Prefixes
-description: Common SI (metric) prefixes and their multipliers, from femto to tera, used to scale units like meters, grams, seconds, volts, watts, and hertz.
+description: Common SI (metric) prefixes and their multipliers, from pico to tera, used to scale units like meters, grams, seconds, volts, watts, and hertz.
 keywords:
     - SI Prefixes
     - Metric Prefixes
@@ -15,12 +15,7 @@ keywords:
     - Micro
     - Nano
     - Pico
-    - Femto
 ---
-
-:::info
-This page has not been translated into German yet
-:::
 
 # SI Prefixes
 
