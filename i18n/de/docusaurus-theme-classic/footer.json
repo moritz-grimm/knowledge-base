@@ -17,6 +17,18 @@
   },
   "link.item.label.My Homepage": {
     "message": "Meine Homepage",
-    "description": "The label of footer link with label=My Website linking to https://www.moritz-grimm.dev"
+    "description": "The label of footer link with label=My Homepage linking to https://www.moritz-grimm.dev"
+  },
+  "link.item.label.Status": {
+    "message": "Status",
+    "description": "The label of footer link with label=Status linking to https://status.moritz-grimm.dev/status/default"
+  },
+  "link.item.label.Impressum": {
+    "message": "Impressum",
+    "description": "The label of footer link with label=Impressum linking to https://www.moritz-grimm.dev/impressum.html"
+  },
+  "link.item.label.Privacy Policy": {
+    "message": "Privacy Policy",
+    "description": "The label of footer link with label=Privacy Policy linking to https://www.moritz-grimm.dev/privacy-policy.html"
   }
 }
