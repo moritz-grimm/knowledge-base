@@ -1,5 +1,5 @@
 ---
-title: Datenbanken
+title: Datenbanken Übersicht
 description: Ein Überblick zu relationalen und nicht-relationalen Datenbanken, sowie Kernkonzepten wie Normalisierung, ACID und bekannte Datenbanksysteme
 keywords:
     - Datenbanken
@@ -12,7 +12,7 @@ keywords:
     - MongoDB
 ---
 
-# Datenbanken
+# Datenbanken Übersicht
 
 ## Überblick
 
@@ -30,7 +30,7 @@ Daten werden in **Tabellen** gespeichert mit Zeilen und Spalten. Jeder Datensatz
 
 ### Kernkonzepte
 
-**Normalisierung**: Tabellen organisieren um Datenredundanz zu reduzieren:
+**[Normalisierung](./normalization.md)**: Tabellen organisieren um Datenredundanz zu reduzieren:
 
 - **1NF**: Atomare Werte, keine sich wiederholenden Gruppen
 - **2NF**: Keine partiellen Abhängigkeiten von zusammengesetzten Schlüsseln
