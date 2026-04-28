@@ -1,6 +1,6 @@
 ---
-title: Encryption and Digital Signatures
-description: Overview of symmetric and asymmetric encryption, hash functions, and digital signatures.
+title: "Encryption and Digital Signatures"
+description: "Overview of symmetric and asymmetric encryption, hash functions, and digital signatures."
 keywords:
     - Encryption
     - Digital Signature

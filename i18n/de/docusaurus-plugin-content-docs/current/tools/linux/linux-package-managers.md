@@ -1,6 +1,6 @@
 ---
-title: Linux Paketmanager
-description: Ein Überblick über die bekanntesten Linux Paketmanager, die von ihnen unterstützten Distributionen und ihre wichtigsten Befehle.
+title: "Linux Paketmanager"
+description: "Ein Überblick über die bekanntesten Linux Paketmanager, die von ihnen unterstützten Distributionen und ihre wichtigsten Befehle."
 keywords:
     - Linux
     - Paketmanager

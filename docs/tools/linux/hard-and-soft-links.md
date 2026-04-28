@@ -1,6 +1,6 @@
 ---
-title: Hard and Soft Links
-description: Hard links and symbolic (soft) links in Linux. What they are, how they differ and how to create and manage them with the `ln` command.
+title: "Hard and Soft Links"
+description: "Hard links and symbolic (soft) links in Linux. What they are, how they differ and how to create and manage them with the `ln` command."
 keywords:
     - Linux
     - Hard Link

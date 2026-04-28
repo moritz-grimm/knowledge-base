@@ -1,6 +1,6 @@
 ---
-title: Offer Calculation
-description: How to calculate a sales price from a supplier's list price using the standard trade calculation scheme, covering discounts, markups, and VAT.
+title: "Offer Calculation"
+description: "How to calculate a sales price from a supplier's list price using the standard trade calculation scheme, covering discounts, markups, and VAT."
 keywords:
     - Offer Calculation
     - Trade Calculation

@@ -1,6 +1,6 @@
 ---
-title: Google-Suchoperatoren
-description: Übersicht über erweiterte Google-Suchoperatoren und Techniken für bessere Suchergebnisse.
+title: "Google-Suchoperatoren"
+description: "Übersicht über erweiterte Google-Suchoperatoren und Techniken für bessere Suchergebnisse."
 keywords:
     - Google
     - Suche

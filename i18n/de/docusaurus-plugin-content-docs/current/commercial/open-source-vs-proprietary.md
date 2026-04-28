@@ -1,6 +1,6 @@
 ---
-title: Open Source vs. Proprietäre Software
-description: Ein Vergleich zwischen Open Source und proprietärer Software
+title: "Open Source vs. Proprietäre Software"
+description: "Ein Vergleich zwischen Open Source und proprietärer Software"
 keywords:
     - Open Source
     - Proprietäre Software

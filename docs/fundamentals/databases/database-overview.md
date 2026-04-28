@@ -1,6 +1,6 @@
 ---
-title: Databases Overview
-description: An overview of relational and non-relational databases, core concepts like normalization and ACID, and common database systems.
+title: "Databases Overview"
+description: "An overview of relational and non-relational databases, core concepts like normalization and ACID, and common database systems."
 keywords:
     - Databases
     - SQL

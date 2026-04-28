@@ -1,6 +1,6 @@
 ---
-title: Network Plan (CPM)
-description: A network plan models project tasks as a directed graph to identify dependencies, calculate earliest and latest times, and determine the critical path.
+title: "Network Plan (CPM)"
+description: "A network plan models project tasks as a directed graph to identify dependencies, calculate earliest and latest times, and determine the critical path."
 keywords:
     - Network Plan
     - Netzplan

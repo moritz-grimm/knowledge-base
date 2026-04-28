@@ -1,6 +1,6 @@
 ---
-title: INVEST Model
-description: The INVEST criteria help teams write better user stories by ensuring they are Independent, Negotiable, Valuable, Estimable, Small, and Testable.
+title: "INVEST Model"
+description: "The INVEST criteria help teams write better user stories by ensuring they are Independent, Negotiable, Valuable, Estimable, Small, and Testable."
 keywords:
     - INVEST
     - User Stories

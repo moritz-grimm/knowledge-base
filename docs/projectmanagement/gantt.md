@@ -1,6 +1,6 @@
 ---
-title: Gantt Chart
-description: A Gantt chart is a horizontal bar chart used to visualize a project schedule, showing tasks, durations, and their timeline.
+title: "Gantt Chart"
+description: "A Gantt chart is a horizontal bar chart used to visualize a project schedule, showing tasks, durations, and their timeline."
 keywords:
     - Gantt Chart
     - Project Planning

@@ -1,6 +1,6 @@
 ---
-title: Google Search Operators
-description: Overview of advanced Google search operators and techniques for more precise search results.
+title: "Google Search Operators"
+description: "Overview of advanced Google search operators and techniques for more precise search results."
 keywords:
     - Google
     - Search

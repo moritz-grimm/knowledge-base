@@ -1,6 +1,6 @@
 ---
-title: Projektphasen
-description: Die 5 Projektphasen bieten einen strukturierten Rahmen für Planung, Durchführung und Abschluss eines Projekts.
+title: "Projektphasen"
+description: "Die 5 Projektphasen bieten einen strukturierten Rahmen für Planung, Durchführung und Abschluss eines Projekts."
 keywords:
     - Projektmanagement
     - Projektphasen

@@ -1,6 +1,6 @@
 ---
-title: ARP (Address Resolution Protocol)
-description: How ARP resolves IP addresses to MAC addresses within a local network, including the request/reply process and the ARP cache.
+title: "ARP (Address Resolution Protocol)"
+description: "How ARP resolves IP addresses to MAC addresses within a local network, including the request/reply process and the ARP cache."
 keywords:
     - ARP
     - Address Resolution Protocol

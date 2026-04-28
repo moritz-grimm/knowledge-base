@@ -1,6 +1,6 @@
 ---
-title: SI Präfixe
-description: Gängige SI (metrische) Präfixe und deren Multiplikatoren von Pico zu Tera, die zur Skalierung von Einheiten wie Metern, Gramm, Sekunden, Volt, Watt oder Hertz verwendet werden.
+title: "SI Präfixe"
+description: "Gängige SI (metrische) Präfixe und deren Multiplikatoren von Pico zu Tera, die zur Skalierung von Einheiten wie Metern, Gramm, Sekunden, Volt, Watt oder Hertz verwendet werden."
 keywords:
     - SI Präfixe
     - Metrische Präfixe

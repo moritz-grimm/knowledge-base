@@ -1,6 +1,6 @@
 ---
-title: Verschlüsselung und Digitale Signaturen
-description: Überblick über symmetrische und asymmetrische Verschlüsselung, Hash Funktionen und digitale Signaturen.
+title: "Verschlüsselung und Digitale Signaturen"
+description: "Überblick über symmetrische und asymmetrische Verschlüsselung, Hash Funktionen und digitale Signaturen."
 keywords:
     - Verschlüsselung
     - Digitale Signaturen

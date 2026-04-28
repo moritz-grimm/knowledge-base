@@ -1,5 +1,5 @@
 ---
-title: ER Model
+title: "ER Model"
 description: "Entity-Relationship models for database design and data modeling"
 keywords:
   - "UML"

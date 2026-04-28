@@ -1,6 +1,6 @@
 ---
-title: Angebotsvergleich
-description: Wie man Zulieferer mithilfe von quantitativen und qualitativen Faktoren vergleicht um den besten Deal zu finden.
+title: "Angebotsvergleich"
+description: "Wie man Zulieferer mithilfe von quantitativen und qualitativen Faktoren vergleicht um den besten Deal zu finden."
 keywords:
     - Angebotsvergleich
     - Anbieter Vergleich

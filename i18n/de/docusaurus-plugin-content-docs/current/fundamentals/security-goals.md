@@ -1,6 +1,6 @@
 ---
-title: IT-Sicherheitsziele
-description: Die vier IT-Sicherheitsziele, confidentiality, integrity, availability and authenticity, und was sie bedeuten.
+title: "IT-Sicherheitsziele"
+description: "Die vier IT-Sicherheitsziele, confidentiality, integrity, availability and authenticity, und was sie bedeuten."
 keywords:
     - Sicherheitsziele
     - Vertraulichkeit

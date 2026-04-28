@@ -1,6 +1,6 @@
 ---
-title: Electrical Units – Power, Voltage, Current, and Energy
-description: The relationship between power (P), voltage (U), current (I), resistance (R), and electrical work/energy (W). Including the power triangle, Ohm's law, and kilowatt-hours.
+title: "Electrical Units – Power, Voltage, Current, and Energy"
+description: "The relationship between power (P), voltage (U), current (I), resistance (R), and electrical work/energy (W). Including the power triangle, Ohm's law, and kilowatt-hours."
 keywords:
     - Electrical Units
     - Power

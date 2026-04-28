@@ -1,6 +1,6 @@
 ---
-title: Datenbanken Übersicht
-description: Ein Überblick zu relationalen und nicht-relationalen Datenbanken, sowie Kernkonzepten wie Normalisierung, ACID und bekannte Datenbanksysteme
+title: "Datenbanken Übersicht"
+description: "Ein Überblick zu relationalen und nicht-relationalen Datenbanken, sowie Kernkonzepten wie Normalisierung, ACID und bekannte Datenbanksysteme"
 keywords:
     - Datenbanken
     - SQL

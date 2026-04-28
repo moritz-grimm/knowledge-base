@@ -1,5 +1,5 @@
 ---
-title: Activity Chart
+title: "Activity Chart"
 description: "UML activity diagrams for modeling process flows and system behavior"
 keywords:
   - "UML"

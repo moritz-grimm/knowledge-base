@@ -1,6 +1,6 @@
 ---
-title: SMART Modell
-description: Das SMART Modell hilft Teams dabei, klare und umsetzbare Ziele zu definieren.
+title: "SMART Modell"
+description: "Das SMART Modell hilft Teams dabei, klare und umsetzbare Ziele zu definieren."
 keywords:
     - SMART
     - Ziele

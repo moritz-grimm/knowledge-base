@@ -1,6 +1,6 @@
 ---
-title: Requirement/Functional Specifications
-description: Overview of requirement specifications and functional specifications in project management
+title: "Requirement/Functional Specifications"
+description: "Overview of requirement specifications and functional specifications in project management"
 keywords:
   - requirements
   - functional specifications

@@ -1,5 +1,5 @@
 ---
-title: Subnetting (IPv4)
+title: "Subnetting (IPv4)"
 description: "Subnetting Grundlagen, Berechnungen & Beispiele (IPv4)"
 keywords: 
     - Subnetting

@@ -1,6 +1,6 @@
 ---
-title: IT Security Goals
-description: The four core IT security goals, confidentiality, integrity, availability, authenticity, and what they mean in practice.
+title: "IT Security Goals"
+description: "The four core IT security goals, confidentiality, integrity, availability, authenticity, and what they mean in practice."
 keywords:
     - Security Goals
     - Confidentiality

@@ -1,5 +1,5 @@
 ---
-title: Use Case Diagram
+title: "Use Case Diagram"
 description: "UML use case diagrams for modeling system requirements and user interactions"
 keywords:
   - "UML"
