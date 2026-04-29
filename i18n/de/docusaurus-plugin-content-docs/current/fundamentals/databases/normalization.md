@@ -48,7 +48,7 @@ Normalisierung ist der Prozess der Strukturierung einer relationalen Datenbank, 
 
 ## Zweite Normalform (2NF)
 
-**Regel**: Muss sich bereits in der 1NF befinden und jedes Nicht-Schlüsselattribut muss vom **gesamten** Primärschlüssel abhängen, nicht nur von einem Teil davon. Dies gilt nur, wenn der Primärschlüssel zusammengesetzt ist.
+**Regel**: Muss sich bereits in der 1NF befinden und jedes Nicht-Schlüsselattribut muss vom **gesamten** Primärschlüssel abhängen, nicht nur von einem Teil davon.
 
 **Verstoß**: Die Tabelle nutzt `(OrderID, ProductID)` als zusammengesetzten Primärschlüssel aber `ProductName` hängt nur von `ProductID` ab.
 

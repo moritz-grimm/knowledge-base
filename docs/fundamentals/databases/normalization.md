@@ -48,7 +48,7 @@ Normalization is the process of structuring a relational database to reduce data
 
 ## Second Normal Form (2NF)
 
-**Rule**: Must be in 1NF, and every non-key attribute must depend on the **entire** primary key, not just part of it. This only applies when the primary key is composite.
+**Rule**: Must be in 1NF, and every non-key attribute must depend on the **entire** primary key, not just part of it
 
 **Violation**: The table uses `(OrderID, ProductID)` as a composite key, but `ProductName` depends only on `ProductID`.
 
