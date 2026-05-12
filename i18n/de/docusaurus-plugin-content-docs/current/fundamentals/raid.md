@@ -1,6 +1,6 @@
 ---
-title: RAID
-description: Überblick über alle RAID Level und deren Kompromisse zwischen Performance, Redundanz und Speichereffizienz.
+title: "RAID"
+description: "Überblick über alle RAID Level und deren Kompromisse zwischen Performance, Redundanz und Speichereffizienz."
 keywords:
     - RAID
     - Redundant Array of Independent Disks

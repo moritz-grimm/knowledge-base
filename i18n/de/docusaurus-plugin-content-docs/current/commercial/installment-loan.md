@@ -1,6 +1,6 @@
 ---
-title: Ratendarlehen
-description: Definition, Formel und Beispiel eines Ratendarlehens
+title: "Ratendarlehen"
+description: "Definition, Formel und Beispiel eines Ratendarlehens"
 keywords:
   - "Ratendarlehen"
   - "Finanzen"

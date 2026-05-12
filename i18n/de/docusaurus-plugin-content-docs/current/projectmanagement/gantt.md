@@ -1,6 +1,6 @@
 ---
-title: Gantt-Diagramm
-description: Ein Gantt-Diagramm ist ein Balkendiagramm, das zur Visualisierung eines Projektplans verwendet wird und Aufgaben, sowie deren Zeitdauer anzeigt
+title: "Gantt-Diagramm"
+description: "Ein Gantt-Diagramm ist ein Balkendiagramm, das zur Visualisierung eines Projektplans verwendet wird und Aufgaben, sowie deren Zeitdauer anzeigt"
 keywords:
     - Gantt-Diagramm
     - Projektplanung

@@ -1,6 +1,6 @@
 ---
-title: Angebotskalkulation
-description: Wie man einen Einkaufs-/Verkaufspreis aus dem Listenpreis eines Lieferanten berechnet, unter Beachtung von Rabatten, Skonto und Versandkosten.
+title: "Angebotskalkulation"
+description: "Wie man einen Einkaufs-/Verkaufspreis aus dem Listenpreis eines Lieferanten berechnet, unter Beachtung von Rabatten, Skonto und Versandkosten."
 keywords:
     - Bezugskalkulation
     - Handelskalkulation

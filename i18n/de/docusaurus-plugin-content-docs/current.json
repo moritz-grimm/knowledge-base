@@ -43,6 +43,10 @@
     "message": "Projektmanagement",
     "description": "The label for category 'Projektmanagement' in sidebar 'docs'"
   },
+  "sidebar.docs.category.Databases": {
+    "message": "Datenbanken",
+    "description": "The label for category 'Databases' in sidebar 'docs'"
+  },
   "sidebar.docs.category.Business Cooperation": {
     "message": "Unternehmenskooperation",
     "description": "The label for category 'Business Cooperation' in sidebar 'docs'"

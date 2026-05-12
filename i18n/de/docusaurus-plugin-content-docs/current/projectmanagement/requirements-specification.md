@@ -1,6 +1,6 @@
 ---
-title: Lastenheft/Pflichtenheft
-description: Überblick über das Lasten- & Pflichtenheft im Projektmanagement
+title: "Lastenheft/Pflichtenheft"
+description: "Überblick über das Lasten- & Pflichtenheft im Projektmanagement"
 keywords:
   - anforderungen
   - Lastenheft

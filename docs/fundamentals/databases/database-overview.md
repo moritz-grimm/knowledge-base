@@ -1,6 +1,6 @@
 ---
-title: Databases
-description: An overview of relational and non-relational databases, core concepts like normalization and ACID, and common database systems.
+title: "Databases Overview"
+description: "An overview of relational and non-relational databases, core concepts like normalization and ACID, and common database systems."
 keywords:
     - Databases
     - SQL
@@ -12,7 +12,7 @@ keywords:
     - MongoDB
 ---
 
-# Databases
+# Databases Overview
 
 ## Overview
 
@@ -30,7 +30,7 @@ Data is stored in **tables** with rows and columns. Each dataset is uniquely ide
 
 ### Key Concepts
 
-**Normalization**: Organizing tables to reduce data redundancy:
+**[Normalization](./normalization.md)**: Organizing tables to reduce data redundancy:
 
 - **1NF**: Atomic values, no repeating groups
 - **2NF**: No partial dependencies on composite keys

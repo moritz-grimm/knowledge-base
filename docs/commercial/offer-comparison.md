@@ -1,6 +1,6 @@
 ---
-title: Offer Comparison
-description: How to compare supplier offers quantitatively and qualitatively to determine the best deal in procurement.
+title: "Offer Comparison"
+description: "How to compare supplier offers quantitatively and qualitatively to determine the best deal in procurement."
 keywords:
     - Offer Comparison
     - Supplier Comparison

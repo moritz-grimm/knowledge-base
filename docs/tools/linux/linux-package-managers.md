@@ -1,6 +1,6 @@
 ---
-title: Linux Package Managers
-description: An overview of the most common Linux package managers, their supported distributions, and their key commands.
+title: "Linux Package Managers"
+description: "An overview of the most common Linux package managers, their supported distributions, and their key commands."
 keywords:
     - Linux
     - Package Manager

@@ -1,6 +1,6 @@
 ---
-title: Class Diagram
-description: Comprehensive explanation of UML class diagrams. Including structure, visibility, relationships, cardinality, best practices, and a example on the basis of a library system.
+title: "Class Diagram"
+description: "Comprehensive explanation of UML class diagrams. Including structure, visibility, relationships, cardinality, best practices, and a example on the basis of a library system."
 keywords: 
     - UML
     - Class Diagram

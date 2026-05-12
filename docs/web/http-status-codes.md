@@ -1,6 +1,6 @@
 ---
-title: HTTP Status Codes
-description: Overview of the most common HTTP status codes grouped by category.
+title: "HTTP Status Codes"
+description: "Overview of the most common HTTP status codes grouped by category."
 keywords:
     - HTTP
     - status codes

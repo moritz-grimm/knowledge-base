@@ -1,6 +1,6 @@
 ---
-title: RAID
-description: Overview of RAID levels and their trade-offs between performance, redundancy, and storage efficiency.
+title: "RAID"
+description: "Overview of RAID levels and their trade-offs between performance, redundancy, and storage efficiency."
 keywords:
     - RAID
     - Redundant Array of Independent Disks

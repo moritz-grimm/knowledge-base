@@ -1,6 +1,6 @@
 ---
-title: SMART Model
-description: The SMART criteria help teams define clear and actionable goals.
+title: "SMART Model"
+description: "The SMART criteria help teams define clear and actionable goals."
 keywords:
     - SMART
     - Goals

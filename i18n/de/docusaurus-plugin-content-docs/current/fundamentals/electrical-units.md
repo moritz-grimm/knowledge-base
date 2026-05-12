@@ -1,6 +1,6 @@
 ---
-title: Elektrische Einheiten – Leistung, Spannung, Stromstärke und Energie
-description: Die Verbindung zwischen Leistung (P), Spannung (U), Stromstärke (I), Widerstand (R) und elektrischer Arbeit/Energie (W), einschließlich des Leistungsdreiecks, des Ohmschen Gesetzes und Kilowattstunden.
+title: "Elektrische Einheiten – Leistung, Spannung, Stromstärke und Energie"
+description: "Die Verbindung zwischen Leistung (P), Spannung (U), Stromstärke (I), Widerstand (R) und elektrischer Arbeit/Energie (W), einschließlich des Leistungsdreiecks, des Ohmschen Gesetzes und Kilowattstunden."
 keywords:
     - Elektrische Einheiten
     - Leistung

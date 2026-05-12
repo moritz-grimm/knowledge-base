@@ -1,6 +1,6 @@
 ---
-title: Scrum
-description: Scrum is an agile framework for developing complex products through short iterations, clear roles, and regular reflection.
+title: "Scrum"
+description: "Scrum is an agile framework for developing complex products through short iterations, clear roles, and regular reflection."
 keywords:
     - SCRUM
     - Agile
