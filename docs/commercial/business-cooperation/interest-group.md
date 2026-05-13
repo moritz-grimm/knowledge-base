@@ -30,18 +30,32 @@ An **interest group** is a contract-based association of natural or legal person
 
 ## Advantages and disadvantages
 
-| Advantages                                     | Disadvantages                                  |
-| ---------------------------------------------- | ---------------------------------------------- |
-| Bundle resources and reach goals efficiently   | Need for compromise, own interests may suffer  |
-| Stronger presence vs. politics, market, public | Risk of conflicts and dependencies             |
-| Exchange of know-how, experience, resources    | Organisational overhead                        |
-| Cheaper, more effective joint projects         | Possible competition restrictions              |
+| Advantages                                     | Disadvantages                                 |
+| ---------------------------------------------- | --------------------------------------------- |
+| Bundle resources and reach goals efficiently   | Need for compromise, own interests may suffer |
+| Stronger presence vs. politics, market, public | Risk of conflicts and dependencies            |
+| Exchange of know-how, experience, resources    | Organisational overhead                       |
+| Cheaper, more effective joint projects         | Possible competition restrictions             |
 
 ## Effects on others
 
 - **Other companies**: can benefit from lower supplier prices (bulk purchasing), but face displacement if outsiders cannot match the prices
 - **Consumers**: cheaper, possibly higher-quality products, but less variety and potentially less innovation
 - **Economy**: stabilises markets and smooths supply / demand shocks, risk of monopolistic structures when few players dominate
+
+## Comparison with Joint Venture
+
+While both forms involve cooperation between independent companies, they differ in structure and purpose:
+
+| Aspect                 | Interest Group                                           | Joint Venture                                              |
+| ---------------------- | -------------------------------------------------------- | ---------------------------------------------------------- |
+| Legal form             | No own legal form, often a civil-law partnership         | Often a newly founded legal entity (e.g. GmbH)             |
+| Contractual strictness | Informal, no fixed form required                         | Formally regulated, rights and obligations clearly defined |
+| Purpose                | Broad, ongoing shared interests (lobbying, cost sharing) | Specific project or goal with a defined scope              |
+| Profit/loss sharing    | Not necessarily agreed upon                              | Explicitly agreed between partners                         |
+| Typical duration       | Open-ended                                               | Often project-bound or time-limited                        |
+
+In short: an interest group is a looser, often informal arrangement to pursue common goals, while a joint venture is a tighter contractual partnership, usually set up to achieve a specific objective, often through a newly founded company.
 
 ## Examples
 
