@@ -48,6 +48,20 @@ Eine **Arbeitsgemeinschaft** (kurz **ARGE**) oder ein **Konsortium** ist ein bef
 - Vorteile für Verbraucher: bessere Qualität, niedrigere Preise, schnellere Lieferung
 - **Risiko**: Bei zu starker Marktposition können kleinere Unternehmen verdrängt werden (Gefahr von Kartellbildung)
 
+## Abgrenzung zum Joint Venture
+
+Beide Formen ermöglichen die Zusammenarbeit selbstständiger Unternehmen, unterscheiden sich aber in Umfang, Dauer und Struktur:
+
+| Merkmal                    | Arbeitsgemeinschaft / Konsortium                   | Joint Venture                                       |
+| -------------------------- | -------------------------------------------------- | --------------------------------------------------- |
+| Dauer                      | Projektgebunden, endet mit Abschluss des Projekts  | Oft langfristig oder dauerhaft                      |
+| Eigene Rechtsform          | Nein, meist GbR                                    | Häufig ja (z.B. neu gegründete GmbH)                |
+| Zweck                      | Einzelnes, klar abgegrenztes Projekt               | Breites strategisches Ziel (Markteintritt, Produkt) |
+| Ressourcen                 | Jeder Partner erbringt seine Leistung eigenständig | Gemeinsam gemanagt und gebündelt                    |
+| Gewinn-/Verlustbeteiligung | Aufteilung zwischen den Partnern per Vereinbarung  | Ausdrücklich im Gründungsvertrag vereinbart         |
+
+Kurz: Eine Arbeitsgemeinschaft oder ein Konsortium ist ein befristeter Zusammenschluss für ein einziges Projekt, nach dessen Abschluss die Partner getrennte Wege gehen, während ein Joint Venture eine engere, oft dauerhafte Kooperation mit gemeinsamen Ressourcen und häufig einer neu gegründeten Gesellschaft ist.
+
 ## Beispiele
 
 - **Autobahnausbau A7**: ARGE aus EUROVIA, ROHDE und STUTZ, Ausbau auf sechs Spuren (ca. 60 km) zwischen Bockenem und Northeim-Nord, beendet 2023

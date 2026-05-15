@@ -47,6 +47,20 @@ A **working group** or **consortium** is a temporary association of legally and 
 - Possible benefits for consumers: better quality, lower prices, faster delivery
 - **Risk**: too much market power can squeeze smaller firms and tip into a cartel-like situation
 
+## Comparison with Joint Venture
+
+While both forms involve cooperation between independent companies, they differ in scope, duration, and structure:
+
+| Aspect           | Working Group / Consortium                     | Joint Venture                                       |
+| ---------------- | ---------------------------------------------- | --------------------------------------------------- |
+| Duration         | Project-bound, dissolves when the project ends | Often long-term or ongoing                          |
+| New legal entity | No, usually a civil-law partnership            | Typically yes (e.g. a jointly founded GmbH)         |
+| Scope            | Single, clearly defined project                | Broader strategic goal (market entry, product line) |
+| Resources        | Each member contributes independently          | Jointly managed and pooled                          |
+| Profit sharing   | Split between partners per agreement           | Explicitly agreed upon in the founding contract     |
+
+In short: a working group or consortium is a temporary alliance limited to one project, after which the partners go their separate ways, while a joint venture is a tighter, often permanent partnership with shared resources and frequently a newly founded company.
+
 ## Examples
 
 - **A7 motorway expansion** (Germany): working group of EUROVIA, ROHDE and STUTZ, six-lane extension between Bockenem and Northeim-Nord, ended 2023

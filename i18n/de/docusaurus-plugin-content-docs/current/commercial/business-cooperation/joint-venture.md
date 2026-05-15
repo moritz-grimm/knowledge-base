@@ -44,6 +44,20 @@ Ein **Joint Venture** (Gemeinschaftsunternehmen) ist eine Form der Zusammenarbei
 - **Verbraucher**: Neue Produkte und Technologien, teilweise sinkende Preise, aber geringere Markenvielfalt
 - **Wirtschaft**: Fördert Innovation, Wachstum und ausländische Investitionen, Risiko der Marktkonzentration
 
+## Abgrenzung zur Arbeitsgemeinschaft und zum Konsortium
+
+Beide Formen ermöglichen die Zusammenarbeit selbstständiger Unternehmen an einem konkreten Ziel, unterscheiden sich aber in Umfang und Struktur:
+
+| Merkmal                    | Joint Venture                                       | Arbeitsgemeinschaft / Konsortium                   |
+| -------------------------- | --------------------------------------------------- | -------------------------------------------------- |
+| Dauer                      | Oft langfristig oder dauerhaft                      | Projektgebunden, endet mit Abschluss des Projekts  |
+| Eigene Rechtsform          | Häufig ja (z.B. neu gegründete GmbH)                | Nein, meist GbR                                    |
+| Zweck                      | Breites strategisches Ziel (Markteintritt, Produkt) | Einzelnes, klar abgegrenztes Projekt               |
+| Ressourcen                 | Gemeinsam gemanagt und gebündelt                    | Jeder Partner erbringt seine Leistung eigenständig |
+| Gewinn-/Verlustbeteiligung | Ausdrücklich im Gründungsvertrag vereinbart         | Aufteilung zwischen den Partnern per Vereinbarung  |
+
+Kurz: Ein Joint Venture ist eine engere, oft dauerhafte Kooperation mit gemeinsamen Ressourcen und häufig einer neu gegründeten Gesellschaft, während eine Arbeitsgemeinschaft oder ein Konsortium ein befristeter Zusammenschluss für ein einziges Projekt ist, nach dessen Abschluss die Partner getrennte Wege gehen.
+
 ## Abgrenzung zur Interessengemeinschaft
 
 Beide Formen ermöglichen die Zusammenarbeit selbstständiger Unternehmen, unterscheiden sich aber in Struktur und Zweck:
