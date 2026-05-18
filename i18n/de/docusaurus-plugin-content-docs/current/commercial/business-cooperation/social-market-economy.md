@@ -35,7 +35,7 @@ Die **soziale Marktwirtschaft** ist eine Wirtschaftsordnung, die einen freien Ma
 
 ### Adam Smith
 
-- Begründer der modernen Marktwirtschaft
+- Begründer der freien (liberalen) Marktwirtschaft
 - Buch: *Wohlstand der Nationen*
 - Idee: die **„unsichtbare Hand"** des Marktes, freier Markt führt zu Wohlstand
 
