@@ -19,6 +19,19 @@ A **working group** or **consortium** is a temporary association of legally and 
 - Typical legal form: civil-law partnership
 - **Difference**: a consortium is the looser form, each member provides its service independently
 
+## Working Group vs. Consortium
+
+Although often used interchangeably, the two forms differ in their degree of internal integration:
+
+| Aspect                | Working Group (ARGE)                               | Consortium                                               |
+| --------------------- | -------------------------------------------------- | -------------------------------------------------------- |
+| Integration           | High: resources, finances and personnel are pooled | Low: each member performs their share independently      |
+| Internal organisation | Joint management, common accounting                | Separate management and accounting per member            |
+| Liability             | Joint and several                                  | Often limited to each member's own portion               |
+| Typical sector        | Construction and infrastructure                    | Banking (loan syndication, IPOs), large service projects |
+
+In short: a working group pools resources and works jointly on the inside, while a consortium presents itself jointly on the outside but each member handles their part independently.
+
 ## Effect on independence
 
 - Members remain **legally and economically independent**

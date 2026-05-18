@@ -20,6 +20,19 @@ Eine **Arbeitsgemeinschaft** (kurz **ARGE**) oder ein **Konsortium** ist ein bef
 - Häufige Rechtsform: GbR (Gesellschaft bürgerlichen Rechts)
 - **Abgrenzung**: Konsortium = lockerer Zusammenschluss, Leistungen werden eigenständig erbracht
 
+## ARGE vs. Konsortium
+
+Obwohl beide Begriffe oft synonym verwendet werden, unterscheiden sie sich im Grad der internen Integration:
+
+| Merkmal              | Arbeitsgemeinschaft (ARGE)                                    | Konsortium                                                               |
+| -------------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| Integration          | Hoch: Ressourcen, Finanzen und Personal werden zusammengelegt | Gering: jedes Mitglied erbringt seinen Anteil eigenständig               |
+| Interne Organisation | Gemeinsame Führung, gemeinsame Buchhaltung                    | Getrennte Führung und Buchhaltung je Mitglied                            |
+| Haftung              | Gesamtschuldnerisch                                           | Oft auf den eigenen Anteil begrenzt                                      |
+| Typische Branche     | Bauwirtschaft und Infrastruktur                               | Bankwesen (Kreditkonsortien, Börsengänge), große Dienstleistungsprojekte |
+
+Kurz: Eine ARGE bündelt Ressourcen und arbeitet intern gemeinsam, während ein Konsortium nach außen geschlossen auftritt, aber intern jedes Mitglied seinen Teil eigenständig abwickelt.
+
 ## Auswirkung auf die Selbstständigkeit
 
 - Unternehmen bleiben **rechtlich und wirtschaftlich selbstständig**
