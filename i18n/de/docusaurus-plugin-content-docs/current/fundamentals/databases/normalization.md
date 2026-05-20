@@ -16,6 +16,10 @@ keywords:
 
 Normalisierung ist der Prozess der Strukturierung einer relationalen Datenbank, um Datenredundanz zu reduzieren und Datenintegrität zu verbessern. Jede Normalform baut auf der vorherigen auf.
 
+## Redundanz
+
+Redundanz ist die mehrfache, unnötige wiederholte Speicherung der selben Daten in einer Datenbank.
+
 ## Erste Normalform (1NF)
 
 **Regel**: Jede Spalte muss atomare (unteilbare) Werte enthalten, und jede Zeile muss eindeutig sein.
