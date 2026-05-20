@@ -177,7 +177,7 @@ const config: Config = {
                         },
 
                         {
-                            label: "This Repo",
+                            label: "Knowledge Base",
                             href: "https://github.com/moritz-grimm/knowledge-base",
                         },
                         {
