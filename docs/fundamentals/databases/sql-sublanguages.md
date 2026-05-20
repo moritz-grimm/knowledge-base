@@ -17,9 +17,7 @@ keywords:
     - "Relational Database"
 ---
 
-# Overview
-
-SQL can be split into four subcategories: DDL, DML, DQL, and DCL.
+# SQL Sublanguages
 
 ## DDL (Data Definition Language)
 
