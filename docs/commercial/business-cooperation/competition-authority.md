@@ -37,6 +37,13 @@ The Bundeskartellamt uncovers and prosecutes price-fixing, market sharing and ot
 | Protects against abuse of power by large firms | Complex to evaluate     |
 |                                                | Risk of over-regulation |
 
+## Types of Abuse of Market Power
+
+Market-dominant companies can abuse their position in two main ways:
+
+- **Exploitative abuse**: A dominant company demands unjustifiably high prices or imposes unfair terms to exploit customers or suppliers.
+- **Exclusionary abuse**: A dominant company hinders competitors, for example by denying them access to essential infrastructure. A classic example is a telecommunications company blocking rivals' access to its network to gain an unfair competitive advantage.
+
 ## Effects
 
 - Creates **fair market conditions**, no company gets unlawful advantages

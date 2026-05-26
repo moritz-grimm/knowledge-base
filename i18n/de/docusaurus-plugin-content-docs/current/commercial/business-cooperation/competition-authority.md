@@ -38,6 +38,13 @@ Das Bundeskartellamt deckt Preisabsprachen, Marktaufteilungen und andere geheime
 | Schützt vor Machtmissbrauch großer Unternehmen | Komplexe Beurteilung       |
 |                                                | Gefahr der Überregulierung |
 
+## Arten des Marktmachtmissbrauchs
+
+Marktbeherrschende Unternehmen können ihre Stellung auf zwei Arten missbrauchen:
+
+- **Ausbeutungsmissbrauch**: Ein marktbeherrschendes Unternehmen verlangt ungerechtfertigt hohe Preise oder diktiert unfaire Konditionen, um Kunden oder Lieferanten auszunutzen.
+- **Behinderungsmissbrauch**: Ein marktbeherrschendes Unternehmen behindert Wettbewerber, z.B. indem es ihnen den Zugang zu einer notwendigen Infrastruktur verweigert. Ein klassisches Beispiel ist ein Telekommunikationsunternehmen, das Konkurrenten den Netzzugang verweigert, um sich einen ungerechtfertigten Wettbewerbsvorteil zu verschaffen.
+
 ## Auswirkungen
 
 - Schafft **faire Marktbedingungen**, kein Unternehmen erhält unrechtmäßige Vorteile

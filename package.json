@@ -36,11 +36,10 @@
         "@docusaurus/core": "^3.10.0",
         "@docusaurus/faster": "^3.10.0",
         "@docusaurus/plugin-sitemap": "^3.10.0",
-        "@docusaurus/plugin-vercel-analytics": "^3.10.0",
         "@docusaurus/preset-classic": "^3.10.0",
-        "@easyops-cn/docusaurus-search-local": "^0.53.0",
         "@mdx-js/react": "^3.0.0",
         "clsx": "^2.0.0",
+        "docusaurus-theme-search-typesense": "^0.26.0-0",
         "prism-react-renderer": "^2.3.0",
         "react": "^19.0.0",
         "react-dom": "^19.0.0"
@@ -51,6 +50,7 @@
         "@docusaurus/types": "^3.10.0",
         "@moritz-grimm/eslint-config": "^2.2.0",
         "@octokit/types": "^16.0.0",
+        "dotenv": "^17.4.2",
         "markdownlint-cli2": "^0.21.0",
         "typescript": "~5.6.2"
     },

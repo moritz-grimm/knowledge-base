@@ -44,6 +44,34 @@ Ein **Joint Venture** (Gemeinschaftsunternehmen) ist eine Form der Zusammenarbei
 - **Verbraucher**: Neue Produkte und Technologien, teilweise sinkende Preise, aber geringere Markenvielfalt
 - **Wirtschaft**: Fördert Innovation, Wachstum und ausländische Investitionen, Risiko der Marktkonzentration
 
+## Abgrenzung zur Arbeitsgemeinschaft und zum Konsortium
+
+Beide Formen ermöglichen die Zusammenarbeit selbstständiger Unternehmen an einem konkreten Ziel, unterscheiden sich aber in Umfang und Struktur:
+
+| Merkmal                    | Joint Venture                                       | Arbeitsgemeinschaft / Konsortium                   |
+| -------------------------- | --------------------------------------------------- | -------------------------------------------------- |
+| Dauer                      | Oft langfristig oder dauerhaft                      | Projektgebunden, endet mit Abschluss des Projekts  |
+| Eigene Rechtsform          | Häufig ja (z.B. neu gegründete GmbH)                | Nein, meist GbR                                    |
+| Zweck                      | Breites strategisches Ziel (Markteintritt, Produkt) | Einzelnes, klar abgegrenztes Projekt               |
+| Ressourcen                 | Gemeinsam gemanagt und gebündelt                    | Jeder Partner erbringt seine Leistung eigenständig |
+| Gewinn-/Verlustbeteiligung | Ausdrücklich im Gründungsvertrag vereinbart         | Aufteilung zwischen den Partnern per Vereinbarung  |
+
+Kurz: Ein Joint Venture ist eine engere, oft dauerhafte Kooperation mit gemeinsamen Ressourcen und häufig einer neu gegründeten Gesellschaft, während eine Arbeitsgemeinschaft oder ein Konsortium ein befristeter Zusammenschluss für ein einziges Projekt ist, nach dessen Abschluss die Partner getrennte Wege gehen.
+
+## Abgrenzung zur Interessengemeinschaft
+
+Beide Formen ermöglichen die Zusammenarbeit selbstständiger Unternehmen, unterscheiden sich aber in Struktur und Zweck:
+
+| Merkmal                    | Joint Venture                                        | Interessengemeinschaft                                           |
+| -------------------------- | ---------------------------------------------------- | ---------------------------------------------------------------- |
+| Rechtsform                 | Häufig eigene Rechtsform (z.B. GmbH)                 | Keine eigene Rechtsform, oft als GbR                             |
+| Vertragsstrenge            | Formal geregelt, Rechte und Pflichten klar definiert | Informell, keine Formvorgaben                                    |
+| Zweck                      | Konkretes Projekt oder Ziel mit festgelegtem Umfang  | Breite, laufende gemeinsame Interessen (Lobbying, Kostenteilung) |
+| Gewinn-/Verlustbeteiligung | Ausdrücklich zwischen den Partnern vereinbart        | Nicht zwingend vereinbart                                        |
+| Typische Dauer             | Oft projekt- oder zeitgebunden                       | Offen                                                            |
+
+Kurz: Ein Joint Venture ist eine stärker vertraglich geregelte Kooperation, die häufig zur Erreichung eines konkreten Ziels, oft über eine neu gegründete Gesellschaft, aufgesetzt wird, während eine Interessengemeinschaft ein lockerer, meist informeller Zusammenschluss zur Verfolgung gemeinsamer Ziele ist.
+
 ## Beispiele (Automobilbranche, China)
 
 | Joint Venture     | Besonderheit / Produkt                              |

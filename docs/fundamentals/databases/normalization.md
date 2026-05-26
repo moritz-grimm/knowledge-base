@@ -14,7 +14,13 @@ keywords:
 
 # Normalization
 
+## Overview
+
 Normalization is the process of structuring a relational database to reduce data redundancy and improve data integrity. Each normal form builds on the previous one.
+
+## Redundancy
+
+Redundancy is the unnecessarry repetition of the same data in a database.
 
 ## First Normal Form (1NF)
 

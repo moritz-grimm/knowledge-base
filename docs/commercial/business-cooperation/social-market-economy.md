@@ -34,7 +34,7 @@ The **social market economy** is an economic order that combines a free-market s
 
 ### Adam Smith
 
-- Founder of the modern market economy
+- Founder of the free (liberal) market economy
 - Book: *The Wealth of Nations*
 - Idea: the **"invisible hand"** of the market, free markets lead to prosperity
 

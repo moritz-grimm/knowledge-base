@@ -43,6 +43,34 @@ A **joint venture** is a cooperation of at least two independent companies, ofte
 - **Consumers**: new products and technologies, sometimes lower prices, but reduced brand variety
 - **Economy**: drives innovation, growth and foreign investment, but risk of market concentration
 
+## Comparison with Working Group and Consortium
+
+While both forms involve cooperation between independent companies on a specific objective, they differ in scope and structure:
+
+| Aspect           | Joint Venture                                       | Working Group / Consortium                     |
+| ---------------- | --------------------------------------------------- | ---------------------------------------------- |
+| Duration         | Often long-term or ongoing                          | Project-bound, dissolves when the project ends |
+| New legal entity | Typically yes (e.g. a jointly founded GmbH)         | No, usually a civil-law partnership            |
+| Scope            | Broader strategic goal (market entry, product line) | Single, clearly defined project                |
+| Resources        | Jointly managed and pooled                          | Each member contributes independently          |
+| Profit sharing   | Explicitly agreed upon in the founding contract     | Split between partners per agreement           |
+
+In short: a joint venture is a tighter, often permanent partnership with shared resources and frequently a new company, while a working group or consortium is a temporary alliance limited to one project, after which the partners go their separate ways.
+
+## Comparison with Interest Group
+
+While both forms involve cooperation between independent companies, they differ in structure and purpose:
+
+| Aspect                 | Joint Venture                                              | Interest Group                                           |
+| ---------------------- | ---------------------------------------------------------- | -------------------------------------------------------- |
+| Legal form             | Often a newly founded legal entity (e.g. GmbH)             | No own legal form, often a civil-law partnership         |
+| Contractual strictness | Formally regulated, rights and obligations clearly defined | Informal, no fixed form required                         |
+| Purpose                | Specific project or goal with a defined scope              | Broad, ongoing shared interests (lobbying, cost sharing) |
+| Profit/loss sharing    | Explicitly agreed between partners                         | Not necessarily agreed upon                              |
+| Typical duration       | Often project-bound or time-limited                        | Open-ended                                               |
+
+In short: a joint venture is a tighter contractual partnership set up to achieve a specific objective, often through a newly founded company, while an interest group is a looser, often informal arrangement to pursue common goals.
+
 ## Examples (automotive, China)
 
 | Joint Venture     | Detail                                          |

@@ -19,6 +19,19 @@ A **working group** or **consortium** is a temporary association of legally and 
 - Typical legal form: civil-law partnership
 - **Difference**: a consortium is the looser form, each member provides its service independently
 
+## Working Group vs. Consortium
+
+Although often used interchangeably, the two forms differ in their degree of internal integration:
+
+| Aspect                | Working Group (ARGE)                               | Consortium                                               |
+| --------------------- | -------------------------------------------------- | -------------------------------------------------------- |
+| Integration           | High: resources, finances and personnel are pooled | Low: each member performs their share independently      |
+| Internal organisation | Joint management, common accounting                | Separate management and accounting per member            |
+| Liability             | Joint and several                                  | Often limited to each member's own portion               |
+| Typical sector        | Construction and infrastructure                    | Banking (loan syndication, IPOs), large service projects |
+
+In short: a working group pools resources and works jointly on the inside, while a consortium presents itself jointly on the outside but each member handles their part independently.
+
 ## Effect on independence
 
 - Members remain **legally and economically independent**
@@ -46,6 +59,20 @@ A **working group** or **consortium** is a temporary association of legally and 
 - Bundling of strengths (know-how, capital, resources)
 - Possible benefits for consumers: better quality, lower prices, faster delivery
 - **Risk**: too much market power can squeeze smaller firms and tip into a cartel-like situation
+
+## Comparison with Joint Venture
+
+While both forms involve cooperation between independent companies, they differ in scope, duration, and structure:
+
+| Aspect           | Working Group / Consortium                     | Joint Venture                                       |
+| ---------------- | ---------------------------------------------- | --------------------------------------------------- |
+| Duration         | Project-bound, dissolves when the project ends | Often long-term or ongoing                          |
+| New legal entity | No, usually a civil-law partnership            | Typically yes (e.g. a jointly founded GmbH)         |
+| Scope            | Single, clearly defined project                | Broader strategic goal (market entry, product line) |
+| Resources        | Each member contributes independently          | Jointly managed and pooled                          |
+| Profit sharing   | Split between partners per agreement           | Explicitly agreed upon in the founding contract     |
+
+In short: a working group or consortium is a temporary alliance limited to one project, after which the partners go their separate ways, while a joint venture is a tighter, often permanent partnership with shared resources and frequently a newly founded company.
 
 ## Examples
 

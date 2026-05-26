@@ -1,3 +1,4 @@
+import "dotenv/config";
 import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
@@ -49,27 +50,7 @@ const config: Config = {
         ],
     ],
 
-    plugins: [
-        [
-            "vercel-analytics",
-            {
-                debug: false,
-            },
-        ],
-        [
-            "@easyops-cn/docusaurus-search-local",
-            /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
-            ({
-                hashed: true,
-                language: [ "en", "de" ],
-                indexBlog: false,
-                indexPages: true,
-                removeDefaultStopWordFilter: [ "en", "de" ],
-                removeDefaultStemmer: true,
-                fuzzyMatchingDistance: 2,
-            }),
-        ],
-    ],
+    themes: [ "docusaurus-theme-search-typesense" ],
 
     scripts: [
         {
@@ -196,7 +177,7 @@ const config: Config = {
                         },
 
                         {
-                            label: "This Repo",
+                            label: "Knowledge Base",
                             href: "https://github.com/moritz-grimm/knowledge-base",
                         },
                         {
@@ -215,6 +196,30 @@ const config: Config = {
         prism: {
             theme: prismThemes.github,
             darkTheme: prismThemes.dracula,
+        },
+        typesense: {
+            typesenseCollectionName: "knowledge_base",
+            typesenseServerConfig: {
+                nodes: [
+                    {
+                        host: "typesense.moritz-grimm.dev",
+                        port: 443,
+                        protocol: "https",
+                    },
+                ],
+                apiKey: process.env.TYPESENSE_READONLY_API_KEY,
+            },
+
+            // Optional: Typesense search parameters: https://typesense.org/docs/0.24.0/api/search.html#search-parameters
+            typesenseSearchParameters: {
+                query_by: "hierarchy.lvl0,hierarchy.lvl1,hierarchy.lvl2,hierarchy.lvl3,hierarchy.lvl4,hierarchy.lvl5,hierarchy.lvl6,content,embedding",
+                query_by_weights: "6,5,4,3,2,1,1,1,0",
+                vector_query: "embedding:([], k: 5, distance_threshold: 1.0, alpha: 0.7)",
+                group_by: "url_without_anchor",
+                group_limit: 2,
+            },
+
+            contextualSearch: true,
         },
     } satisfies Preset.ThemeConfig,
 };

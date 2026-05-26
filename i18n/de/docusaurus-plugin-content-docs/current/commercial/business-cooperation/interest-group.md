@@ -44,6 +44,20 @@ Eine **Interessengemeinschaft** (IG) ist ein vertraglich geregelter Zusammenschl
 - **Verbraucher**: Günstigere und teils hochwertigere Produkte, aber weniger Auswahl und u.U. weniger Innovation
 - **Wirtschaft**: Stabilisierung von Märkten, Risiko monopolartiger Strukturen bei wenigen großen Akteuren
 
+## Abgrenzung zum Joint Venture
+
+Beide Formen ermöglichen die Zusammenarbeit selbstständiger Unternehmen, unterscheiden sich aber in Struktur und Zweck:
+
+| Merkmal                    | Interessengemeinschaft                                           | Joint Venture                                        |
+| -------------------------- | ---------------------------------------------------------------- | ---------------------------------------------------- |
+| Rechtsform                 | Keine eigene Rechtsform, oft als GbR                             | Häufig eigene Rechtsform (z.B. GmbH)                 |
+| Vertragsstrenge            | Informell, keine Formvorgaben                                    | Formal geregelt, Rechte und Pflichten klar definiert |
+| Zweck                      | Breite, laufende gemeinsame Interessen (Lobbying, Kostenteilung) | Konkretes Projekt oder Ziel mit festgelegtem Umfang  |
+| Gewinn-/Verlustbeteiligung | Nicht zwingend vereinbart                                        | Ausdrücklich zwischen den Partnern vereinbart        |
+| Typische Dauer             | Offen                                                            | Oft projekt- oder zeitgebunden                       |
+
+Kurz: Eine Interessengemeinschaft ist ein lockerer, meist informeller Zusammenschluss zur Verfolgung gemeinsamer Ziele, während ein Joint Venture eine stärker vertraglich geregelte Kooperation ist, die häufig zur Erreichung eines konkreten Ziels, oft über eine neu gegründete Gesellschaft, aufgesetzt wird.
+
 ## Beispiele
 
 - **Toyota und Subaru**: Gemeinsame Forschung und Entwicklung bei Dieselmotoren (Einsparung von Entwicklungskosten, trotzdem im Wettbewerb)
