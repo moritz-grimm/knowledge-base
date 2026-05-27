@@ -21,7 +21,13 @@ keywords:
 
 # MariaDB
 
+## Overview
+
+MariaDB is an open-source relational database management system and a community-driven fork of MySQL. It uses SQL as its query language and is fully compatible with MySQL in most use cases.
+
 ## CREATE TABLE
+
+Defines a new table with its columns, data types, and constraints.
 
 ```sql
 CREATE TABLE users (
@@ -35,6 +41,8 @@ CREATE TABLE users (
 
 ## ALTER TABLE
 
+Modifies an existing table by adding, removing, or changing columns.
+
 ```sql
 ALTER TABLE users ADD COLUMN age INT;
 
@@ -47,6 +55,8 @@ ALTER TABLE users RENAME COLUMN name TO full_name;
 
 ## DROP / TRUNCATE
 
+Permanently deletes a table or removes all its rows while keeping the structure.
+
 ```sql
 DROP TABLE users;       -- Delete table including all data
 
@@ -54,6 +64,8 @@ TRUNCATE TABLE users;   -- Delete all rows, keep structure
 ```
 
 ## INSERT
+
+Adds one or more rows to a table.
 
 ```sql
 INSERT INTO users (name, email)
@@ -66,6 +78,8 @@ INSERT INTO users (name, email) VALUES
 
 ## SELECT
 
+Retrieves rows from one or more tables, with optional filtering, ordering, and pagination.
+
 ```sql
 SELECT id, name, email
 FROM   users
@@ -76,6 +90,8 @@ LIMIT  10 OFFSET 20;
 
 ### Aliases
 
+Assigns temporary names to columns or tables for readability.
+
 ```sql
 SELECT u.name AS user_name, o.total AS order_total
 FROM   users  AS u
@@ -83,6 +99,8 @@ JOIN   orders AS o ON o.user_id = u.id;
 ```
 
 ### JOINs
+
+Combines rows from multiple tables based on a related column.
 
 ```sql
 -- INNER JOIN — only rows that have a match in both tables
@@ -103,6 +121,8 @@ RIGHT JOIN orders AS o ON o.user_id = u.id;
 
 ### GROUP BY / HAVING
 
+Groups rows by column value and optionally filters groups after aggregation.
+
 ```sql
 -- GROUP BY aggregates rows by column value
 SELECT   department_id, COUNT(*) AS headcount
@@ -117,6 +137,8 @@ HAVING   headcount > 5;
 ```
 
 ### Subqueries
+
+Nests a query inside another query, either as a filter or a derived table.
 
 ```sql
 SELECT name
@@ -135,6 +157,8 @@ WHERE avg_salary > 50000;
 
 ## UPDATE
 
+Modifies existing rows in a table.
+
 ```sql
 UPDATE users
 SET    name  = 'Alice Smith',
@@ -144,11 +168,15 @@ WHERE  id = 1;
 
 ## DELETE
 
+Removes rows from a table.
+
 ```sql
 DELETE FROM users WHERE id = 1;
 ```
 
 ## Indexes
+
+Speeds up queries by creating a data structure for faster lookups on one or more columns.
 
 ```sql
 CREATE INDEX idx_users_name ON users (name);
@@ -162,6 +190,8 @@ SHOW INDEX FROM users;
 
 ## Views
 
+Creates a named, reusable query that can be referenced like a table.
+
 ```sql
 CREATE VIEW active_users AS
 SELECT id, name, email
@@ -172,6 +202,8 @@ DROP VIEW active_users;
 ```
 
 ## Transactions
+
+Groups multiple statements into a single atomic unit that either fully succeeds or fully rolls back.
 
 ```sql
 START TRANSACTION;
@@ -187,6 +219,8 @@ COMMIT;
 
 ### String
 
+Common functions for manipulating text values.
+
 ```sql
 CONCAT(first_name, ' ', last_name)    -- Concatenate strings
 LOWER(name)                            -- Lowercase
@@ -198,6 +232,8 @@ REPLACE(name, 'old', 'new')           -- Replace substring
 ```
 
 ### Date / Time
+
+Common functions for working with date and time values.
 
 ```sql
 NOW()                                  -- Current date and time
@@ -213,6 +249,8 @@ DATE_ADD(created, INTERVAL 7 DAY)     -- Add interval
 
 ### Aggregate
 
+Functions that compute a single value from a set of rows.
+
 ```sql
 COUNT(*)        -- Count all rows
 COUNT(email)    -- Count non-NULL values
@@ -223,6 +261,8 @@ MAX(total)      -- Maximum
 ```
 
 ### Conditional
+
+Functions and expressions for returning different values based on conditions.
 
 ```sql
 -- COALESCE — returns the first non-NULL value
