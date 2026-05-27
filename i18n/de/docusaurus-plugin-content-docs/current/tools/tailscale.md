@@ -15,7 +15,7 @@ keywords:
 
 ## Was ist Tailscale?
 
-Tailscale ist ein Zero-Config-Mesh-VPN-Service, der auf [WireGuard](https://www.wireguard.com/) basiert. Es verbindet Geräte in einem privaten Netzwerk, dem sogenannten "**Tailnet**", unabhängig vom Standort oder ob sie hinter NAT, Firewalls oder unterschiedlichen ISPs betrieben werden.
+Tailscale ist ein Zero-Config-Mesh-VPN-Service, der auf [WireGuard](../fundamentals/wireguard.md) basiert. Es verbindet Geräte in einem privaten Netzwerk, dem sogenannten "**Tailnet**", unabhängig vom Standort oder ob sie hinter NAT, Firewalls oder unterschiedlichen ISPs betrieben werden.
 
 Anders als bei traditionellen VPNs, bei denen der gesamte Traffic durch ein zentrales Gateway geleitet wird, stellt Tailscale, soweit möglich, direkte **Peer-to-Peer-Verbindungen** zwischen den Geräten her. Das führt zu geringerer Latenz und höherem Durchsatz.
 
