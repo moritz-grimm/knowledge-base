@@ -1,6 +1,6 @@
 ---
 title: "MariaDB"
-description: "Syntax reference for the most common MariaDB SQL commands with examples."
+description: "Overview and SQL command reference for MariaDB, an open-source relational database management system."
 keywords:
     - "SQL"
     - "MariaDB"
@@ -23,7 +23,9 @@ keywords:
 
 ## Overview
 
-MariaDB is an open-source relational database management system and a community-driven fork of MySQL. It uses SQL as its query language and is fully compatible with MySQL in most use cases.
+MariaDB is an open-source relational database management system created in 2009 by the original MySQL developers after Oracle acquired Sun Microsystems. It is a community-driven fork of MySQL and fully compatible with it in most use cases, making it a common drop-in replacement.
+
+MariaDB is ACID-compliant and supports multiple storage engines, including InnoDB and Aria. It is widely used for web applications, content management systems such as WordPress and Drupal, and general-purpose OLTP workloads.
 
 ## CREATE TABLE
 
