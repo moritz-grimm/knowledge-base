@@ -1,6 +1,6 @@
 ---
 title: "MariaDB"
-description: "Syntax-Referenz für die gängigsten MariaDB-SQL-Befehle mit Beispielen."
+description: "Überblick und SQL-Befehlsreferenz für MariaDB, ein Open-Source-Datenbankmanagementsystem."
 keywords:
     - "SQL"
     - "MariaDB"
@@ -21,7 +21,15 @@ keywords:
 
 # MariaDB
 
+## Überblick
+
+MariaDB ist ein Open-Source-Datenbankmanagementsystem, das 2009 von den ursprünglichen MySQL-Entwicklern gegründet wurde, nachdem Oracle Sun Microsystems übernommen hatte. Es ist ein Community-getriebener Fork von MySQL und in den meisten Anwendungsfällen vollständig kompatibel, wodurch es häufig als Drop-in-Ersatz eingesetzt wird.
+
+MariaDB ist ACID-konform und unterstützt mehrere Storage Engines, darunter InnoDB und Aria. Es wird häufig für Webanwendungen, Content-Management-Systeme wie WordPress und Drupal sowie allgemeine OLTP-Workloads eingesetzt.
+
 ## CREATE TABLE
+
+Legt eine neue Tabelle mit ihren Spalten, Datentypen und Constraints an.
 
 ```sql
 CREATE TABLE users (
@@ -35,6 +43,8 @@ CREATE TABLE users (
 
 ## ALTER TABLE
 
+Ändert eine bestehende Tabelle durch Hinzufügen, Entfernen oder Umbenennen von Spalten.
+
 ```sql
 ALTER TABLE users ADD COLUMN age INT;
 
@@ -47,6 +57,8 @@ ALTER TABLE users RENAME COLUMN name TO full_name;
 
 ## DROP / TRUNCATE
 
+Löscht eine Tabelle dauerhaft oder entfernt alle Zeilen und behält dabei die Struktur.
+
 ```sql
 DROP TABLE users;       -- Tabelle inkl. aller Daten löschen
 
@@ -54,6 +66,8 @@ TRUNCATE TABLE users;   -- Alle Zeilen löschen, Struktur behalten
 ```
 
 ## INSERT
+
+Fügt eine oder mehrere Zeilen in eine Tabelle ein.
 
 ```sql
 INSERT INTO users (name, email)
@@ -66,6 +80,8 @@ INSERT INTO users (name, email) VALUES
 
 ## SELECT
 
+Liest Zeilen aus einer oder mehreren Tabellen, optional mit Filterung, Sortierung und Paginierung.
+
 ```sql
 SELECT id, name, email
 FROM   users
@@ -76,6 +92,8 @@ LIMIT  10 OFFSET 20;
 
 ### Aliases
 
+Weist Spalten oder Tabellen temporäre Namen zur besseren Lesbarkeit zu.
+
 ```sql
 SELECT u.name AS user_name, o.total AS order_total
 FROM   users  AS u
@@ -83,6 +101,8 @@ JOIN   orders AS o ON o.user_id = u.id;
 ```
 
 ### JOINs
+
+Verknüpft Zeilen aus mehreren Tabellen anhand einer gemeinsamen Spalte.
 
 ```sql
 -- INNER JOIN — nur Zeilen, die in beiden Tabellen übereinstimmen
@@ -103,6 +123,8 @@ RIGHT JOIN orders AS o ON o.user_id = u.id;
 
 ### GROUP BY / HAVING
 
+Gruppiert Zeilen nach Spaltenwert und filtert Gruppen optional nach der Aggregation.
+
 ```sql
 -- GROUP BY fasst Zeilen nach Spaltenwert zusammen
 SELECT   department_id, COUNT(*) AS headcount
@@ -117,6 +139,8 @@ HAVING   headcount > 5;
 ```
 
 ### Unterabfragen
+
+Verschachtelt eine Abfrage in einer anderen, entweder als Filter oder als abgeleitete Tabelle.
 
 ```sql
 SELECT name
@@ -135,6 +159,8 @@ WHERE avg_salary > 50000;
 
 ## UPDATE
 
+Ändert bestehende Zeilen in einer Tabelle.
+
 ```sql
 UPDATE users
 SET    name  = 'Alice Smith',
@@ -144,11 +170,15 @@ WHERE  id = 1;
 
 ## DELETE
 
+Entfernt Zeilen aus einer Tabelle.
+
 ```sql
 DELETE FROM users WHERE id = 1;
 ```
 
 ## Indizes
+
+Beschleunigt Abfragen durch eine Datenstruktur für schnellere Suchen auf einer oder mehreren Spalten.
 
 ```sql
 CREATE INDEX idx_users_name ON users (name);
@@ -162,6 +192,8 @@ SHOW INDEX FROM users;
 
 ## Views
 
+Erstellt eine benannte, wiederverwendbare Abfrage, die wie eine Tabelle referenziert werden kann.
+
 ```sql
 CREATE VIEW active_users AS
 SELECT id, name, email
@@ -172,6 +204,8 @@ DROP VIEW active_users;
 ```
 
 ## Transaktionen
+
+Fasst mehrere Anweisungen zu einer atomaren Einheit zusammen, die entweder vollständig ausgeführt oder vollständig zurückgerollt wird.
 
 ```sql
 START TRANSACTION;
@@ -187,6 +221,8 @@ COMMIT;
 
 ### String
 
+Häufig verwendete Funktionen zur Bearbeitung von Textwerten.
+
 ```sql
 CONCAT(first_name, ' ', last_name)    -- Strings zusammenfügen
 LOWER(name)                            -- Kleinbuchstaben
@@ -198,6 +234,8 @@ REPLACE(name, 'alt', 'neu')           -- Teilstring ersetzen
 ```
 
 ### Datum / Uhrzeit
+
+Häufig verwendete Funktionen für Datums- und Zeitwerte.
 
 ```sql
 NOW()                                  -- Aktuelles Datum und Uhrzeit
@@ -213,6 +251,8 @@ DATE_ADD(created, INTERVAL 7 DAY)     -- Intervall addieren
 
 ### Aggregat
 
+Funktionen, die aus einer Menge von Zeilen einen einzelnen Wert berechnen.
+
 ```sql
 COUNT(*)        -- Alle Zeilen zählen
 COUNT(email)    -- Nicht-NULL-Werte zählen
@@ -223,6 +263,8 @@ MAX(total)      -- Maximum
 ```
 
 ### Konditional
+
+Funktionen und Ausdrücke zur Rückgabe unterschiedlicher Werte basierend auf Bedingungen.
 
 ```sql
 -- COALESCE — gibt den ersten Nicht-NULL-Wert zurück
