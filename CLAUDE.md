@@ -117,6 +117,10 @@ Uses `@easyops-cn/docusaurus-search-local` plugin for local search (no external 
 - Use kebab-case for file names (e.g., `file-naming.md`, `class-id-naming.md`)
 - Category index files should be named `index.mdx`
 
+### Writing Style
+
+- **Impersonal style**: Write in an anonymous, impersonal style — avoid addressing the reader directly with "Sie" (German formal) or "Du" (German informal), or their English equivalents "you". Use passive voice or noun-based constructions instead.
+
 ### Markdown Formatting
 
 - **Headings**: Every heading in `.md` files must be surrounded by a blank line (before and after) for proper formatting and readability
