@@ -50,5 +50,9 @@
   "sidebar.docs.category.Business Cooperation": {
     "message": "Unternehmenskooperation",
     "description": "The label for category 'Business Cooperation' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.IT Service Management (ITSM)": {
+    "message": "IT-Service-Management (ITSM)",
+    "description": "The label for category 'IT Service Management (ITSM)' in sidebar 'docs'"
   }
 }
