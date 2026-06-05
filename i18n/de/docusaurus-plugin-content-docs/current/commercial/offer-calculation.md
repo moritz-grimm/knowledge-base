@@ -11,7 +11,7 @@ keywords:
 
 # Angebotskalkulation
 
-## Übersicht
+## Überblick
 
 Die Angebotskalkulation ermittelt den Verkaufspreis basierend auf dem Einkaufspreis plus allen verbundenen Kosten wie Rabatten, Skonto, Steuern und Versandkosten. Sie folgt einem standardisierten schrittweisen Schema.
 

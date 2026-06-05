@@ -16,7 +16,7 @@ keywords:
 
 # OSI-Modell
 
-## Übersicht
+## Überblick
 
 Das OSI (Open Systems Interconnection) Modell ist ein konzeptionelles Framework, das die Kommunikation zwischen verschiedenen Netzwerken standardisiert. Es unterteilt die Kommunikation in **7 Schichten**, jede mit einer bestimmten Funktion. Das Modell ist herstellerunabhängig und dient als Referenz, um zu verstehen, wie Protokolle miteinander interagieren.
 

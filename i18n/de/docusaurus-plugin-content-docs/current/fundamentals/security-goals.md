@@ -11,7 +11,7 @@ keywords:
 
 # IT-Sicherheitsziele
 
-## Übersicht
+## Überblick
 
 IT-Sicherheit besitzt vier Sicherheitsziele welche definieren wann ein System sicher ist.
 

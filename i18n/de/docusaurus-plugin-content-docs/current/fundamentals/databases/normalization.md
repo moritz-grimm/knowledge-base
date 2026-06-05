@@ -14,7 +14,7 @@ keywords:
 
 # Normalisierung
 
-## Übersicht
+## Überblick
 
 Normalisierung ist der Prozess der Strukturierung einer relationalen Datenbank, um Datenredundanz zu reduzieren und Datenintegrität zu verbessern. Jede Normalform baut auf der vorherigen auf.
 
