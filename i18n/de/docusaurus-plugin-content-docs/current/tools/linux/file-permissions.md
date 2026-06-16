@@ -1,0 +1,66 @@
+---
+title: "Linux Dateiberechtigungen"
+description: "Dateimetadaten und Berechtigungen unter Linux mit `ls -l` anzeigen, versteckte Dateien mit `ls -a` einblenden und die `-rwxr-xr-x`-Notation lesen."
+keywords:
+    - Linux
+    - Dateiberechtigungen
+    - ls
+    - rwx
+    - Dateisystem
+    - versteckte Dateien
+---
+
+# Linux Dateiberechtigungen
+
+Zwei `ls`-Optionen decken die alltäglichen Fälle ab: Details auflisten (inklusive Berechtigungen) und versteckte Dateien anzeigen.
+
+## Dateien auflisten
+
+```bash
+ls -l    # Langformat: Berechtigungen, Eigentümer, Größe, Datum, Name
+ls -a    # Alle Dateien anzeigen, auch versteckte
+```
+
+Dateien und Ordner, deren Name mit einem Punkt beginnt (`.bashrc`, `.config`), sind **versteckt** und erscheinen nur mit `ls -a`. Beide Optionen werden oft als `ls -la` kombiniert.
+
+## Beispielausgabe
+
+Jede `ls -l`-Zeile beschreibt einen Eintrag über mehrere Spalten:
+
+```bash
+-rw-r--r-- 1 user staff 1024 Apr 25 10:00 notes.txt
+drwxr-xr-x 2 user staff 4096 Apr 25 09:30 projects
+```
+
+| Spalte         | Beispiel       | Bedeutung                          |
+| -------------- | -------------- | ---------------------------------- |
+| Berechtigungen | `-rw-r--r--`   | Dateityp und Berechtigungen        |
+| Links          | `1`            | Anzahl der Hard Links              |
+| Eigentümer     | `user`         | Eigentümer der Datei               |
+| Gruppe         | `staff`        | Gruppe, zu der die Datei gehört    |
+| Größe          | `1024`         | Größe in Bytes                     |
+| Datum & Zeit   | `Apr 25 10:00` | Zeitpunkt der letzten Änderung     |
+| Name           | `notes.txt`    | Datei- oder Ordnername             |
+
+## Die Berechtigungs-Notation lesen
+
+Eine `ls -l`-Zeile beginnt mit einer 10 Zeichen langen Zeichenkette wie `-rwxr-xr-x`. Sie gliedert sich in vier Teile:
+
+| Position | Beispiel | Bedeutung                                           |
+| -------- | -------- | --------------------------------------------------- |
+| 1        | `-`      | Dateityp (`-` = Datei, `d` = Ordner, `l` = Symlink) |
+| 2-4      | `rwx`    | Berechtigungen für den **Eigentümer**               |
+| 5-7      | `r-x`    | Berechtigungen für die **Gruppe**                   |
+| 8-10     | `r-x`    | Berechtigungen für **andere**                       |
+
+Jede der drei Gruppen verwendet dieselben drei Flags:
+
+| Flag | Bedeutung | Wirkung auf eine Datei | Wirkung auf einen Ordner    |
+| ---- | --------- | ---------------------- | --------------------------- |
+| `r`  | lesen     | Inhalt lesen           | Einträge auflisten          |
+| `w`  | schreiben | Inhalt ändern          | Einträge anlegen/löschen    |
+| `x`  | ausführen | Als Programm starten   | Verzeichnis betreten (`cd`) |
+
+Ein `-` anstelle eines Buchstabens bedeutet, dass diese Berechtigung nicht gewährt ist. `-rwxr-xr-x` bedeutet also: eine reguläre Datei, der Eigentümer darf lesen/schreiben/ausführen, Gruppe und andere dürfen lesen und ausführen, aber nicht schreiben.
+
+<!-- TODO: Folgt noch => chmod, oktale Notation (z.B. 755, 644) und chown. -->

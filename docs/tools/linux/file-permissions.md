@@ -1,0 +1,66 @@
+---
+title: "Linux File Permissions"
+description: "Reading file metadata and permissions in Linux with `ls -l`, showing hidden files with `ls -a`, and how to read the `-rwxr-xr-x` permission notation."
+keywords:
+    - Linux
+    - File Permissions
+    - ls
+    - rwx
+    - Filesystem
+    - hidden files
+---
+
+# Linux File Permissions
+
+Two `ls` options cover the everyday cases: listing details (including permissions) and showing hidden files.
+
+## Listing Files
+
+```bash
+ls -l    # Long format: permissions, owner, size, date, name
+ls -a    # Show all files, including hidden ones
+```
+
+Files and directories whose name starts with a dot (`.bashrc`, `.config`) are **hidden** and only appear with `ls -a`. Both options are often combined as `ls -la`.
+
+## Example Output
+
+Each `ls -l` line describes one entry across several columns:
+
+```bash
+-rw-r--r-- 1 user staff 1024 Apr 25 10:00 notes.txt
+drwxr-xr-x 2 user staff 4096 Apr 25 09:30 projects
+```
+
+| Column      | Example        | Meaning                   |
+| ----------- | -------------- | ------------------------- |
+| Permissions | `-rw-r--r--`   | File type and permissions |
+| Links       | `1`            | Number of hard links      |
+| Owner       | `user`         | Owner of the file         |
+| Group       | `staff`        | Group the file belongs to |
+| Size        | `1024`         | Size in bytes             |
+| Date & time | `Apr 25 10:00` | Last modification time    |
+| Name        | `notes.txt`    | File or directory name    |
+
+## Reading the Permission Notation
+
+An `ls -l` line starts with a 10-character string such as `-rwxr-xr-x`. It breaks down into four parts:
+
+| Position | Example | Meaning                                                |
+| -------- | ------- | ------------------------------------------------------ |
+| 1        | `-`     | File type (`-` = file, `d` = directory, `l` = symlink) |
+| 2-4      | `rwx`   | Permissions for the **owner**                          |
+| 5-7      | `r-x`   | Permissions for the **group**                          |
+| 8-10     | `r-x`   | Permissions for **others**                             |
+
+Each of the three groups uses the same three flags:
+
+| Flag | Meaning | Effect on a file    | Effect on a directory      |
+| ---- | ------- | ------------------- | -------------------------- |
+| `r`  | read    | Read the contents   | List the entries           |
+| `w`  | write   | Modify the contents | Create/delete entries      |
+| `x`  | execute | Run as a program    | Enter (`cd`) the directory |
+
+A `-` in place of a letter means that permission is not granted. So `-rwxr-xr-x` means: a regular file, the owner may read/write/execute, group and others may read and execute but not write.
+
+<!-- TODO: Still to be added => chmod, octal notation (e.g. 755, 644), and chown. -->
