@@ -1,0 +1,28 @@
+---
+title: "Mounting in Linux"
+description: "Attaching and detaching filesystems in Linux with the `mount` and `umount` commands."
+keywords:
+    - Linux
+    - mount
+    - umount
+    - Filesystem
+    - mountpoint
+---
+
+# Mounting in Linux
+
+In Linux a storage device (a disk, partition or USB stick) is not accessed by a drive letter but is **mounted** into the directory tree at a chosen **mountpoint**. Once mounted, its contents appear under that directory.
+
+## Mounting
+
+```bash
+mount /dev/sdb1 /mnt/usb    # Attach the device /dev/sdb1 at /mnt/usb
+```
+
+## Unmounting
+
+```bash
+umount /mnt/usb    # Detach the filesystem (note: the command is "umount", without the first "n")
+```
+
+<!-- TODO: Still to be added => /etc/fstab (automatic mounting at boot), lsblk and findmnt for listing, df for usage, and mount options (e.g. -o ro). -->

@@ -1,0 +1,28 @@
+---
+title: "Mounten unter Linux"
+description: "Dateisysteme unter Linux mit den Befehlen `mount` und `umount` einbinden und aushängen."
+keywords:
+    - Linux
+    - mount
+    - umount
+    - Dateisystem
+    - Mountpoint
+---
+
+# Mounten unter Linux
+
+Unter Linux wird ein Speichermedium (eine Festplatte, Partition oder ein USB-Stick) nicht über einen Laufwerksbuchstaben angesprochen, sondern an einem gewählten **Mountpoint** in den Verzeichnisbaum **eingebunden** (gemountet). Nach dem Mounten erscheint sein Inhalt unter diesem Verzeichnis.
+
+## Mounten
+
+```bash
+mount /dev/sdb1 /mnt/usb    # Das Gerät /dev/sdb1 unter /mnt/usb einbinden
+```
+
+## Unmounten
+
+```bash
+umount /mnt/usb    # Das Dateisystem aushängen (Achtung: der Befehl heißt „umount", ohne das erste „n")
+```
+
+<!-- TODO: Folgt noch => /etc/fstab (automatisches Mounten beim Booten), lsblk und findmnt zum Auflisten, df für die Belegung sowie Mount-Optionen (z.B. -o ro). -->
