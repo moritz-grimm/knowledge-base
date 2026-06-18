@@ -24,8 +24,11 @@
         "lvl4": "article h4",
         "lvl5": "article h5",
         "lvl6": "article h6",
-        "text": "article p"
+        "text": "article p, article li, article td"
     },
+    "selectors_exclude": [
+        ".theme-doc-card-container"
+    ],
     "strip_chars": " .,;:#",
     "custom_settings": {
         "separatorsToIndex": "_",
