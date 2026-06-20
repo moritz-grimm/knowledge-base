@@ -197,6 +197,13 @@ html[data-theme-style='homepage'] ::-webkit-scrollbar-thumb:hover {
     background: rgba(200, 255, 0, 0.4);
 }
 
+/* Docusaurus' .thin-scrollbar sets scrollbar-width: thin, which makes Chrome
+   ignore the ::-webkit-scrollbar rules above. Reset it so the docs sidebar
+   gets the same styled scrollbar as the rest of the page. */
+html[data-theme-style='homepage'] .thin-scrollbar {
+    scrollbar-width: auto;
+}
+
 html[data-theme-style='homepage'] .header-github-link::before {
     filter: invert(1);
 }
