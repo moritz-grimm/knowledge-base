@@ -110,5 +110,5 @@ t_an = 0,25 x 1 ms = 0,25 ms
 ## Siehe auch
 
 - [Raspberry Pi Überblick](./raspberry-pi.md): wie Sensoren und Aktoren (etwa ein passiver Buzzer) verdrahtet werden
-- [Analog-Digital-Wandler (ADC)](./analog-digital-converter.md): die umgekehrte Richtung — ein analoges Signal in einen digitalen Wert umsetzen
+- [Analog-Digital-Wandler (ADC)](./analog-digital-converter.mdx): die umgekehrte Richtung — ein analoges Signal in einen digitalen Wert umsetzen
 - [Elektrische Einheiten](./electrical-units.md): Grundlagen zu Spannung und Leistung

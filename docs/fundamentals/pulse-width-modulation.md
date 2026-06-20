@@ -107,5 +107,5 @@ t_on = 0.25 x 1 ms = 0.25 ms
 ## See Also
 
 - [Raspberry Pi Overview](./raspberry-pi.md): how sensors and actuators (such as a passive buzzer) are wired up
-- [Analog-to-Digital Converter (ADC)](./analog-digital-converter.md): the inverse direction — turning an analog signal into a digital value
+- [Analog-to-Digital Converter (ADC)](./analog-digital-converter.mdx): the inverse direction — turning an analog signal into a digital value
 - [Electrical Units](./electrical-units.md): voltage and power fundamentals
