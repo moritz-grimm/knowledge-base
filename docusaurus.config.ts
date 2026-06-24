@@ -27,6 +27,10 @@ const config: Config = {
 
     onBrokenLinks: "warn",
 
+    customFields: {
+        groqApiKey: process.env.GROQ_API_KEY,
+    },
+
     i18n: {
         defaultLocale: "en",
         locales: [ "en", "de" ],
