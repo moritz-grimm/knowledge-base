@@ -14,7 +14,7 @@ keywords:
 
 # DNS (Domain Name System)
 
-DNS löst DNS-Namen in IP-Adressen auf und umgekehrt. Ein DNS-Name besteht aus zwei Teilen: dem **Hostnamen**, der einen einzelnen Host identifiziert, und dem **Domänennamen**, der eine Gruppe von Hosts in einem gemeinsamen Namensraum kennzeichnet. Beide werden durch einen Punkt getrennt.
+DNS löst DNS-Namen in IP-Adressen auf und umgekehrt. Ein DNS-Name besteht aus zwei Teilen: dem **Hostnamen**, der einen einzelnen Host identifiziert, und dem **Domänennamen**, der eine Gruppe von Hosts in einem gemeinsamen Namespace kennzeichnet. Beide werden durch einen Punkt getrennt.
 
 ## Hierarchie und FQDN
 
@@ -29,7 +29,7 @@ Sind alle Teile bis zur Root angegeben, ergibt sich der **FQDN** (Fully Qualifie
 
 ## Zonen
 
-Jeder DNS-Server ist für einen abgegrenzten Teil des Namensraums zuständig, der als **Zone** bezeichnet wird (z.B. `heise.de`). Der Server, der die Zonendatei verwaltet, besitzt die **Autorität** für diese Zone.
+Jeder DNS-Server ist für einen abgegrenzten Teil des Namespace zuständig, der als **Zone** bezeichnet wird (z.B. `heise.de`). Der Server, der die Zonendatei verwaltet, besitzt die **Autorität** für diese Zone.
 
 - **Primäre Zone** – Schreib- und Lesezugriff; die autoritative Kopie der Zone.
 - **Sekundäre Zone** – Eine Read-only-Kopie einer primären Zone (zur Redundanz oder Lastverteilung). Sie kann Abfragen beantworten, aber die Zonendatei nicht aktualisieren.
