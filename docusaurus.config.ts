@@ -166,25 +166,38 @@ const config: Config = {
             style: "dark",
             links: [
                 {
-                    title: "Links",
+                    title: "Socials",
                     items: [
                         {
-                            label: "My Homepage",
+                            label: "GitHub",
+                            href: "https://github.com/moritz-grimm",
+                        },
+                        {
+                            label: "LinkedIn",
+                            href: "https://www.linkedin.com/in/moritz-grimm-dev",
+                        },
+                    ],
+                },
+                {
+                    title: "More",
+                    items: [
+                        {
+                            label: "Homepage",
                             href: "https://www.moritz-grimm.dev",
+                        },
+                        {
+                            label: "Source Code",
+                            href: "https://github.com/moritz-grimm/knowledge-base",
                         },
                         {
                             label: "Status",
                             href: "https://status.moritz-grimm.dev/status/default",
                         },
-                        {
-                            label: "GitHub",
-                            href: "https://github.com/moritz-grimm",
-                        },
-
-                        {
-                            label: "Knowledge Base",
-                            href: "https://github.com/moritz-grimm/knowledge-base",
-                        },
+                    ],
+                },
+                {
+                    title: "Legal",
+                    items: [
                         {
                             label: "Impressum",
                             href: "https://www.moritz-grimm.dev/impressum.html",

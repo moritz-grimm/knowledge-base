@@ -208,9 +208,8 @@ html[data-theme-style='homepage'] .header-github-link::before {
     filter: invert(1);
 }
 
-/* Footer: reduce bottom padding so last-updated sits closer to copyright */
 .footer {
-    padding-bottom: 0;
+    padding-bottom: 0.75rem;
 }
 
 .footer__last-updated {
@@ -220,6 +219,29 @@ html[data-theme-style='homepage'] .header-github-link::before {
     opacity: 0.7;
     background-color: var(--ifm-footer-background-color);
     color: var(--ifm-footer-color);
+}
+
+.footer__links {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Below Infima's mobile breakpoint the footer columns stack on their own, but
+   Infima also sets `width: max-content` on the links. That shrink-wrapped
+   block ignores the centered text alignment and sticks to the left edge, so it
+   needs auto margins. The column spacing of 3rem is far too airy when stacked. */
+@media (max-width: 996px) {
+    .footer__link-item {
+        margin-inline: auto;
+    }
+
+    .footer__col {
+        margin-bottom: 1.5rem;
+    }
+
+    .footer__col:last-child {
+        margin-bottom: 0;
+    }
 }
 
 /* ============================================================
