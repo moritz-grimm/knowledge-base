@@ -54,5 +54,25 @@
   "sidebar.docs.category.IT Service Management (ITSM)": {
     "message": "IT-Service-Management (ITSM)",
     "description": "The label for category 'IT Service Management (ITSM)' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Unternehmenskooperation": {
+    "message": "Unternehmenskooperation",
+    "description": "The label for category 'Unternehmenskooperation' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.IT-Service-Management (ITSM)": {
+    "message": "IT-Service-Management (ITSM)",
+    "description": "The label for category 'IT-Service-Management (ITSM)' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Database Systems": {
+    "message": "Database Systems",
+    "description": "The label for category 'Database Systems' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Linux": {
+    "message": "Linux",
+    "description": "The label for category 'Linux' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.TypeScript": {
+    "message": "TypeScript",
+    "description": "The label for category 'TypeScript' in sidebar 'docs'"
   }
 }

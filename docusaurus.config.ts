@@ -147,6 +147,12 @@ const config: Config = {
                     label: "Knowledge",
                 },
                 {
+                    // TODO: remove after the AP2 exam (2026-11-25)
+                    to: "/docs/tags/ap2",
+                    position: "left",
+                    label: "AP2",
+                },
+                {
                     type: "localeDropdown",
                     position: "right",
                 },

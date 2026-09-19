@@ -134,8 +134,31 @@ Self-hosted Umami instance at `analytics.moritz-grimm.dev`. The tracking script 
    ---
    ```
 
-3. For German translation, create the corresponding file in `i18n/de/docusaurus-plugin-content-docs/current/` with the same structure
-4. Run `npm run write-translations:de` to autogenerate metadata, then update `i18n/de/docusaurus-plugin-content-docs/current.json` if needed
+3. Add the `ap2` tag if the entry is exam-relevant (see **Tags** below)
+4. For German translation, create the corresponding file in `i18n/de/docusaurus-plugin-content-docs/current/` with the same structure
+5. Run `npm run write-translations:de` to autogenerate metadata, then update `i18n/de/docusaurus-plugin-content-docs/current.json` if needed
+
+### Tags
+
+Tags are declared centrally in `docs/tags.yml` and mirrored in
+`i18n/de/docusaurus-plugin-content-docs/current/tags.yml`. Only tags defined there may be used.
+
+Currently defined:
+
+- `ap2` — entries relevant to the written part of the final examination part 2 (AP2) for IT specialists in application development: *Planen eines Softwareproduktes*, *Entwicklung und Umsetzung von Algorithmen*, *Wirtschafts- und Sozialkunde*
+
+Rules:
+
+- The tag goes into the frontmatter below `keywords`, with the same 4-space list indentation as the other frontmatter lists:
+
+  ```yaml
+  tags:
+      - ap2
+  ```
+
+- A tag must be set identically in the English source and in the German translation. A tag that exists in only one locale is missing from the other locale's tag page.
+- Do not tag entries whose content only touches an exam topic in passing. AP1- and Systemintegration-specific material (e.g. Active Directory administration, structured cabling, reading `ls -l` output) does not get the `ap2` tag.
+- When adding a new tag, add it to both `tags.yml` files first, including `label`, `permalink` and a translated `description`.
 
 ### Translation Guidelines
 
