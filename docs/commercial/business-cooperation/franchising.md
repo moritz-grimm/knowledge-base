@@ -7,6 +7,8 @@ keywords:
   - "Franchisor"
   - "Franchisee"
   - "Business Model"
+tags:
+  - ap2
 ---
 
 # Franchising

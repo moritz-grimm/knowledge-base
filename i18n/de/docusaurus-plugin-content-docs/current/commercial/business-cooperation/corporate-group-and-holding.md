@@ -7,6 +7,8 @@ keywords:
   - "Muttergesellschaft"
   - "Tochterunternehmen"
   - "Unternehmenszusammenschluss"
+tags:
+  - ap2
 ---
 
 # Konzern und Holding

@@ -6,6 +6,8 @@ keywords:
   - "Cooperation"
   - "Lobbying"
   - "Joint Interests"
+tags:
+  - ap2
 ---
 
 # Interest Group

@@ -15,6 +15,8 @@ keywords:
     - "Datenbank"
     - "Datenbanken"
     - "Relationale Datenbanken"
+tags:
+    - ap2
 ---
 
 # SQL-Untersprachen

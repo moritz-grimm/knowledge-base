@@ -7,6 +7,8 @@ keywords:
     - Critical Path
     - Project Planning
     - Project Management
+tags:
+    - ap2
 ---
 
 # Network Plan

@@ -6,6 +6,8 @@ keywords:
   - "Consortium"
   - "Business Cooperation"
   - "Joint Operation"
+tags:
+  - ap2
 ---
 
 # Working Group and Consortium

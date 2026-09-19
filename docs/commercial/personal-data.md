@@ -10,6 +10,8 @@ keywords:
   - "Data Subject Rights"
   - "Legal Basis"
   - "Legitimate Interests"
+tags:
+  - ap2
 ---
 
 # Personal Data

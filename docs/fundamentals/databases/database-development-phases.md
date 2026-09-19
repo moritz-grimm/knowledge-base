@@ -8,6 +8,8 @@ keywords:
   - "conceptual design"
   - "physical design"
   - "normalization"
+tags:
+  - ap2
 ---
 
 # Database Development Phases

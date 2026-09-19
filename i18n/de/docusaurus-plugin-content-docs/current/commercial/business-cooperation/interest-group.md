@@ -7,6 +7,8 @@ keywords:
   - "Gemeinsame Interessen"
   - "GbR"
   - "Lobby"
+tags:
+  - ap2
 ---
 
 # Interessengemeinschaft

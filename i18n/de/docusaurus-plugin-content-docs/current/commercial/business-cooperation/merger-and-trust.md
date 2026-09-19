@@ -7,6 +7,8 @@ keywords:
   - "Unternehmenszusammenschluss"
   - "Verschmelzung"
   - "M&A"
+tags:
+  - ap2
 ---
 
 # Fusion und Trust

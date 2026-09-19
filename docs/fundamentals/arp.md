@@ -10,6 +10,8 @@ keywords:
     - Layer 2
     - Layer 3
     - Default Gateway
+tags:
+    - ap2
 ---
 
 # ARP (Address Resolution Protocol)

@@ -7,6 +7,8 @@ keywords:
   - "Diagonal Merger"
   - "Conglomerate"
   - "M&A"
+tags:
+  - ap2
 ---
 
 # Types of Mergers

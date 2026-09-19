@@ -7,6 +7,8 @@ keywords:
   - "Wettbewerbsrecht"
   - "Bundeskartellamt"
   - "Wettbewerbsbeschränkung"
+tags:
+  - ap2
 ---
 
 # Kartelle

@@ -7,6 +7,8 @@ keywords:
   - "Konsortium"
   - "Unternehmenskooperation"
   - "Bauwirtschaft"
+tags:
+  - ap2
 ---
 
 # Arbeitsgemeinschaft (ARGE) und Konsortium

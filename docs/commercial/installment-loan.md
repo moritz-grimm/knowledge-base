@@ -7,6 +7,8 @@ keywords:
   - "Loan Calculation"
   - "Interest"
   - "Amortization"
+tags:
+  - ap2
 ---
 
 # Installment Loan

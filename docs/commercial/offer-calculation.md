@@ -7,6 +7,8 @@ keywords:
     - Pricing
     - Procurement
     - Commercial
+tags:
+    - ap2
 ---
 
 # Offer Calculation

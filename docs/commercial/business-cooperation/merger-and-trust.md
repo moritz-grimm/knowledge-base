@@ -6,6 +6,8 @@ keywords:
   - "Trust"
   - "Business Combination"
   - "M&A"
+tags:
+  - ap2
 ---
 
 # Merger and Trust

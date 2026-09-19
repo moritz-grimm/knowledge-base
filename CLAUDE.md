@@ -156,6 +156,7 @@ Rules:
       - ap2
   ```
 
+- Existing files still using 2-space indentation are migrated to 4 spaces only when the file is touched for another reason.
 - A tag must be set identically in the English source and in the German translation. A tag that exists in only one locale is missing from the other locale's tag page.
 - Do not tag entries whose content only touches an exam topic in passing. AP1- and Systemintegration-specific material (e.g. Active Directory administration, structured cabling, reading `ls -l` output) does not get the `ap2` tag.
 - When adding a new tag, add it to both `tags.yml` files first, including `label`, `permalink` and a translated `description`.

@@ -9,6 +9,8 @@ keywords:
   - "Root Cause Analysis"
   - "Problem Analysis"
   - "Cause-Effect Matrix"
+tags:
+  - ap2
 ---
 
 # Problem Analysis Methods

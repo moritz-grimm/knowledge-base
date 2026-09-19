@@ -12,6 +12,8 @@ keywords:
   - "Change Management"
   - "ITSM"
 sidebar_position: 4
+tags:
+  - ap2
 ---
 
 # Release Management

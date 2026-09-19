@@ -11,6 +11,8 @@ keywords:
   - "Beziehungen"
   - "Kardinalitäten"
   - "schwache Entitäten"
+tags:
+  - ap2
 ---
 
 # ER-Modell

@@ -6,6 +6,8 @@ keywords:
   - "Competition Law"
   - "Antitrust"
   - "Bundeskartellamt"
+tags:
+  - ap2
 ---
 
 # Cartels

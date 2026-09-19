@@ -13,6 +13,8 @@ keywords:
     - GPIO
     - Dimmen
     - Motorsteuerung
+tags:
+    - ap2
 ---
 
 # Frequenz (Hz) und Pulsweitenmodulation (PWM)

@@ -10,6 +10,8 @@ keywords:
   - "kebab-case"
   - "camelCase"
   - "Namenskonventionen"
+tags:
+  - ap2
 ---
 
 # JSON

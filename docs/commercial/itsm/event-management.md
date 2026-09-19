@@ -9,6 +9,8 @@ keywords:
   - "Exception"
   - "Monitoring"
   - "ITSM"
+tags:
+  - ap2
 ---
 
 # Event Management

@@ -8,6 +8,8 @@ keywords:
     - Speicher
     - Datenspeicher
     - Festplattenredundanz
+tags:
+    - ap2
 ---
 
 # RAID

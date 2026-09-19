@@ -11,6 +11,8 @@ keywords:
   - "Relationships"
   - "Cardinality"
   - "Weak Entity"
+tags:
+  - ap2
 ---
 
 # ER Model

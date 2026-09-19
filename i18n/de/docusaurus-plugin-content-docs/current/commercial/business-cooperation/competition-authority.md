@@ -7,6 +7,8 @@ keywords:
   - "Kartellrecht"
   - "Fusionskontrolle"
   - "Missbrauchsaufsicht"
+tags:
+  - ap2
 ---
 
 # Wettbewerbsaufsicht

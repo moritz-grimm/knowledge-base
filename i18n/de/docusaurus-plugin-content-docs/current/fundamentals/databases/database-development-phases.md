@@ -8,6 +8,8 @@ keywords:
   - "konzeptioneller Entwurf"
   - "physischer Entwurf"
   - "Normalisierung"
+tags:
+  - ap2
 ---
 
 # Datenbankentwicklungsphasen

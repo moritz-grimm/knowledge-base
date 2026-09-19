@@ -7,6 +7,8 @@ keywords:
   - "Darlehensberechnung"
   - "Zinsen"
   - "Tilgung"
+tags:
+  - ap2
 ---
 
 # Ratendarlehen

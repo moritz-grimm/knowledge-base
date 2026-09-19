@@ -7,6 +7,8 @@ keywords:
   - "Marktwirtschaft"
   - "Ludwig Erhard"
   - "Adam Smith"
+tags:
+  - ap2
 ---
 
 # Soziale Marktwirtschaft

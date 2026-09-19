@@ -15,6 +15,8 @@ keywords:
     - "Database"
     - "Databases"
     - "Relational Database"
+tags:
+    - ap2
 ---
 
 # SQL Sublanguages

@@ -9,6 +9,8 @@ keywords:
   - "Ursachenanalyse"
   - "Problemanalyse"
   - "Ursachen-Wirkungs-Matrix"
+tags:
+  - ap2
 ---
 
 # Analysemethoden im Problem Management

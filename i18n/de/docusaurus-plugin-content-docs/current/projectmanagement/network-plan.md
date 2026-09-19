@@ -7,6 +7,8 @@ keywords:
     - Kritischer Pfad
     - Projektplanung
     - Projektmanagement
+tags:
+    - ap2
 ---
 
 # Netzplan

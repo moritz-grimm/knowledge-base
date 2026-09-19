@@ -12,6 +12,8 @@ keywords:
     - GPIO
     - Dimming
     - Motor Control
+tags:
+    - ap2
 ---
 
 # Frequency (Hz) and Pulse-Width Modulation (PWM)

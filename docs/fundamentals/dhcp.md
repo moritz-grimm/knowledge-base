@@ -10,6 +10,8 @@ keywords:
     - Relay Agent
     - Failover
     - DHCPv6
+tags:
+    - ap2
 ---
 
 # DHCP (Dynamic Host Configuration Protocol)

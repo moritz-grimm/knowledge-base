@@ -6,6 +6,8 @@ keywords:
   - "Gemeinschaftsunternehmen"
   - "Unternehmenskooperation"
   - "Strategische Allianz"
+tags:
+  - ap2
 ---
 
 # Joint Venture

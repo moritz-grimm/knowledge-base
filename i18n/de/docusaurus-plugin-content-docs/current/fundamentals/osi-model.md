@@ -12,6 +12,8 @@ keywords:
     - Darstellungsschicht
     - Anwendungsschicht
     - Netzwerken
+tags:
+    - ap2
 ---
 
 # OSI-Modell

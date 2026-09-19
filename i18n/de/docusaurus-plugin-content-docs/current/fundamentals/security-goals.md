@@ -7,6 +7,8 @@ keywords:
     - Integrität
     - Authentizität
     - Verfügbarkeit
+tags:
+    - ap2
 ---
 
 # IT-Sicherheitsziele

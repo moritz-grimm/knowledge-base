@@ -7,6 +7,8 @@ keywords:
   - "Diagonaler Zusammenschluss"
   - "Konglomerat"
   - "M&A"
+tags:
+  - ap2
 ---
 
 # Arten von Zusammenschlüssen

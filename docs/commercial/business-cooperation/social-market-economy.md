@@ -6,6 +6,8 @@ keywords:
   - "Market Economy"
   - "Ludwig Erhard"
   - "Adam Smith"
+tags:
+  - ap2
 ---
 
 # Social Market Economy

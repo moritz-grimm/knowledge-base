@@ -6,6 +6,8 @@ keywords:
     - User Datagram Protocol
     - Internetprotocol
 draft: true
+tags:
+    - ap2
 ---
 
 # UDP (User Datagram Protocol)

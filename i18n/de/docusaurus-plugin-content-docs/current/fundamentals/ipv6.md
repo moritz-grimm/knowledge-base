@@ -11,6 +11,8 @@ keywords:
     - Multicast
     - Anycast
     - Scope
+tags:
+    - ap2
 ---
 
 # IPv6 (Internet Protocol Version 6)

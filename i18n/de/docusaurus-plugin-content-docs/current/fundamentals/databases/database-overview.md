@@ -10,6 +10,8 @@ keywords:
     - Normalisierung
     - PostgreSQL
     - MongoDB
+tags:
+    - ap2
 ---
 
 # Datenbanken Übersicht

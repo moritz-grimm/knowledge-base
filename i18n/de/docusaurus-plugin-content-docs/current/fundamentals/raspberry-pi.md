@@ -17,6 +17,8 @@ keywords:
     - SDA
     - SCL
     - I2C
+tags:
+    - ap2
 ---
 
 # Raspberry Pi Überblick

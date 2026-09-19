@@ -10,6 +10,8 @@ keywords:
   - "Incident-Priorität"
   - "Reaktionszeit"
   - "SLA"
+tags:
+  - ap2
 ---
 
 # Priorisierung im IT-Support

@@ -6,6 +6,8 @@ keywords:
     - Goals
     - Agile
     - Scrum
+tags:
+    - ap2
 ---
 
 # SMART Model

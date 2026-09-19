@@ -10,6 +10,8 @@ keywords:
     - Reverse-Lookup
     - Rekursive Abfrage
     - Iterative Abfrage
+tags:
+    - ap2
 ---
 
 # DNS (Domain Name System)

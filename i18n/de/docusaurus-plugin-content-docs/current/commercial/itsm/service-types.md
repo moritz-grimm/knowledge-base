@@ -11,6 +11,8 @@ keywords:
   - "ITSM"
   - "KPI"
   - "SLA"
+tags:
+  - ap2
 ---
 
 # Servicearten der IT

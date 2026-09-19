@@ -7,6 +7,8 @@ keywords:
     - Redundant Array of Inexpensive Disks
     - storage
     - disk redundancy
+tags:
+    - ap2
 ---
 
 # RAID

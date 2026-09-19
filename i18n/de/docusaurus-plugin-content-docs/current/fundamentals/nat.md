@@ -11,6 +11,8 @@ keywords:
     - IP-Adressen
     - Private IP
     - Öffentliche IP
+tags:
+    - ap2
 ---
 
 # NAT (Network Address Translation)

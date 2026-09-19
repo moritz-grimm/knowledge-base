@@ -7,6 +7,8 @@ keywords:
     - Preisgestaltung
     - Beschaffung
     - Kaufmännisches
+tags:
+    - ap2
 ---
 
 # Angebotskalkulation

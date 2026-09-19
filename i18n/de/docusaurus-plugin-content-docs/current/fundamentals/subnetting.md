@@ -6,6 +6,8 @@ keywords:
     - IPv4
 last_update:
     author: moritz-grimm
+tags:
+    - ap2
 ---
 
 # Subnetting (IPv4)

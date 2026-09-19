@@ -6,6 +6,8 @@ keywords:
     - status codes
     - response codes
     - HTTP status
+tags:
+    - ap2
 ---
 
 # HTTP Status Codes

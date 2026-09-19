@@ -5,6 +5,8 @@ keywords:
   - "Joint Venture"
   - "Cooperation"
   - "Strategic Alliance"
+tags:
+  - ap2
 ---
 
 # Joint Venture

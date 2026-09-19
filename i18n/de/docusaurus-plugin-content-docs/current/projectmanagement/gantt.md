@@ -5,6 +5,8 @@ keywords:
     - Gantt-Diagramm
     - Projektplanung
     - Projektmanagement
+tags:
+    - ap2
 ---
 
 # Gantt-Diagramm

@@ -8,6 +8,8 @@ keywords:
     - NetBIOS
     - mDNS
     - Name Resolution
+tags:
+    - ap2
 ---
 
 # Namensauflösung

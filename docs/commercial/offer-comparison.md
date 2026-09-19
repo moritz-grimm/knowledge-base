@@ -8,6 +8,8 @@ keywords:
     - Purchasing
     - Quantitative Analysis
     - Qualitative Analysis
+tags:
+    - ap2
 ---
 
 # Offer Comparison

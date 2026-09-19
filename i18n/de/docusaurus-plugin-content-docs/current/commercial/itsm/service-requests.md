@@ -10,6 +10,8 @@ keywords:
   - "First Level Support"
   - "Issue-Tracking-System"
   - "Knowledge Base"
+tags:
+  - ap2
 ---
 
 # Serviceanfragen einordnen

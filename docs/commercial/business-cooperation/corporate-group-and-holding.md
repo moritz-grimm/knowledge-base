@@ -6,6 +6,8 @@ keywords:
   - "Holding"
   - "Subsidiary"
   - "Parent Company"
+tags:
+  - ap2
 ---
 
 # Corporate Group and Holding

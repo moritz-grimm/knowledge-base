@@ -10,6 +10,8 @@ keywords:
     - "3NF"
     - "Normal Forms"
     - "Relational Database"
+tags:
+    - ap2
 ---
 
 # Normalization

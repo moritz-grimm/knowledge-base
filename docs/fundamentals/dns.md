@@ -10,6 +10,8 @@ keywords:
     - Reverse Lookup
     - Recursive Query
     - Iterative Query
+tags:
+    - ap2
 ---
 
 # DNS (Domain Name System)

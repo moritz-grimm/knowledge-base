@@ -9,6 +9,8 @@ keywords:
     - Einkauf
     - Quantitative Analyse
     - Qualitative Analyse
+tags:
+    - ap2
 ---
 
 # Angebotsvergleich

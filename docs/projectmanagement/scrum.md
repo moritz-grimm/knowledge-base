@@ -5,6 +5,8 @@ keywords:
     - SCRUM
     - Agile
     - Sprints
+tags:
+    - ap2
 ---
 
 # Scrum

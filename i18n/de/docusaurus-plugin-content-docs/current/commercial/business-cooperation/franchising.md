@@ -7,6 +7,8 @@ keywords:
   - "Franchisenehmer"
   - "Geschäftsmodell"
   - "Unternehmenskooperation"
+tags:
+  - ap2
 ---
 
 # Franchising

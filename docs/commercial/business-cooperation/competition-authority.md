@@ -6,6 +6,8 @@ keywords:
   - "Bundeskartellamt"
   - "Antitrust"
   - "Merger Control"
+tags:
+  - ap2
 ---
 
 # Competition Authority

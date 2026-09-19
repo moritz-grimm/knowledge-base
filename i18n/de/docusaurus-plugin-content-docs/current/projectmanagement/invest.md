@@ -6,6 +6,8 @@ keywords:
     - User Stories
     - Agile
     - Scrum
+tags:
+    - ap2
 ---
 
 # INVEST Modell

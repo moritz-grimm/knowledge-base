@@ -7,6 +7,8 @@ keywords:
     - Software Licensing
     - Commercial Software
     - Free Software
+tags:
+    - ap2
 ---
 
 # Open Source vs. Proprietary Software

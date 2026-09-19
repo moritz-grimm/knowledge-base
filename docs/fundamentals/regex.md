@@ -2,15 +2,17 @@
 title: "Regular Expressions"
 description: "Overview of regular expression syntax, character classes, quantifiers, anchors, groups, lookaround, and common patterns."
 keywords:
-  - "Regular Expressions"
-  - "Regex"
-  - "Pattern Matching"
-  - "Character Classes"
-  - "Quantifiers"
-  - "Anchors"
-  - "Lookahead"
-  - "Lookbehind"
-  - "Groups"
+    - "Regular Expressions"
+    - "Regex"
+    - "Pattern Matching"
+    - "Character Classes"
+    - "Quantifiers"
+    - "Anchors"
+    - "Lookahead"
+    - "Lookbehind"
+    - "Groups"
+tags:
+    - ap2
 ---
 
 # Regular Expressions

@@ -10,6 +10,8 @@ keywords:
   - "Service Level Manager"
   - "KPI"
   - "Response Time"
+tags:
+  - ap2
 ---
 
 # Service Level Agreement (SLA)

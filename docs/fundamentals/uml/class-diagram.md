@@ -6,6 +6,8 @@ keywords:
     - Class Diagram
 last_update:
     author: moritz-grimm
+tags:
+    - ap2
 ---
 
 # Class Diagram

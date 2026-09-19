@@ -7,6 +7,8 @@ keywords:
     - Agile
     - Scrum
     - Requirements
+tags:
+    - ap2
 ---
 
 # INVEST Model

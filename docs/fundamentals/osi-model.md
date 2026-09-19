@@ -12,6 +12,8 @@ keywords:
     - Presentation Layer
     - Application Layer
     - Networking
+tags:
+    - ap2
 ---
 
 # OSI Model
