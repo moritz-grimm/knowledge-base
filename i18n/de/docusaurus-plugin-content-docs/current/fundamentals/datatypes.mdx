@@ -1,0 +1,226 @@
+---
+title: "Datentypen"
+description: "Primitive und zusammengesetzte Datentypen in Programmiersprachen, ihre Wertebereiche, ihr Speicherverbrauch und ihre Umwandlungsregeln."
+keywords:
+    - "Datentyp"
+    - "Datentypen"
+    - "Primitive Datentypen"
+    - "Zusammengesetzte Typen"
+    - "Integer"
+    - "Floating Point"
+    - "Boolean"
+    - "Character"
+    - "String"
+    - "Tuple"
+    - "Array"
+    - "Enum"
+    - "Typkonvertierung"
+    - "Wertebereiche"
+    - "Overflow"
+tags:
+    - ap2
+---
+
+# Datentypen
+
+## Überblick
+
+Ein Datentyp definiert drei Dinge für jede Variable, jeden Parameter und jeden Rückgabewert:
+
+- **Wertebereich:** Welche Werte gültig sind, z.B. `true` und `false` für einen boolean
+- **Speicherverbrauch:** Wie viele Bytes für einen Wert reserviert sind
+- **Operationen:** Was mit dem Wert getan werden kann, z.B. bedeutet `+` bei Zahlen eine Addition, bei Strings jedoch eine Verkettung
+
+| Kategorie           | Beinhaltet                         | Beispiele                            |
+| ------------------- | ---------------------------------- | ------------------------------------ |
+| **Primitiv**        | genau ein unteilbarer Wert         | `int`, `double`, `boolean`, `char`   |
+| **Zusammengesetzt** | mehrere Werte unter einem Namen    | array, tuple, record, object, string |
+| **Abstrakt**        | ein Vertrag, kein konkretes Layout | interface, generischer Typparameter  |
+
+:::info
+Die Typnamen und Größen folgen der üblichen C/Java/C# Sprachfamilie. Andere Sprachen unterscheiden sich: Integer in Python haben beliebige Genauigkeit, JavaScript verfügt über einen einzigen `number`-Typ, welcher auf einem 64-Bit-Float basiert, und Go benennt seine Typen anhand der Breite (`int32`, `uint64`).
+:::
+
+---
+
+## Primitive Datentypen
+
+### Integer-Typen
+
+Integer speichern ganze Zahlen ohne Bruchteil. Der Wertebereich lässt sich direkt aus der Anzahl der Bits `n` ableiten:
+
+```text
+signed:    -2^(n-1)  to  2^(n-1) - 1
+unsigned:         0  to  2^n - 1
+```
+
+| Bits | Typischer Name | Wertebereich mit Vorzeichen                              | Wertebereich ohne Vorzeichen     |
+| ---- | -------------- | -------------------------------------------------------- | -------------------------------- |
+| 8    | `byte`         | -128 bis 127                                             | 0 bis 255                        |
+| 16   | `short`        | -32.768 bis 32.767                                       | 0 bis 65.535                     |
+| 32   | `int`          | -2.147.483.648 bis 2.147.483.647                         | 0 bis 4.294.967.295              |
+| 64   | `long`         | -9.223.372.036.854.775.808 bis 9.223.372.036.854.775.807 | 0 bis 18.446.744.073.709.551.615 |
+
+**Weitere Infos:**
+
+- Ein Bit einer vorzeichenbehafteten Ganzzahl codiert das Vorzeichen, weshalb der vorzeichenbehaftete Bereich etwa die Hälfte des vorzeichenlosen Bereichs abdeckt.
+- Die negative Seite reicht einen Schritt weiter als die positive Seite, da die Null zu den nicht-negativen Werten zählt.
+
+### Floating-Point-Typen
+
+Gleitkommatypen speichern Zahlen mit einem Bruchteil als Vorzeichen, Mantisse und Exponent gemäß IEEE 754.
+
+| Bits | Typischer Name    | Signifikante Dezimalstellen | Ungefähre Größenordnung |
+| ---- | ----------------- | --------------------------- | ----------------------- |
+| 32   | `float`, `single` | ungefähr 7                  | bis zu 3,4 x 10^38      |
+| 64   | `double`          | ungefähr 15 bis 16          | bis zu 1,8 x 10^308     |
+
+Da die Mantisse binär ist, lassen sich Dezimalbrüche wie `0.1` nicht exakt darstellen:
+
+```text
+0.1 + 0.2 = 0.30000000000000004
+```
+
+**Wichtige Überlegungen, die sich daraus ergeben:**
+
+- Gleitkommawerte sollten niemals mit `==` verglichen werden, sondern anhand einer kleinen Toleranz.
+- Geldbeträge sollten nicht als `float` oder `double` gespeichert werden, sondern als [Festkomma-Typ](#fixed-point-typen) oder als ganzzahlige Cent-Angabe.
+
+### Fixed-Point-Typen
+
+Ein Fixed-Point-Typ speichert eine feste Anzahl von Dezimalstellen. Unter der Haube wird der Wert als Ganzzahl dargestellt, die mit einer Zehnerpotenz skaliert ist. So wird beispielsweise `12,34` als `1234` mit einer Skalierung von 2 gespeichert. Dezimalbrüche werden somit exakt dargestellt, was bei einem Floating-Point-Typ nicht möglich ist.
+
+**Beispiel:**
+
+`DECIMAL(10, 2)` bedeutet insgesamt 10 Ziffern, davon 2 hinter dem Komma, sodass davor 8 Ziffern verbleiben.
+
+Der Preis für diese Genauigkeit sind Rechenoperationen, die deutlich langsamer sind als bei `double`, sowie ein höherer Speicherbedarf. Festkommatypen werden daher dort eingesetzt, wo Genauigkeit unerlässlich ist, vor allem bei Geldbeträgen, Steuersätzen und Rechnungsbeträgen, nicht jedoch bei Messwerten oder Grafiken.
+
+### Boolean
+
+Ein boolean enthält genau einen der beiden Wahrheitswerte `true` und `false` und ist der Ergebnistyp jeder Vergleichs- und logischen Operation (`&&`, `||`, `!`). Obwohl ein einzelnes Bit eigentlich ausreichen würde, wird in der Regel mindestens ein Byte reserviert, da der Speicher byteweise adressiert wird.
+
+### Character
+
+Ein Character-Typ enthält ein einzelnes Zeichen, gespeichert als numerischer Codepoint einer Zeichenkodierung.
+
+| Encoding | Größe pro Zeichen      | Bereich                                               |
+| -------- | ---------------------- | ----------------------------------------------------- |
+| ASCII    | 1 Byte (7 Bit genutzt) | 128 Zeichen, keine Umlaute                            |
+| UTF-8    | 1 bis 4 Bytes          | vollständiges Unicode, ASCII-kompatibel               |
+| UTF-16   | 2 oder 4 Bytes         | vollständiges Unicode, genutzt von Java und C# `char` |
+
+**Fun Fact:** Da ein Zeichen als Zahl gespeichert wird, lassen sich daran arithmetische und Vergleichsoperationen durchführen: `'A' + 1` ergibt `'B'`, und `'a' < 'b'` ist `true`.
+
+---
+
+## Zusammengesetzte Datentypen
+
+### String
+
+Ein String ist eine Sequenz von Zeichen. Zwei Design-Entscheidungen unterscheiden die Implementierungen voneinander:
+
+- **Länge:** fest (im Anwendungscode selten) oder variabel
+- **Veränderlichkeit:** unveränderlich in Java, C# und Python, veränderbar in C++ und Rust
+
+Ist ein String unveränderlich, wird bei jeder Änderung ein neues Objekt erstellt. Das Erstellen eines Strings durch wiederholte Verkettung innerhalb einer Schleife führt daher bei jedem Durchlauf zu einer Kopie des gesamten Textes und wird durch einen Builder-Typ (`StringBuilder`, `StringBuffer`) ersetzt.
+
+### Array
+
+Ein Array speichert eine feste Anzahl an Elementen **desselben Typs** unter einem Namen. Der Zugriff erfolgt über einen null-basierten Index.
+
+```text
+scores = [17, 42, 8, 23]
+
+scores[0] = 17
+scores[3] = 23
+```
+
+Eigenschaften:
+
+- Die Größe wird bei der Erstellung festgelegt, daher ist für eine Vergrößerung ein neues Array und eine Kopie erforderlich.
+- Der Zugriff über den Index erfolgt in konstanter Zeit, da die Adresse als `start + index x elementSize` berechnet wird.
+- Mehrdimensionale Arrays (`matrix[row][column]`) bilden Tabellen und Gitter ab.
+
+### Tuple
+
+Ein Tuple gruppiert eine feste Anzahl an Werten, **möglicherweise unterschiedlicher Typen**, in einer festen Reihenfolge. Elemente werden anhand ihrer Position adressiert, nicht anhand ihres Namens.
+
+```text
+point    = (3, 7)
+httpCall = ("GET", "/users", 200)
+```
+
+Tuples sind nützlich, um aus einer Funktion mehrere Werte zurückzugeben, ohne dafür einen eigenen Typ deklarieren zu müssen. Sobald die Positionen eine Erklärung benötigen, ist ein Record die bessere Wahl.
+
+### Record, Struct und Object
+
+Ein Record (auch struct, oder ein Objekt einer Klasse) gruppiert Werte unterschiedlicher Typen unter **benannten** Feldern zusammen.
+
+```text
+Customer {
+    id:      int
+    name:    string
+    active:  boolean
+    revenue: decimal
+}
+```
+
+Im Gegensatz zu einem Tuple hat jedes Feld einen Namen, wodurch die Bedeutung jedes Werts eindeutig wird und der Typ erweitert werden kann, ohne dass bestehende Positionen beeinträchtigt werden.
+
+### Enumeration
+
+Ein enum definiert eine feste, benannte Menge zulässiger Werte.
+
+```text
+enum OrderState { NEW, PAID, SHIPPED, CANCELLED }
+```
+
+Der Vorteil gegenüber einer Magic Number oder einer losen String-Konstante: Der Compiler lehnt jeden Wert ab, der außerhalb der definierten Menge liegt, und alle gültigen Zustände sind an einer Stelle dokumentiert.
+
+### Collections
+
+Listen, Mengen, Maps und Warteschlangen sind zusammengesetzte Typen, die nicht vom Sprachkern, sondern von der Standardbibliothek bereitgestellt werden. Sie werden separat im Abschnitt „Datenstrukturen“ behandelt. {/* TODO: add link to datastructures.md here once it exists */}
+
+---
+
+## Typumwandlung
+
+Die Umwandlung eines Werts von einem Typ in einen anderen erfolgt entweder **implizit** (automatisch durch den Compiler) oder **explizit** (im Quellcode durch einen Typumwandlungsbefehl oder eine Konvertierungsfunktion veranlasst).
+
+| Richtung      | Bedeutung                                    | Beispiel        | Risiko             |
+| ------------- | -------------------------------------------- | --------------- | ------------------ |
+| **Widening**  | Ziel-Wertebereich enthält Quell-Wertebereich | `int` => `long` | keine, verlustfrei |
+| **Narrowing** | Ziel-Wertebereich ist kleiner                | `long` => `int` | Overflow, Kürzung  |
+
+```text
+implicit widening:   long total = 42;          // int fits into long
+explicit narrowing:  int  count = (int) 42L;   // cast required
+truncation:          int  n     = (int) 3.99;  // yields 3, not 4
+```
+
+Die Umwandlung zwischen einem String und einer Zahl ist keine Typumwandlung, sondern ein **Parsing** oder eine **Formatierung**, da sich die Speicherdarstellung vollständig ändert. Das Parsing hängt von der Eingabe ab und kann daher fehlschlagen, weshalb ein Fehler zurückgegeben oder eine Ausnahme ausgelöst wird.
+
+---
+
+## Häufige Fehler
+
+- **Integer Overflow:** In den meisten Programmiersprachen führt das Hinzufügen von 1 zum Maximalwert dazu, dass der Wert auf den Minimalwert zurückspringt, anstatt einen Fehler auszulösen.
+- **Integer Division:** `7 / 2` ergibt `3`, nicht `3.5`, solange beide Operanden ganze Zahlen sind.
+- **Gleitkomma-Vergleich:** `0.1 + 0.2 == 0.3` ergibt `false`.
+- **Geld als Gleitkommazahl:** Rundungsfehler akkumulieren sich über viele Operationen.
+- **Kürzung bei Narrowing:** Beim Umwandeln eines Gleitkommawerts in eine Ganzzahl wird der Bruchteil abgeschnitten, es erfolgt keine Rundung.
+- **Standardmäßig überdimensionierte Typen:** Ein `long`, wo ein `byte` ausreichen würde, verschwendet Speicherplatz in großen Arrays und Datensätzen.
+
+---
+
+## Den richtigen Datentyp wählen
+
+1. **Wertebereich:** der größte und kleinste Wert, der realistisch auftreten kann, einschließlich des erwarteten Wachstums
+2. **Präzision:** ob ein Bruchteil benötigt wird und ob dieser exakt sein muss (Geld) oder annähernd sein darf (Messwerte)
+3. **Speicherplatz und Performance:** relevant für große Arrays, embedded Systems und Netzwerktransfer, vernachlässigbar für einzelne Variablen
+4. **Semantik:** ob sich ungültige Werte bereits durch den Typ selbst ausschließen lassen, z.B. ein enum statt eines Strings oder ein boolean statt `0` und `1`, sodass ein falscher Wert bereits zur Kompilierzeit scheitert
+
+{/* ## See Also */}
+
+{/* TODO: comment back once a german translation exists: '- [Bit, Byte & Unit Conversions](./bit-byte-conversions.md): converting between bits, bytes and their decimal and binary multiples' */}

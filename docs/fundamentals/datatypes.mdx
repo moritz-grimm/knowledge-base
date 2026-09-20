@@ -1,0 +1,226 @@
+---
+title: "Data Types"
+description: "Primitive and composite data types in programming languages, their value ranges, memory usage and conversion rules."
+keywords:
+    - "Data Types"
+    - "Datatypes"
+    - "Primitive Types"
+    - "Composite Types"
+    - "Integer"
+    - "Floating Point"
+    - "Boolean"
+    - "Character"
+    - "String"
+    - "Tuple"
+    - "Array"
+    - "Enum"
+    - "Type Conversion"
+    - "Value Range"
+    - "Overflow"
+tags:
+    - ap2
+---
+
+# Data Types
+
+## Overview
+
+A data type defines three things for every variable, parameter and return value:
+
+- **Value range:** which values are valid, e.g. `true` and `false` for a boolean
+- **Memory usage:** how many bytes are reserved for one value
+- **Operations:** what may be done with the value, e.g. `+` meaning addition on numbers but concatenation on strings
+
+| Category      | Holds                             | Examples                             |
+| ------------- | --------------------------------- | ------------------------------------ |
+| **Primitive** | exactly one indivisible value     | `int`, `double`, `boolean`, `char`   |
+| **Composite** | several values under one name     | array, tuple, record, object, string |
+| **Abstract**  | a contract, not a concrete layout | interface, generic type parameter    |
+
+:::info
+The type names and sizes below follow the common C/Java/C# family. Other languages differ: Python integers have arbitrary precision, JavaScript has a single `number` type backed by a 64-bit float, and Go names its types by width (`int32`, `uint64`).
+:::
+
+---
+
+## Primitive Data Types
+
+### Integer Types
+
+Integers store whole numbers without a fractional part. The value range follows directly from the number of bits `n`:
+
+```text
+signed:    -2^(n-1)  to  2^(n-1) - 1
+unsigned:         0  to  2^n - 1
+```
+
+| Bits | Typical name | Signed range                                            | Unsigned range                  |
+| ---- | ------------ | ------------------------------------------------------- | ------------------------------- |
+| 8    | `byte`       | -128 to 127                                             | 0 to 255                        |
+| 16   | `short`      | -32,768 to 32,767                                       | 0 to 65,535                     |
+| 32   | `int`        | -2,147,483,648 to 2,147,483,647                         | 0 to 4,294,967,295              |
+| 64   | `long`       | -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 | 0 to 18,446,744,073,709,551,615 |
+
+**Further Info:**
+
+- One bit of a signed integer encodes the sign, which is why the signed range covers roughly half of the unsigned one.
+- The negative side reaches one step further than the positive side, because zero occupies a slot among the non-negative values.
+
+### Floating-Point Types
+
+Floating-point types store numbers with a fractional part as sign, mantissa and exponent according to IEEE 754.
+
+| Bits | Typical name      | Significant decimal digits | Approximate magnitude |
+| ---- | ----------------- | -------------------------- | --------------------- |
+| 32   | `float`, `single` | about 7                    | up to 3.4 x 10^38     |
+| 64   | `double`          | about 15 to 16             | up to 1.8 x 10^308    |
+
+Because the mantissa is binary, decimal fractions such as `0.1` have no exact representation:
+
+```text
+0.1 + 0.2 = 0.30000000000000004
+```
+
+**Important considerations that follow from this:**
+
+- Floating-point values are never compared with `==`, but against a small tolerance
+- Monetary amounts are not stored as `float` or `double`, but in a [fixed-point type](#fixed-point-types) or as an integer number of cents
+
+### Fixed-Point Types
+
+A fixed-point type stores a fixed number of decimal places. Internally the value is an integer scaled by a power of ten, so `12.34` is held as `1234` with a scale of 2. Decimal fractions are therefore represented exactly, which is what a floating-point type cannot do.
+
+**Example:**
+
+`DECIMAL(10, 2)` means 10 digits in total, 2 of them after the decimal point, which leaves 8 digits before it.
+
+The price for this exactness is arithmetic that is considerably slower than `double` and a larger memory footprint. Fixed-point types are therefore used where exactness is mandatory, above all for monetary amounts, tax rates and invoice totals, not for measurements or graphics.
+
+### Boolean
+
+A boolean holds exactly one of the two truth values `true` and `false` and is the result type of every comparison and logical operation (`&&`, `||`, `!`). Although a single bit would suffice, at least one byte is usually reserved, because memory is addressed byte-wise.
+
+### Character
+
+A character type holds a single character, stored as the numeric code point of a character encoding.
+
+| Encoding | Size per character   | Range                                    |
+| -------- | -------------------- | ---------------------------------------- |
+| ASCII    | 1 byte (7 bits used) | 128 characters, no umlauts               |
+| UTF-8    | 1 to 4 bytes         | full Unicode, ASCII-compatible           |
+| UTF-16   | 2 or 4 bytes         | full Unicode, used by Java and C# `char` |
+
+**Fun Fact:** Since a character is stored as a number, arithmetic and comparison work on it: `'A' + 1` yields `'B'`, and `'a' < 'b'` is `true`.
+
+---
+
+## Composite Data Types
+
+### String
+
+A string is a sequence of characters. Two design decisions distinguish the implementations:
+
+- **Length:** fixed (rare in application code) or variable
+- **Mutability:** immutable in Java, C# and Python, mutable in C++ and Rust
+
+Where a string is immutable, every modification creates a new object. Building a string by repeated concatenation inside a loop therefore copies the whole text on each pass and is replaced by a builder type (`StringBuilder`, `StringBuffer`).
+
+### Array
+
+An array stores a fixed number of elements **of the same type** under one name, accessed by a zero-based index.
+
+```text
+scores = [17, 42, 8, 23]
+
+scores[0] = 17
+scores[3] = 23
+```
+
+Characteristics:
+
+- The size is fixed at creation time, therefore growing requires a new array and a copy
+- Access by index takes constant time, because the address is calculated as `start + index x elementSize`
+- Multi-dimensional arrays (`matrix[row][column]`) model tables and grids
+
+### Tuple
+
+A tuple groups a fixed number of values **of possibly different types** in a fixed order. Elements are addressed by position, not by name.
+
+```text
+point    = (3, 7)
+httpCall = ("GET", "/users", 200)
+```
+
+Tuples are useful for returning several values from a function without declaring a dedicated type. As soon as the positions need explanation, a record is the better choice.
+
+### Record, Struct and Object
+
+A record (also struct, or an object of a class) groups values of different types under **named** fields.
+
+```text
+Customer {
+    id:      int
+    name:    string
+    active:  boolean
+    revenue: decimal
+}
+```
+
+Unlike a tuple, every field carries a name, which makes the meaning of each value explicit and allows the type to be extended without breaking existing positions.
+
+### Enumeration
+
+An enum defines a fixed, named set of permitted values.
+
+```text
+enum OrderState { NEW, PAID, SHIPPED, CANCELLED }
+```
+
+The advantage over a magic number or a loose string constant: the compiler rejects any value outside the set, and all valid states are documented in one place.
+
+### Collections
+
+Lists, sets, maps and queues are composite types provided by the standard library rather than by the language core. They are covered separately under data structures. {/* TODO: add link to datastructures.md here once it exists */}
+
+---
+
+## Type Conversion
+
+Converting a value from one type to another is either **implicit** (performed automatically by the compiler) or **explicit** (requested in the source code by a cast or a conversion function).
+
+| Direction     | Meaning                            | Example         | Risk                 |
+| ------------- | ---------------------------------- | --------------- | -------------------- |
+| **Widening**  | target range contains source range | `int` => `long` | none, lossless       |
+| **Narrowing** | target range is smaller            | `long` => `int` | overflow, truncation |
+
+```text
+implicit widening:   long total = 42;          // int fits into long
+explicit narrowing:  int  count = (int) 42L;   // cast required
+truncation:          int  n     = (int) 3.99;  // yields 3, not 4
+```
+
+Converting between a string and a number is not a cast but **parsing** or **formatting**, because the memory representation changes completely. Parsing depends on the input and can therefore fail, which is why it returns an error or throws an exception.
+
+---
+
+## Common Pitfalls
+
+- **Integer overflow:** adding 1 to the maximum value wraps around to the minimum value in most languages instead of raising an error
+- **Integer division:** `7 / 2` yields `3`, not `3.5`, as long as both operands are integers
+- **Float comparison:** `0.1 + 0.2 == 0.3` evaluates to `false`
+- **Money as float:** rounding errors accumulate over many operations
+- **Truncation on narrowing:** casting a floating-point value to an integer cuts off the fractional part, it does not round
+- **Oversized types by default:** a `long` where a `byte` suffices wastes memory in large arrays and records
+
+---
+
+## Choosing a Data Type
+
+1. **Value range:** the largest and smallest value that can legitimately occur, including expected growth
+2. **Precision:** whether a fractional part is needed, and whether it has to be exact (money) or may be approximate (measurements)
+3. **Memory and performance:** relevant for large arrays, embedded systems and network transfer, negligible for single variables
+4. **Semantics:** whether invalid values can be ruled out by the type itself, e.g. an enum instead of a string or a boolean instead of `0` and `1`, so that a wrong value fails at compile time
+
+## See Also
+
+- [Bit, Byte & Unit Conversions](./bit-byte-conversions.md): converting between bits, bytes and their decimal and binary multiples
