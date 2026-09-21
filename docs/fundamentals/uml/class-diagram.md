@@ -94,7 +94,7 @@ A special type of association where one class is a container for another, but th
 Library ◇────── Book
 ```
 
-**Key characteristic:** If the container is destroyed, the contained objects survive.
+**Remember:** If the container is destroyed, the contained objects survive.
 
 ### Composition (Strong Ownership)
 
@@ -108,9 +108,9 @@ A stronger form of aggregation where the contained class cannot exist without th
 Book ◆────── Chapter
 ```
 
-**Key characteristic:** If the container is destroyed, the contained objects are also destroyed.
+**Remember:** If the container is destroyed, the contained objects are also destroyed.
 
-### Inheritance (Is-A)
+### Inheritance
 
 Represents a relationship where one class (subclass/child) inherits attributes and methods from another class (superclass/parent).
 
@@ -147,7 +147,7 @@ Cardinality specifies how many instances of one class can be associated with ins
 Library 1 ────── 0..* Book
 ```
 
-*One library can have zero or more books*
+Read: One library can have zero or more books
 
 ## Naming Conventions
 
@@ -163,7 +163,7 @@ Library 1 ────── 0..* Book
 
 3. **No umlauts or special characters**
    - ✅ `doppelgaenger`
-   - ❌ `doppelgänger` → use `doppelgaenger` (since 'ä' becomes 'ae')
+   - ❌ `doppelgänger`
 
 4. **Boolean attributes:** Prefix with `is`, `has`, or `can`
    - ✅ `isActive`, `hasPermission`
@@ -411,6 +411,13 @@ A simple library management system with books, magazines, users, and borrowing f
 3. **Inheritance:** Both `Buch` and `Zeitschrift` inherit common behavior from `Medium`
 4. **Cardinality:** A book must have at least one chapter (`1..*`), but a library can have zero media (`0..*`)
 
+## Common Mistakes to Avoid
+
+1. **Using public attributes:** Almost always use private or protected
+2. **Forgetting cardinality:** Always specify how many instances can be related
+3. **Wrong relationship type:** Understand the difference between aggregation and composition
+4. **Inconsistent naming:** Use camelCase for attributes/methods, PascalCase for classes
+
 ## Tools for Creating Class Diagrams
 
 - draw.io / diagrams.net (Free, browser-based)
@@ -419,16 +426,9 @@ A simple library management system with books, magazines, users, and borrowing f
 - Visual Paradigm
 - StarUML
 
-## Common Mistakes to Avoid
+## See Also
 
-1. **Using public attributes:** Almost always use private or protected
-2. **Forgetting cardinality:** Always specify how many instances can be related
-3. **Wrong relationship type:** Understand the difference between aggregation and composition
-4. **Inconsistent naming:** Use camelCase for attributes/methods, PascalCase for classes
-
-## Related Concepts
-
-- Object Diagram (shows instances of classes)
-- Sequence Diagram (shows interactions over time)
-- Use Case Diagram (shows system functionality)
-- ER Diagram (database modeling)
+- [Object Diagram](./further-uml-diagrams.md#object-diagram): a concrete snapshot of instances at one point in time
+- [Sequence Diagram](./sequence-diagram.md): the interaction between objects of these classes over time
+- [Use Case Diagram](./use-case-diagram.md): the behavioural counterpart, showing which services these classes provide to actors
+- [ER Model](./er-model.md): the relational counterpart, describing how these classes' attributes are persisted in tables
