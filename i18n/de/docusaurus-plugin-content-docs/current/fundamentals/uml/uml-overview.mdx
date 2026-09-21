@@ -1,0 +1,201 @@
+---
+title: "UML-Überblick"
+description: "Überblick über die Unified Modeling Language: die 14 Diagrammtypen der UML 2.5, die Einteilung in Struktur- und Verhaltensdiagramme mit den Interaktionsdiagrammen als Untergruppe, typische Einsatzgebiete, Kriterien für die Auswahl des passenden Diagramms sowie die Rolle der UML im Softwareentwurf."
+keywords:
+    - UML
+    - Unified Modeling Language
+    - UML 2.5
+    - Diagrammtypen
+    - Strukturdiagramm
+    - Verhaltensdiagramm
+    - Interaktionsdiagramm
+    - Modellierung
+    - Softwareentwurf
+    - OMG
+tags:
+    - ap2
+---
+
+# UML-Überblick
+
+## Überblick
+
+Die **Unified Modeling Language (UML)** ist eine standardisierte grafische Notation zur Modellierung von Softwaresystemen. Sie wird von der **Object Management Group (OMG)** gepflegt. Die aktuelle Fassung ist **UML 2.5** (seit 2017 in der Version 2.5.1) und definiert **14 Diagrammtypen**.
+
+Die UML adressiert ein praktisches Problem: Fließtext ist mehrdeutig, Quelltext ist für eine Diskussion zu detailliert. Ein Diagramm liegt dazwischen. Es zeigt den Ausschnitt eines Systems, um den es gerade geht, und lässt alles Übrige bewusst weg.
+
+Typische Einsatzgebiete:
+
+- Aufnahme von Anforderungen gemeinsam mit Auftraggebern, bevor etwas implementiert wird
+- Entwurf der statischen Struktur eines objektorientierten Systems
+- Klärung eines Ablaufs oder eines Algorithmus über Team- und Abteilungsgrenzen hinweg
+- Dokumentation eines bestehenden Systems zur Übergabe oder Erweiterung
+- Diskussion von Architekturentscheidungen, ohne den Quelltext lesen zu müssen
+
+---
+
+## Was die UML ist und was sie nicht ist
+
+Die UML **ist**:
+
+- eine **Notation**: ein festgelegter Vorrat an Symbolen mit definierter Bedeutung
+- ein **Standard**: dasselbe Symbol bedeutet in jedem Unternehmen und in jedem Werkzeug dasselbe
+- **sprachunabhängig**: ein Klassendiagramm sagt nichts über Java, C# oder TypeScript aus
+- **selektiv**: jedes Diagramm modelliert einen Aspekt, nie das gesamte System
+
+Die UML **ist nicht**:
+
+{/* TODO: add link to scrum.md once german entry exists */}
+
+- **eine Methode oder ein Vorgehensmodell:** Die UML sagt nichts darüber aus, *wann* welches Diagramm entsteht und von wem. Das legt das Vorgehensmodell fest (Scrum, V-Modell, Unified Process). Die UML ist die Notation, das Vorgehensmodell ist die Methode.
+- **eine Programmiersprache:** Aus Modellen lassen sich Codegerüste erzeugen, ein Diagramm ist jedoch nicht ausführbar und ersetzt keine Implementierung.
+- **eine vollständige Beschreibung:** Ein Modell ist immer eine Vereinfachung. Ein Diagramm, das alles enthält, was auch der Quelltext enthält, hat gegenüber dem Quelltext keinen Vorteil.
+- **ein Standard für Datenmodellierung:** Das [ER-Modell](../databases/er-model.md) ist eine eigene Notation für den Datenbankentwurf und gehört nicht zur UML, auch wenn ein Klassendiagramm ähnliche Sachverhalte ausdrücken kann.
+- **eine Garantie für Qualität:** Ein schlecht geschnittenes System bleibt schlecht geschnitten, egal wie sauber es gezeichnet ist.
+
+Das häufigste Missverständnis in diesem Bereich besteht darin, die UML für eine Methodik zu halten. Ein Anwendungsfalldiagramm zeichnen zu können, sagt nichts darüber aus, *wann* Anforderungen erhoben werden, *wer* sie freigibt und *wie* sie in die Projektplanung einfließen.
+
+---
+
+## Die 14 Diagrammtypen
+
+Die UML 2.5 teilt ihre Diagramme in zwei Hauptgruppen ein. **Strukturdiagramme** beschreiben, woraus ein System besteht, **Verhaltensdiagramme** beschreiben, was es tut. Die **Interaktionsdiagramme** sind eine Untergruppe der Verhaltensdiagramme: Sie beschreiben Verhalten über den Austausch von Nachrichten zwischen Beteiligten.
+
+| #   | Diagramm                                                    | Gruppe                  | Beantwortet die Frage                                                                           |
+| --- | ----------------------------------------------------------- | ----------------------- | ----------------------------------------------------------------------------------------------- |
+| 1   | [Klassendiagramm](./class-diagram.md)                       | Struktur                | Welche Klassen gibt es, was enthalten sie, wie hängen sie zusammen?                             |
+| 2   | [Objektdiagramm](./further-uml-diagrams.md)                 | Struktur                | Welche konkreten Objekte und Werte existieren zu einem Zeitpunkt?                               |
+| 3   | [Paketdiagramm](./further-uml-diagrams.md)                  | Struktur                | Wie wird ein großes Modell in Gruppen aufgeteilt, was hängt wovon ab?                           |
+| 4   | [Komponentendiagramm](./component-diagram.md)               | Struktur                | Aus welchen austauschbaren Teilen besteht die Software, welche Schnittstellen haben sie?        |
+| 5   | [Kompositionsstrukturdiagramm](./further-uml-diagrams.md)   | Struktur                | Wie ist ein einzelnes Element intern aus zusammenwirkenden Teilen aufgebaut?                    |
+| 6   | [Verteilungsdiagramm](./deployment-diagram.md)              | Struktur                | Welche Artefakte laufen auf welchen Knoten, und wie sind diese verbunden?                       |
+| 7   | [Profildiagramm](./further-uml-diagrams.md)                 | Struktur                | Wie wird die UML selbst für eine Domäne erweitert (Stereotypen, Eigenschaftswerte)?             |
+| 8   | [Anwendungsfalldiagramm](./use-case-diagram.md)             | Verhalten               | Was leistet das System, und für welche Akteure?                                                 |
+| 9   | [Aktivitätsdiagramm](./activity-diagram.md)                 | Verhalten               | In welcher Reihenfolge laufen Schritte ab, inklusive Verzweigungen, Schleifen und Parallelität? |
+| 10  | [Zustandsdiagramm](./state-machine-diagram.md)              | Verhalten               | Welche Zustände kann ein Objekt annehmen, welche Ereignisse lösen Übergänge aus?                |
+| 11  | [Sequenzdiagramm](./sequence-diagram.md)                    | Verhalten / Interaktion | Welche Nachrichten tauschen Objekte in welcher zeitlichen Reihenfolge aus?                      |
+| 12  | [Kommunikationsdiagramm](./further-uml-diagrams.md)         | Verhalten / Interaktion | Wer spricht mit wem, und wie sind die Beteiligten verbunden?                                    |
+| 13  | [Zeitverlaufsdiagramm](./further-uml-diagrams.md)           | Verhalten / Interaktion | Wie ändern sich Zustände entlang einer Zeitachse, welche Zeitbedingungen gelten?                |
+| 14  | [Interaktionsübersichtsdiagramm](./further-uml-diagrams.md) | Verhalten / Interaktion | Wie werden mehrere Interaktionen zu einem Gesamtablauf zusammengesetzt?                         |
+
+Das Symbolset, das alle gemeinsam nutzen, wird in den [Notationsgrundlagen](./uml-notation-basics.md) beschrieben.
+
+---
+
+## Strukturdiagramme
+
+Strukturdiagramme zeigen ein System im Ruhezustand. Zeit spielt in ihnen keine Rolle, sie enthalten keine Ausführungsreihenfolge.
+
+- **Klassendiagramm:** das zentrale Diagramm des objektorientierten Entwurfs. Klassen mit Attributen und Operationen, verbunden durch Assoziation, Aggregation, Komposition, Generalisierung und Abhängigkeit, ergänzt um Sichtbarkeiten und Multiplizitäten.
+- **Objektdiagramm:** eine Momentaufnahme eines Klassendiagramms. Statt der Klasse `Order` zeigt es das Objekt `order42` mit seinen tatsächlichen Attributwerten. Nützlich, um ein komplexes Beziehungsgeflecht an einem Beispiel greifbar zu machen.
+- **Paketdiagramm:** fasst Modellelemente zu Paketen zusammen und zeigt die Abhängigkeiten zwischen ihnen. Macht die beabsichtigte Schichtung einer Architektur sichtbar und deckt zyklische Abhängigkeiten auf.
+- **Komponentendiagramm:** Komponenten mit angebotenen und benötigten Schnittstellen (Ball-and-Socket-Notation). Beschreibt, wie die Software in austauschbare Einheiten geschnitten ist.
+- **Kompositionsstrukturdiagramm:** blickt in einen einzelnen Klassifizierer hinein und zeigt dessen Teile, Ports und Konnektoren. Außerhalb von Embedded- und Systems-Engineering selten im Einsatz.
+- **Verteilungsdiagramm:** Knoten (Hardware oder Ausführungsumgebungen), die darauf verteilten Artefakte und die Kommunikationswege dazwischen. Die Brücke vom Softwareentwurf zum Betrieb.
+- **Profildiagramm:** der Erweiterungsmechanismus der UML selbst. Stereotypen, Eigenschaftswerte und Bedingungen passen die Sprache an eine Domäne an, zum Beispiel `«entity»` oder `«controller»`.
+
+---
+
+## Verhaltensdiagramme
+
+Verhaltensdiagramme zeigen, was im zeitlichen Verlauf geschieht: in welcher Reihenfolge, ausgelöst wodurch, mit welchem Ergebnis.
+
+- **Anwendungsfalldiagramm:** Akteure, Anwendungsfälle und die Systemgrenze. Es ist bewusst grob und dient als Inhaltsverzeichnis der Anforderungen, nicht als Ablaufbeschreibung.
+- **Aktivitätsdiagramm:** Kontrollfluss über Aktionen hinweg, mit Verzweigung, Zusammenführung, Parallelisierung und Synchronisation, optional in Swimlanes gegliedert. Das UML-Diagramm, das dem klassischen Programmablaufplan am nächsten kommt, geeignet für Geschäftsprozesse ebenso wie für Algorithmen.
+- **Zustandsdiagramm:** der Lebenszyklus eines einzelnen Objekts. Zustände, durch Ereignisse ausgelöste Übergänge, Guards sowie Eintritts- und Austrittsaktionen. Das Mittel der Wahl, sobald ein Objekt abhängig von seiner Vorgeschichte unterschiedlich auf dieselbe Eingabe reagiert.
+
+### Interaktionsdiagramme
+
+Alle vier Interaktionsdiagramme beschreiben denselben Gegenstand aus unterschiedlichen Blickwinkeln: Beteiligte, die Nachrichten austauschen.
+
+- **Sequenzdiagramm:** Lebenslinien nebeneinander angeordnet, die Zeit läuft nach unten, Nachrichten sind Pfeile zwischen den Lebenslinien. Der stärkste Fokus auf der zeitlichen Reihenfolge, weshalb es das am weitesten verbreitete der vier ist.
+- **Kommunikationsdiagramm:** dieselbe Information als Netz verbundener Beteiligter angeordnet, die Nachrichten werden nummeriert statt über ihre Position geordnet. Der stärkste Fokus darauf, *wer mit wem verbunden ist*.
+- **Zeitverlaufsdiagramm:** Zustandswechsel von Beteiligten, aufgetragen gegen eine explizite Zeitachse. Eingesetzt dort, wo Dauern und Zeitbedingungen zählen, etwa in Echtzeit- und Embedded-Systemen.
+- **Interaktionsübersichtsdiagramm:** ein Aktivitätsdiagramm, dessen Knoten vollständige Interaktionen statt einzelner Aktionen sind. Dient dazu, mehrere Sequenzdiagramme zu einem Gesamtablauf anzuordnen.
+
+Sequenz- und Kommunikationsdiagramm sind semantisch weitgehend gleichwertig, viele Werkzeuge rechnen das eine automatisch in das andere um.
+
+---
+
+## Auswahl des passenden Diagramms
+
+| Zu beantwortende Frage                                              | Geeignetes Diagramm    |
+| ------------------------------------------------------------------- | ---------------------- |
+| Wer nutzt das System, und wofür?                                    | Anwendungsfalldiagramm |
+| In welcher Reihenfolge laufen die Schritte eines Ablaufs?           | Aktivitätsdiagramm     |
+| Wie ist ein Algorithmus vor der Codierung aufgebaut?                | Aktivitätsdiagramm     |
+| Welche Klassen werden benötigt, und wie hängen sie zusammen?        | Klassendiagramm        |
+| Wie sehen die Daten in einem konkreten Fall aus?                    | Objektdiagramm         |
+| Wie arbeiten Objekte zusammen, um einen Anwendungsfall zu erfüllen? | Sequenzdiagramm        |
+| Welche Zustände durchläuft eine Bestellung, ein Ticket, ein Gerät?  | Zustandsdiagramm       |
+| Wie ist das System in austauschbare Module geschnitten?             | Komponentendiagramm    |
+| Welcher Server, welcher Container, welcher Client?                  | Verteilungsdiagramm    |
+| Wie bleibt ein großes Modell übersichtlich?                         | Paketdiagramm          |
+| Welche Zeitbedingungen sind einzuhalten?                            | Zeitverlaufsdiagramm   |
+
+Faustregeln für die Auswahl:
+
+- **Eine Frage, ein Diagramm.** Ein Diagramm, das drei Fragen gleichzeitig beantwortet, beantwortet meist keine davon klar.
+- **Struktur oder Verhalten zuerst?** Anforderungen beginnen beim Verhalten (Anwendungsfall, Aktivität), die Umsetzung beginnt bei der Struktur (Klasse, Komponente).
+- **Der Abstraktionsgrad bleibt konstant.** Ein Diagramm, das Fachbegriffe mit Datenbankspalten mischt, ist für beide Zielgruppen schwer zu gebrauchen.
+- **Ein Diagramm, das niemand liest, ist Verschwendung.** Die Zielgruppe bestimmt den Detailgrad: Auftraggeber brauchen Anwendungsfall- und Aktivitätsdiagramme, Entwickelnde Klassen- und Sequenzdiagramme, der Betrieb Verteilungsdiagramme.
+- **Pflegeaufwand zählt mit.** Diagramme, die vom Quelltext abweichen, sind schlechter als gar keine Diagramme, weil ihnen vertraut wird, obwohl sie falsch sind.
+
+In der Praxis trägt eine kleine Zahl von Diagrammtypen nahezu die gesamte Arbeit: Klassen-, Aktivitäts-, Anwendungsfall-, Sequenz- und Zustandsdiagramm. Die übrigen Typen sind spezialisiert und tauchen nur auf, wenn ihre spezifische Frage gestellt wird.
+
+---
+
+## UML im Softwareentwurf
+
+Die UML ist an kein bestimmtes Vorgehensmodell gebunden, ihre Diagramme lassen sich den Phasen der Entwicklung jedoch naheliegend zuordnen.
+
+| Phase                  | Frage                                         | Typische Diagramme                            |
+| ---------------------- | --------------------------------------------- | --------------------------------------------- |
+| Anforderungsanalyse    | Was soll das System leisten?                  | Anwendungsfall, Aktivität                     |
+| Fachliche Modellierung | Welche Begriffe gibt es in der Domäne?        | Klasse (als Domänenmodell), Objekt            |
+| Entwurf                | Wie ist die Lösung aufgebaut?                 | Klasse, Sequenz, Zustand                      |
+| Architektur            | Wie wird das System geschnitten und verteilt? | Komponente, Paket, Verteilung                 |
+| Implementierung        | Wie wird der Entwurf umgesetzt?               | Klassendiagramm als Codegerüst                |
+| Test                   | Welche Abläufe sind abzudecken?               | Aktivität, Sequenz, Zustand                   |
+| Dokumentation          | Wie funktioniert das System?                  | Alle genannten, auf das Wesentliche reduziert |
+
+Modellierung im Softwareentwurf dient drei Zwecken:
+
+- **Kommunikation:** ein gemeinsames Bild für Beteiligte mit unterschiedlichem Hintergrund
+- **Analyse:** Widersprüche und Lücken werden sichtbar, bevor sie implementiert sind
+- **Dokumentation:** ein System lässt sich verstehen, ohne den gesamten Quelltext zu lesen
+
+---
+
+## Häufige Fehler
+
+1. **UML als Methode verstanden:** Die UML definiert Symbole, kein Vorgehen. Das Vorgehen kommt aus dem Vorgehensmodell.
+2. **Interaktionsdiagramme als dritte Hauptgruppe gezählt:** Sie sind eine Untergruppe der Verhaltensdiagramme.
+3. **Aktivitäts- und Sequenzdiagramm verwechselt:** Ein Aktivitätsdiagramm zeigt den Kontrollfluss zwischen Aktionen, ein Sequenzdiagramm die Nachrichten zwischen Objekten.
+4. **Klassen- und Objektdiagramm verwechselt:** Ein Klassendiagramm zeigt Typen, ein Objektdiagramm Instanzen mit konkreten Werten.
+5. **Anwendungsfalldiagramm als Ablaufbeschreibung benutzt:** Es listet auf, was das System anbietet, der Ablauf innerhalb eines Anwendungsfalls gehört in ein Aktivitätsdiagramm.
+6. **ER-Modell zu den UML-Diagrammen gezählt:** Es ist eine eigene Notation für die Datenmodellierung.
+7. **Alles modelliert:** Ein Modell, das das gesamte System in voller Detailtiefe abbildet, kostet mehr, als es einspart, und ist nach der ersten Änderung veraltet.
+8. **Notation selbst erfunden:** Der Wert der UML liegt darin, dass Symbole überall dasselbe bedeuten, selbst erfundene Pfeile zerstören genau das.
+
+---
+
+## Werkzeuge
+
+- draw.io / diagrams.net (kostenlos, browserbasiert, UML-Formenbibliothek enthalten)
+- PlantUML (textbasiert, das Diagramm wird aus Quelltext erzeugt und lässt sich versionieren)
+- Mermaid (textbasiert, wird auf vielen Plattformen direkt in Markdown gerendert)
+- Visual Paradigm, StarUML, Enterprise Architect, Lucidchart (kommerziell, mit kostenlosen Tarifen)
+
+## Siehe auch
+
+- [UML-Notationsgrundlagen](./uml-notation-basics.md): die Symbole und Beziehungsarten, die alle Diagrammtypen gemeinsam nutzen
+- [Klassendiagramm](./class-diagram.md): das zentrale Strukturdiagramm des objektorientierten Entwurfs
+- [Aktivitätsdiagramm](./activity-diagram.md): Abläufe und Algorithmen als Kontrollfluss
+- [Anwendungsfalldiagramm](./use-case-diagram.md): Systemgrenze, Akteure und das Leistungsangebot des Systems
+- [Sequenzdiagramm](./sequence-diagram.md): zeitlicher Nachrichtenaustausch zwischen Objekten
+- [Zustandsdiagramm](./state-machine-diagram.md): der Lebenszyklus eines Objekts als Zustände und Übergänge
+- [Komponentendiagramm](./component-diagram.md): der Schnitt in austauschbare Einheiten mit Schnittstellen
+- [Verteilungsdiagramm](./deployment-diagram.md): Verteilung von Artefakten auf Knoten
+- [Weitere UML-Diagramme](./further-uml-diagrams.md): Objekt-, Paket-, Kompositionsstruktur-, Profil-, Kommunikations-, Zeitverlaufs- und Interaktionsübersichtsdiagramm
+- [ER-Modell](../databases/er-model.md): Datenmodellierung außerhalb der UML

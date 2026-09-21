@@ -1,0 +1,199 @@
+---
+title: "UML Overview"
+description: "Overview of the Unified Modeling Language: the 14 diagram types of UML 2.5, the split into structure and behavioural diagrams with interaction diagrams as a subgroup, typical applications, criteria for choosing the right diagram, and the role of UML in software design."
+keywords:
+    - UML
+    - Unified Modeling Language
+    - UML 2.5
+    - Diagram Types
+    - Structure Diagram
+    - Behavioural Diagram
+    - Interaction Diagram
+    - Modelling
+    - Software Design
+    - OMG
+tags:
+    - ap2
+---
+
+# UML Overview
+
+## Overview
+
+The **Unified Modeling Language (UML)** is a standardised graphical notation for modelling software systems. It is maintained by the **Object Management Group (OMG)**. The current version is **UML 2.5** (2.5.1 since 2017) and defines **14 diagram types**.
+
+UML addresses one practical problem: prose is ambiguous and source code is too detailed to discuss. A diagram sits between the two. It shows the part of a system that is currently under discussion and deliberately leaves out everything else.
+
+Typical applications:
+
+- Recording requirements together with clients before anything is implemented
+- Designing the static structure of an object-oriented system
+- Clarifying a process or an algorithm across team and department boundaries
+- Documenting an existing system so that it can be handed over or extended
+- Discussing architecture decisions without having to read the code
+
+---
+
+## What UML Is and What It Is Not
+
+UML **is**:
+
+- A **notation**: a fixed vocabulary of symbols with a defined meaning
+- A **standard**: the same symbol means the same thing in every company and every tool
+- **Language-independent**: a class diagram says nothing about Java, C# or TypeScript
+- **Selective**: every diagram models one aspect, never the whole system
+
+UML **is not**:
+
+- **A method or a process model:** UML says nothing about *when* which diagram is produced, or by whom. That is decided by the process model ([Scrum](../../projectmanagement/scrum.md), V-Model, Unified Process). UML is the notation, the process model is the method.
+- **A programming language:** models can be turned into code skeletons, but a diagram is not executable and does not replace an implementation.
+- **A complete description:** a model is always a simplification. A diagram that contains everything the code contains has no advantage over the code.
+- **A data modelling standard:** the [ER model](../databases/er-model.md) is a separate notation for database design and is not part of UML, even though a class diagram can express similar facts.
+- **A guarantee of quality:** a badly cut system stays badly cut, however neatly it is drawn.
+
+The most common misunderstanding in this area is treating UML as a methodology. Being able to draw a use case diagram says nothing about *when* requirements are collected, *who* approves them and *how* they enter the project plan.
+
+---
+
+## The 14 Diagram Types
+
+UML 2.5 splits its diagrams into two top-level groups. **Structure diagrams** describe what a system consists of, **behavioural diagrams** describe what it does. **Interaction diagrams** are a subgroup of the behavioural diagrams: they describe behaviour through the exchange of messages between participants.
+
+| #   | Diagram                                                   | Group                   | Answers the question                                                                  |
+| --- | --------------------------------------------------------- | ----------------------- | ------------------------------------------------------------------------------------- |
+| 1   | [Class diagram](./class-diagram.md)                       | Structure               | Which classes exist, what do they contain, how are they related?                      |
+| 2   | [Object diagram](./further-uml-diagrams.md)               | Structure               | Which concrete objects and values exist at one point in time?                         |
+| 3   | [Package diagram](./further-uml-diagrams.md)              | Structure               | How is a large model divided into groups, and what depends on what?                   |
+| 4   | [Component diagram](./component-diagram.md)               | Structure               | Which exchangeable parts does the software consist of, which interfaces do they have? |
+| 5   | [Composite structure diagram](./further-uml-diagrams.md)  | Structure               | How is a single element built internally from cooperating parts?                      |
+| 6   | [Deployment diagram](./deployment-diagram.md)             | Structure               | Which artifacts run on which nodes, and how are these connected?                      |
+| 7   | [Profile diagram](./further-uml-diagrams.md)              | Structure               | How is UML itself extended for a domain (stereotypes, tagged values)?                 |
+| 8   | [Use case diagram](./use-case-diagram.md)                 | Behaviour               | What does the system do, and for which actors?                                        |
+| 9   | [Activity diagram](./activity-diagram.md)                 | Behaviour               | In which order do steps run, including branches, loops and parallel work?             |
+| 10  | [State machine diagram](./state-machine-diagram.md)       | Behaviour               | Which states can an object take, and which events cause transitions?                  |
+| 11  | [Sequence diagram](./sequence-diagram.md)                 | Behaviour / Interaction | Which messages do objects exchange, in which chronological order?                     |
+| 12  | [Communication diagram](./further-uml-diagrams.md)        | Behaviour / Interaction | Who talks to whom, and how are the participants linked?                               |
+| 13  | [Timing diagram](./further-uml-diagrams.md)               | Behaviour / Interaction | How do states change along a time axis, and which timing constraints apply?           |
+| 14  | [Interaction overview diagram](./further-uml-diagrams.md) | Behaviour / Interaction | How are several interactions combined into one overall flow?                          |
+
+The symbol set shared by all of them is described in the [notation basics](./uml-notation-basics.md).
+
+---
+
+## Structure Diagrams
+
+Structure diagrams show a system at rest. Time plays no role in them, they contain no order of execution.
+
+- **Class diagram:** the central diagram of object-oriented design. Classes with attributes and operations, connected by association, aggregation, composition, generalisation and dependency, annotated with visibilities and multiplicities.
+- **Object diagram:** a snapshot of a class diagram. Instead of the class `Order` it shows the object `order42` with its actual attribute values. Useful for making a complex set of relationships concrete with an example.
+- **Package diagram:** groups model elements into packages and shows the dependencies between them. Makes the intended layering of an architecture visible and reveals cyclic dependencies.
+- **Component diagram:** components with provided and required interfaces (ball-and-socket notation). Describes how the software is cut into exchangeable units.
+- **Composite structure diagram:** looks inside a single classifier and shows its parts, ports and connectors. Rarely used outside embedded and systems engineering.
+- **Deployment diagram:** nodes (hardware or execution environments), the artifacts deployed on them and the communication paths between them. The bridge from software design to operations.
+- **Profile diagram:** the extension mechanism of UML itself. Stereotypes, tagged values and constraints adapt the language to a domain, for example `«entity»` or `«controller»`.
+
+---
+
+## Behavioural Diagrams
+
+Behavioural diagrams show what happens over time: in which order, triggered by what, with which result.
+
+- **Use case diagram:** actors, use cases and the system boundary. It is deliberately coarse and serves as a table of contents for the requirements, not as a description of a process.
+- **Activity diagram:** control flow through actions, with decision, merge, fork and join, optionally grouped into swimlanes. The UML diagram closest to a classic flowchart, suitable for business processes as well as for algorithms.
+- **State machine diagram:** the life cycle of a single object. States, transitions triggered by events, guards, entry and exit actions. The diagram of choice whenever an object reacts differently to the same input depending on its history.
+
+### Interaction Diagrams
+
+All four interaction diagrams describe the same subject from different angles: participants exchanging messages.
+
+- **Sequence diagram:** lifelines arranged horizontally, time running downwards, messages as arrows between the lifelines. The strongest emphasis on chronological order, which makes it the most widely used of the four.
+- **Communication diagram:** the same information arranged as a network of linked participants, with messages numbered instead of ordered by position. The strongest emphasis on *who is connected to whom*.
+- **Timing diagram:** state changes of participants plotted against an explicit time axis. Used where duration and timing constraints matter, for example in real-time and embedded systems.
+- **Interaction overview diagram:** an activity diagram whose nodes are complete interactions instead of single actions. Used to arrange several sequence diagrams into one overall flow.
+
+Sequence and communication diagram are semantically largely equivalent, and many tools convert one into the other automatically.
+
+---
+
+## Choosing the Right Diagram
+
+| Question that needs answering                                 | Suitable diagram      |
+| ------------------------------------------------------------- | --------------------- |
+| Who uses the system, and what for?                            | Use case diagram      |
+| In which order do the steps of a process run?                 | Activity diagram      |
+| How is an algorithm structured before coding starts?          | Activity diagram      |
+| Which classes are needed, and how are they related?           | Class diagram         |
+| What do the data look like in a concrete case?                | Object diagram        |
+| How do objects cooperate to fulfil a use case?                | Sequence diagram      |
+| Which states does an order, a ticket or a device run through? | State machine diagram |
+| How is the system cut into exchangeable modules?              | Component diagram     |
+| Which server, which container, which client?                  | Deployment diagram    |
+| How is a large model kept organised?                          | Package diagram       |
+| Which timing constraints have to be observed?                 | Timing diagram        |
+
+Rules of thumb for the selection:
+
+- **One question, one diagram.** A diagram that answers three questions at once usually answers none of them clearly.
+- **Structure or behaviour first?** Requirements start with behaviour (use case, activity), implementation starts with structure (class, component).
+- **The level of abstraction stays constant.** A diagram that mixes business terms with database columns is hard to use for either audience.
+- **A diagram nobody reads is waste.** The audience decides the level of detail: clients need use case and activity diagrams, developers need class and sequence diagrams, operations need deployment diagrams.
+- **Maintenance costs count.** Diagrams that drift out of sync with the code are worse than no diagrams at all, because they are trusted and wrong.
+
+In practice a small number of diagram types carries almost all of the work: class, activity, use case, sequence and state machine diagram. The remaining types are specialised and appear only when their specific question comes up.
+
+---
+
+## UML in the Software Design Process
+
+UML is not tied to a single process model, but its diagrams map naturally onto the phases of development.
+
+| Phase                 | Question                               | Typical diagrams                            |
+| --------------------- | -------------------------------------- | ------------------------------------------- |
+| Requirements analysis | What is the system supposed to do?     | Use case, activity                          |
+| Domain modelling      | Which concepts exist in the domain?    | Class (as domain model), object             |
+| Design                | How is the solution built?             | Class, sequence, state machine              |
+| Architecture          | How is the system cut and distributed? | Component, package, deployment              |
+| Implementation        | How is the design realised?            | Class diagram as a code skeleton            |
+| Testing               | Which flows have to be covered?        | Activity, sequence, state machine           |
+| Documentation         | How does the system work?              | All of the above, reduced to the essentials |
+
+Modelling in software design serves three purposes:
+
+- **Communication:** a shared picture for people with different backgrounds
+- **Analysis:** contradictions and gaps become visible before they are implemented
+- **Documentation:** a system can be understood without reading all of its source code
+
+---
+
+## Common Mistakes
+
+1. **UML treated as a method:** UML defines symbols, not a procedure. The procedure comes from the process model.
+2. **Interaction diagrams counted as a third main group:** they are a subgroup of the behavioural diagrams.
+3. **Activity and sequence diagram confused:** an activity diagram shows control flow between actions, a sequence diagram shows messages between objects.
+4. **Class and object diagram confused:** a class diagram shows types, an object diagram shows instances with concrete values.
+5. **Use case diagram used as a process description:** it lists what the system offers, the flow inside a use case belongs in an activity diagram.
+6. **ER model counted as a UML diagram:** it is a separate notation for data modelling.
+7. **Everything modelled:** a model covering the entire system in full detail costs more than it saves and is outdated after the first change.
+8. **Notation invented ad hoc:** the value of UML lies in symbols meaning the same thing everywhere, self-invented arrows destroy exactly that.
+
+---
+
+## Tools
+
+- draw.io / diagrams.net (free, browser-based, UML shape library included)
+- PlantUML (text-based, diagram is generated from source and can be versioned)
+- Mermaid (text-based, renders directly in Markdown on many platforms)
+- Visual Paradigm, StarUML, Enterprise Architect, Lucidchart (commercial, with free tiers)
+
+## See Also
+
+- [UML Notation Basics](./uml-notation-basics.md): the symbols and relationship types shared by all diagram types
+- [Class Diagram](./class-diagram.md): the central structure diagram of object-oriented design
+- [Activity Diagram](./activity-diagram.md): processes and algorithms as control flow
+- [Use Case Diagram](./use-case-diagram.md): system boundary, actors and what the system offers
+- [Sequence Diagram](./sequence-diagram.md): chronological exchange of messages between objects
+- [State Machine Diagram](./state-machine-diagram.md): the life cycle of an object as states and transitions
+- [Component Diagram](./component-diagram.md): the cut into exchangeable units with interfaces
+- [Deployment Diagram](./deployment-diagram.md): distribution of artifacts across nodes
+- [Further UML Diagrams](./further-uml-diagrams.md): object, package, composite structure, profile, communication, timing and interaction overview diagram
+- [ER Model](../databases/er-model.md): data modelling outside UML
