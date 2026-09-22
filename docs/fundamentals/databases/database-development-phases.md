@@ -24,7 +24,7 @@ Typical outputs are requirement documents and informal descriptions of the data 
 
 ## 2. Conceptual Phase
 
-Translate the requirements into an abstract, implementation-independent data model. The standard tool for this is the [**Entity-Relationship Model (ERM)**](../uml/er-model.md), which captures entities, their attributes, and the relationships between them.
+Translate the requirements into an abstract, implementation-independent data model. The standard tool for this is the [**Entity-Relationship Model (ERM)**](./er-model.md), which captures entities, their attributes, and the relationships between them.
 
 The conceptual model is technology-agnostic: it describes *what* the data looks like, not *how* it will be stored.
 

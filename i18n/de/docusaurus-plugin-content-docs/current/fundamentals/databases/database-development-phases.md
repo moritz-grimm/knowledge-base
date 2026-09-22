@@ -24,7 +24,7 @@ Typische Ergebnisse sind Anforderungsdokumente und informelle Beschreibungen der
 
 ## 2. Konzeptionelle Phase
 
-Die Anforderungen werden in ein abstraktes, implementierungsunabhängiges Datenmodell übersetzt. Das Standardwerkzeug dafür ist das [**Entity-Relationship-Modell (ERM)**](../uml/er-model.md), das Entitäten, ihre Attribute und die Beziehungen zwischen ihnen abbildet.
+Die Anforderungen werden in ein abstraktes, implementierungsunabhängiges Datenmodell übersetzt. Das Standardwerkzeug dafür ist das [**Entity-Relationship-Modell (ERM)**](./er-model.md), das Entitäten, ihre Attribute und die Beziehungen zwischen ihnen abbildet.
 
 Das konzeptionelle Modell ist technologieunabhängig: Es beschreibt, *was* die Daten darstellen, nicht *wie* sie gespeichert werden.
 

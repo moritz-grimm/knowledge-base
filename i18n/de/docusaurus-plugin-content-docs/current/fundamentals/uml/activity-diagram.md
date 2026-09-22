@@ -279,4 +279,4 @@ Eine realitätsnahe Erweiterung würde hinter `[ja]` parallelisieren, sodass `Ka
 ## Siehe auch
 
 - [Klassendiagramm](./class-diagram.md): das strukturelle Gegenstück, modelliert Klassen und ihre Beziehungen
-- [ER-Modell](./er-model.md): modelliert die Daten, auf denen die Aktionen eines Aktivitätsdiagramms arbeiten
+- [ER-Modell](../databases/er-model.md): modelliert die Daten, auf denen die Aktionen eines Aktivitätsdiagramms arbeiten

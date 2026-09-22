@@ -431,4 +431,4 @@ Eine einfache Bibliotheksverwaltung mit Büchern, Zeitschriften, Benutzern und e
 - [Objektdiagramm](./further-uml-diagrams.md#objektdiagramm): eine konkrete Momentaufnahme von Instanzen zu einem Zeitpunkt
 - [Sequenzdiagramm](./sequence-diagram.md): das Zusammenspiel von Objekten dieser Klassen im zeitlichen Verlauf
 - [Anwendungsfalldiagramm](./use-case-diagram.md): das Verhaltensgegenstück, das zeigt, welche Leistungen diese Klassen den Akteuren anbieten
-- [ER-Modell](./er-model.md): das relationale Gegenstück, das beschreibt, wie die Attribute dieser Klassen in Tabellen gespeichert werden
+- [ER-Modell](../databases/er-model.md): das relationale Gegenstück, das beschreibt, wie die Attribute dieser Klassen in Tabellen gespeichert werden

@@ -431,4 +431,4 @@ A simple library management system with books, magazines, users, and borrowing f
 - [Object Diagram](./further-uml-diagrams.md#object-diagram): a concrete snapshot of instances at one point in time
 - [Sequence Diagram](./sequence-diagram.md): the interaction between objects of these classes over time
 - [Use Case Diagram](./use-case-diagram.md): the behavioural counterpart, showing which services these classes provide to actors
-- [ER Model](./er-model.md): the relational counterpart, describing how these classes' attributes are persisted in tables
+- [ER Model](../databases/er-model.md): the relational counterpart, describing how these classes' attributes are persisted in tables

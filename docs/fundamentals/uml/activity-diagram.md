@@ -279,4 +279,4 @@ A realistic extension would fork after `[yes]` so that `Charge card` in the shop
 ## See Also
 
 - [Class Diagram](./class-diagram.md): the structural counterpart, modelling classes and their relationships
-- [ER Model](./er-model.md): modelling the data that the actions in an activity diagram operate on
+- [ER Model](../databases/er-model.md): modelling the data that the actions in an activity diagram operate on
