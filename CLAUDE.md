@@ -176,11 +176,20 @@ Rules:
 ### Writing Style
 
 - **Impersonal style**: Write in an anonymous, impersonal style — avoid addressing the reader directly with "Sie" (German formal) or "Du" (German informal), or their English equivalents "you". Use passive voice or noun-based constructions instead.
+- **Neutral entries**: An entry never mentions an examination, a course, a curriculum or the occasion it was written for. Phrases such as "for the examination the first six operators are sufficient", "examination tasks frequently hinge on …", "in der Prüfung am häufigsten verlangt" or "is expected in examinations" are removed, and the statement is either kept as a neutral one about practice or dropped. Exam relevance is carried by the `ap2` tag alone, never by the text. The same applies to any other framing of the audience or purpose
+- **Say it once**: Every statement belongs in exactly one section, the one that owns the topic. A notation table, a building-block section, a worked example and a "Common Mistakes" list must not restate the same rule four times. Where a statement is genuinely needed in a second place, link to the section that owns it instead of paraphrasing it
+- **No section recaps**: A recap after a worked example ("What we can learn from this example:") is trimmed to what the example itself adds, not filled with points the concept sections already made. The same applies to a paragraph that describes in prose what the diagram next to it already shows
+- **Cut rhetoric, not facts**: These rules target announcements, motivation and meta-sentences about the entry. A sentence carrying a verifiable statement about notation — the direction of an arrow, the shape of an element, solid versus dashed, a rule about what is forbidden — is rephrased or kept, never dropped because the same fact appears elsewhere. Entries in a "Common Mistakes" list are deliberate duplicates: the mistake perspective carries its own value and stays
+- **No announcement sentences**: Start with the content instead of leading up to it. "The essential point: X" becomes "X"; "A common misunderstanding is the relationship to user stories. A user story is …" becomes "A user story is …". A list does not need a sentence announcing that it follows
+- **No opening restatement**: A section that expands on a table row does not open by paraphrasing that row. It starts with what the table could not carry
 
 ### Markdown Formatting
 
 - **Headings**: Every heading in `.md` files must be surrounded by a blank line (before and after) for proper formatting and readability
 - **Lists**: Every list in `.md` files must be surrounded by a blank line (before and after) for proper formatting and readability
+- **List punctuation**: Bullets that are fragments (single words, noun phrases, incomplete sentences) get no full stop; bullets that are complete sentences end with a full stop. Both styles must never be mixed inside one list — if one entry needs a full sentence, every entry of that list ends with a full stop
+- **Term lists**: Lists of the form *term + explanation* use a colon inside the bold markers, `- **Term:** explanation`, never a dash (`- **Term** – explanation`). See the `### Actors` section in `docs/fundamentals/uml/use-case-diagram.md`
+- **Existing files**: The two rules above are applied to an existing file only when that file is touched for another reason. The unit is the **file**, not the line: once a file is being changed anyway, every violation in it may be fixed, regardless of whether the affected lines are part of the actual change. What is avoided is a blanket migration across untouched files, which bloats the merge request with pure formatting noise
 - **Code Blocks**: Fenced code blocks should always have a language specified
 - **Multiplication sign**: Use `x` (the letter) instead of `×` (Unicode symbol) for multiplication in formulas, to keep content easily searchable
 - **Arrow symbol**: Use `=>` (equal sign + greater-than sign) instead of `→` (Unicode symbol)
