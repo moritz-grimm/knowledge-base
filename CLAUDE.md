@@ -182,6 +182,7 @@ Rules:
 - **Cut rhetoric, not facts**: These rules target announcements, motivation and meta-sentences about the entry. A sentence carrying a verifiable statement about notation — the direction of an arrow, the shape of an element, solid versus dashed, a rule about what is forbidden — is rephrased or kept, never dropped because the same fact appears elsewhere. Entries in a "Common Mistakes" list are deliberate duplicates: the mistake perspective carries its own value and stays
 - **No announcement sentences**: Start with the content instead of leading up to it. "The essential point: X" becomes "X"; "A common misunderstanding is the relationship to user stories. A user story is …" becomes "A user story is …". A list does not need a sentence announcing that it follows
 - **No opening restatement**: A section that expands on a table row does not open by paraphrasing that row. It starts with what the table could not carry
+- **No filler words**: Intensifiers and hedges that add no content are dropped, e.g. "actually", "at all", "really", "simply", "basically", "just", or in German "tatsächlich", "überhaupt", "eigentlich", "einfach", "letztlich". Such a word stays only where removing it changes the statement
 
 ### Markdown Formatting
 
