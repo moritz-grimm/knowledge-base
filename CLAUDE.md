@@ -199,6 +199,26 @@ Rules:
 - **German abbreviations**: Capitalise correctly, e.g. `z.B.` not `z.b.`
 - **Trailing newline**: Every `.md` file must end with exactly one newline character
 
+## Commit Messages
+
+- **Format**: A single lowercase subject line in imperative mood, no Conventional Commits prefix (`feat:`, `docs:`), no trailing full stop, no body
+- **Verb**: `add` for a new entry, `update` for extending or correcting an existing one, `fix` for broken links, syntax or wording errors, otherwise `move`, `rename`, `remove`, `refactor`
+- **Entry name**: The file name in double quotes followed by `entry`, e.g. `add "sequence-diagram.md" entry`
+- **What changed**: `update` names the change with `to include …` or `to correct …`, never just the file name
+- **Several changes**: Separate them with `;`, combine several files with `&`
+- **Locales**: End with the affected locales in parentheses, `(en, de)`, `(en)` or `(de)`
+
+Examples:
+
+```text
+add "state-machine-diagram.md" entry (en, de)
+update "network-plan.md" entry to include total float & free float (en, de)
+update "social-market-economy.md" entry to correct Adam Smith characterisation (en, de)
+fix "Namensraum" wording in "dns.md" entry (de)
+```
+
+In case of doubt, check `git log --format=%s` for comparable commits and follow the existing pattern.
+
 ## Technical Details
 
 - **Node Version**: Requires Node.js >= 20.0
