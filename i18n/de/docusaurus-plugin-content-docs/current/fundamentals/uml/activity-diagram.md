@@ -20,7 +20,7 @@ tags:
 
 ## Überblick
 
-Ein Aktivitätsdiagramm ist ein **Verhaltensdiagramm** der UML. Es beschreibt einen Ablauf als Folge von Aktionen, die durch Kontrollflüsse verbunden sind, einschließlich Verzweigungen, Schleifen und Schritten, die parallel laufen. Während ein [Klassendiagramm](./class-diagram.md) beantwortet, *woraus ein System besteht*, beantwortet ein Aktivitätsdiagramm, *in welcher Reihenfolge etwas geschieht und wer es tut*.
+Ein Aktivitätsdiagramm ist ein **Verhaltensdiagramm** der UML. Es beschreibt einen Ablauf als Folge von Aktionen, die durch Kontrollflüsse verbunden sind, einschließlich Verzweigungen, Schleifen und Schritten, die parallel laufen.
 
 Typische Anwendungsfälle:
 

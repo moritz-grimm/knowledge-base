@@ -20,7 +20,7 @@ tags:
 
 ## Overview
 
-An activity diagram is a **behavioural** UML diagram. It describes a process as a sequence of actions connected by control flows, including branches, loops and steps that run in parallel. Where a [class diagram](./class-diagram.md) answers *what a system consists of*, an activity diagram answers *in which order things happen and who does them*.
+An activity diagram is a **behavioural** UML diagram. It describes a process as a sequence of actions connected by control flows, including branches, loops and steps that run in parallel.
 
 Typical applications:
 
