@@ -89,7 +89,7 @@ The **Writing Style** rules in `CLAUDE.md` ("Say it once", "No section recaps", 
 1. **Build a claim map.** While reading, note every core statement of the entry (a rule, a definition, a criterion) together with each line number where it appears, including paraphrases, not just literal repetitions. A long entry typically runs through the same material four times — overview, notation table, per-concept sections, worked example, mistakes list — and that is only visible when the occurrences are listed side by side.
 2. **Report every statement that appears more than twice**, with all its line numbers, and name the one section that should keep it.
 3. **Check each section's opening sentence** against the table row or overview sentence it expands on. If it only paraphrases it, report the sentence.
-4. **Report announcement and lead-in sentences** individually, with the shortened version as the fix ("The essential point: X" => "X").
+4. **Report announcement sentences** individually, with the shortened version as the fix ("The essential point: X" => "X"). A sentence introducing a table is not an announcement per se: if it carries a statement of its own or tells the reader what the table compares, it stays. Report it only when it says nothing beyond the heading above it or the fact that a table follows.
 5. **Check prose next to a diagram or code block.** If it describes what the diagram already shows instead of adding what the diagram cannot show, report it.
 
 What must **not** be proposed for deletion, per **Cut rhetoric, not facts** in `CLAUDE.md`:
