@@ -1,31 +1,35 @@
 ---
 title: "Service-Modelle (IaaS, PaaS, SaaS)"
 sidebar_position: 2
-description: "Infrastructure-as-a-Service, Platform-as-a-Service und Software-as-a-Service erklärt"
+description: "On-Premise, Infrastructure-as-a-Service, Platform-as-a-Service, Function-as-a-Service und Software-as-a-Service erklärt"
 keywords:
-  - "IaaS"
-  - "PaaS"
-  - "SaaS"
-  - "Cloud Service-Modelle"
-  - "Infrastructure as a Service"
-  - "Platform as a Service"
-  - "Software as a Service"
+    - "IaaS"
+    - "PaaS"
+    - "SaaS"
+    - "Cloud-Service-Modelle"
+    - "Infrastructure as a Service"
+    - "Platform as a Service"
+    - "Software as a Service"
+    - "FaaS"
+    - "Function as a Service"
+    - "Serverless"
 tags:
-  - ap2
+    - ap2
 ---
 
-# Cloud Service-Modelle
+# Cloud-Service-Modelle
 
 ## Überblick
 
 Cloud-Computing-Dienste werden typischerweise in drei Haupt-Service-Modelle kategorisiert, die jeweils unterschiedliche Stufen von Kontrolle & Flexibilität bieten.
 
-| Service-Modell                                | Du verwaltest                                           | Anbieter verwaltet                                                               | Beispiele                                    |
-| --------------------------------------------- | ------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------- |
-| **[On-Premise](#on-premise)**                 | Alles                                                   | Nichts                                                                           | Eigenes Datencenter, Lokaler Serverraum      |
-| **[IaaS](#infrastructure-as-a-service-iaas)** | Betriebssystem, Middleware, Runtime, Daten, Anwendungen | Virtualisierung, Server, Speicher, Netzwerk                                      | AWS EC2, Azure VMs, Google Compute Engine    |
-| **[PaaS](#platform-as-a-service-paas)**       | Daten, Anwendungen                                      | Runtime, Middleware, Betriebssystem, Virtualisierung, Server, Speicher, Netzwerk | Heroku, Google App Engine, Azure App Service |
-| **[SaaS](#software-as-a-service-saas)**       | Nur Konfiguration                                       | Alles                                                                            | Gmail, Salesforce, Microsoft 365, Dropbox    |
+| Service-Modell                                      | Kunde verwaltet                                         | Anbieter verwaltet                                                                           | Beispiele                                            |
+| --------------------------------------------------- | ------------------------------------------------------- | -------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
+| **[On-Premise](#on-premise)**                       | Alles                                                   | Nichts                                                                                       | Eigenes Datencenter, lokale Server                   |
+| **[IaaS](#infrastructure-as-a-service-iaas)**       | Betriebssystem, Middleware, Runtime, Daten, Anwendungen | Virtualisierung, Server, Speicher, Netzwerk                                                  | AWS EC2, Azure VMs, Google Compute Engine            |
+| **[PaaS](#platform-as-a-service-paas)**             | Daten, Anwendungen                                      | Runtime, Middleware, Betriebssystem, Virtualisierung, Server, Speicher, Netzwerk             | Heroku, Google App Engine, Azure App Service, Vercel |
+| **[FaaS](#function-as-a-service-faas--serverless)** | Einzelne Funktionen, Daten                              | Runtime, Skalierung, Middleware, Betriebssystem, Virtualisierung, Server, Speicher, Netzwerk | AWS Lambda, Azure Functions, Cloudflare Workers      |
+| **[SaaS](#software-as-a-service-saas)**             | Nur Konfiguration                                       | Alles                                                                                        | Gmail, Salesforce, Microsoft 365, Dropbox            |
 
 ---
 
@@ -33,18 +37,18 @@ Cloud-Computing-Dienste werden typischerweise in drei Haupt-Service-Modelle kate
 
 ### Definition
 
-On-premise (auch oft "on-prem" genannt) bedeutet das Betreiben und Managen der gesamten IT-Infrastruktur lokal in den eigenen Einrichtungen. Es sind keine Cloud-Anbieter involviert. Dein Unternehmen besitzt, betreibt und verwaltet alles, von der physischen Hardware bis zu den Anwendungen.
+On-Premise (auch "On-Prem" genannt) bedeutet das Betreiben und Verwalten der gesamten IT-Infrastruktur lokal in den eigenen Einrichtungen. Es ist kein Cloud-Anbieter beteiligt. Das Unternehmen besitzt, betreibt und wartet alles, von der physischen Hardware bis zu den Anwendungen.
 
-### Was du bekommst
+### Leistungsumfang
 
 - Physische Server und Hardware
 - Komplette Kontrolle über alle Layer
 - Daten bleiben innerhalb der eigenen Einrichtung
-- Keine Abhängigkeiten von anderen Anbietern
+- Keine Abhängigkeit von externen Anbietern
 
 ### Verantwortlichkeiten
 
-**Du verwaltest:**
+**Unternehmen verwaltet:**
 
 - Physische Hardware (Server, Speicher, Netzwerk)
 - Virtualisierung
@@ -57,16 +61,16 @@ On-premise (auch oft "on-prem" genannt) bedeutet das Betreiben und Managen der g
 
 ### Anwendungsfälle
 
-- **Strenge Compliance-Anforderungen**: Branchen mit strikten Datenverordnungen (z.B. Regierungen, Gesundheitswesen, Finanzwesen)
-- **Legacy-Systeme**: Anwendungen, die nicht in die Cloud migriert werden können
-- **Low-Latency-Anforderungen**: Systeme mit Anforderungen an niedrige Netzwerklatenz
-- **Datensouveränität**: Sensible Daten, die vollständig im Haus bleiben müssen
+- **Strenge Compliance-Anforderungen:** Branchen mit strikten Datenverordnungen (z.B. öffentliche Verwaltung, Gesundheitswesen, Finanzwesen)
+- **Legacy-Systeme:** Anwendungen, die nicht in die Cloud migriert werden können
+- **Low-Latency-Anforderungen:** Systeme mit Anforderungen an niedrige Netzwerklatenz
+- **Vollständige Datensouveränität:** Sensible Daten, die vollständig im Haus bleiben müssen
 
 ### Vorteile
 
 - Vollständige Kontrolle über Hardware und Software
 - Daten verlassen niemals die eigenen Einrichtungen
-- Keine wiederkehrenden Cloud-Kosten
+- Keine wiederkehrenden Cloud-Abonnementkosten
 - Keine Abhängigkeit von einer Internetverbindung
 - Leichtere Einhaltung strenger Datenvorschriften
 
@@ -75,7 +79,7 @@ On-premise (auch oft "on-prem" genannt) bedeutet das Betreiben und Managen der g
 - Hohe Anfangsinvestitionen (Hardware, Gebäude, Kühlung)
 - Erfordert dediziertes IT-Personal zur Wartung
 - Skalierung erfordert Kauf und Installation von neuer Hardware
-- Selbstverantwortlich für alle Updates, Patches und Security
+- Volle Verantwortung für alle Updates, Patches und Security
 - Hardware kann veralten
 
 ---
@@ -84,18 +88,18 @@ On-premise (auch oft "on-prem" genannt) bedeutet das Betreiben und Managen der g
 
 ### Definition
 
-IaaS stellt nur die virtualisierte Computing-Ressourcen über das Internet bereit. Es bietet die grundlegenden Bausteine um seine eigene Cloud-IT-Infrastruktur zu bauen.
+IaaS stellt nur virtualisierte Computing-Ressourcen über das Internet bereit. Es bietet die grundlegenden Bausteine, um eine eigene Cloud-IT-Infrastruktur aufzubauen.
 
-### Was du bekommst
+### Leistungsumfang
 
 - Virtuelle Maschinen
 - Speicher
 - Netzwerke
-- Betriebssysteme
+- Betriebssystem-Images
 
 ### Verantwortlichkeiten
 
-**Du verwaltest:**
+**Kunde verwaltet:**
 
 - Betriebssysteme
 - Anwendungen
@@ -112,22 +116,22 @@ IaaS stellt nur die virtualisierte Computing-Ressourcen über das Internet berei
 
 ### Anwendungsfälle
 
-- **Testing und Development**: Schnelles Hochfahren/Herunterfahren von Testumgebungen
-- **Website-Hosting**: Websites mit voller Kontrolle über die Infrastruktur hosten
-- **Speicher und Backup**: Großangelegte Datenspeicherlösungen
-- **High-Performance Computing**: Rechenintensive Workloads
+- **Testing und Development:** Schnelles Hochfahren/Herunterfahren von Testumgebungen
+- **Website-Hosting:** Websites mit voller Kontrolle über die Infrastruktur hosten
+- **Speicher und Backup:** Großangelegte Datenspeicherlösungen
+- **High-Performance Computing:** Rechenintensive Workloads
 
 ### Vorteile
 
 - Vollständige Kontrolle über die Infrastruktur
-- Pay-as-you-go Preismodell
+- Pay-as-you-go-Preismodell
 - Hochgradig skalierbar
 - Keine physische Hardware-Wartung
 
 ### Nachteile
 
 - Erfordert technisches Fachwissen
-- Du verwaltest Sicherheits-Patches und Updates alleine
+- Sicherheits-Patches und Updates liegen allein beim Kunden
 - Mehr Verwaltungsaufwand als bei PaaS/SaaS
 
 ### Beispiele
@@ -145,17 +149,17 @@ IaaS stellt nur die virtualisierte Computing-Ressourcen über das Internet berei
 
 PaaS bietet eine Plattform, die es Kunden ermöglicht, Anwendungen zu entwickeln, auszuführen und zu verwalten, ohne sich um die Infrastruktur kümmern zu müssen.
 
-### Was du bekommst
+### Leistungsumfang
 
 - **Fertige Laufzeitumgebungen** (Node.js, Python, Java, PHP, ...)
 - **Verwaltete Datenbanken** (PostgreSQL, MySQL, MongoDB, Redis)
 - **Automatisches Deployment** (Code via Git pushen => automatische Builds)
-- **Eingebaute Skalierung** (deine App skaliert automatisch je nach Traffic)
+- **Eingebaute Skalierung** (die Anwendung skaliert automatisch je nach Traffic)
 - **Entwicklungstools** (Logging, Monitoring, Debugging)
 
 ### Verantwortlichkeiten
 
-**Du verwaltest:**
+**Kunde verwaltet:**
 
 - Anwendungen
 - Daten
@@ -170,13 +174,13 @@ PaaS bietet eine Plattform, die es Kunden ermöglicht, Anwendungen zu entwickeln
 
 ### Anwendungsfälle
 
-- **Anwendungsentwicklung**: Apps ohne Sorgen um Infrastruktur erstellen
-- **API-Entwicklung und -Verwaltung**: APIs erstellen und hosten
-- **Microservices-Architektur**: Containerisierte Anwendungen deployen
+- **Anwendungsentwicklung:** Apps ohne Sorgen um Infrastruktur erstellen
+- **API-Entwicklung und -Verwaltung:** APIs erstellen und hosten
+- **Microservices-Architektur:** Containerisierte Anwendungen deployen
 
 ### Vorteile
 
-- Schnellere Entwicklung und Deployment
+- Schnellere Entwicklung und schnelleres Deployment
 - Integrierte Skalierbarkeit
 - Reduzierte Verwaltungskomplexität
 - Fokus auf Code, nicht auf Infrastruktur
@@ -185,7 +189,7 @@ PaaS bietet eine Plattform, die es Kunden ermöglicht, Anwendungen zu entwickeln
 ### Nachteile
 
 - Weniger Kontrolle als bei IaaS
-- Potenzielle Vendor Lock-in
+- Potenzieller Vendor-Lock-in
 - Unterstützt möglicherweise nicht alle Programmiersprachen/Frameworks
 - Begrenzte Anpassungsmöglichkeiten
 
@@ -200,13 +204,88 @@ PaaS bietet eine Plattform, die es Kunden ermöglicht, Anwendungen zu entwickeln
 
 ---
 
+## Function as a Service (FaaS) / Serverless
+
+### Definition
+
+FaaS ist die konsequente Fortsetzung von PaaS: Die Einheit, die ausgeliefert wird, ist keine Anwendung mehr, sondern eine einzelne Funktion. Sie läuft nicht dauerhaft, sondern wird durch ein Ereignis gestartet, verarbeitet es und wird wieder beendet.
+
+"Serverless" ist der weitere Begriff für dieses Betriebsmodell und irreführend: Server sind weiterhin beteiligt, aber für den Kunden nicht mehr sichtbar oder verwaltbar. Neben FaaS umfasst der Begriff auch verwaltete Dienste, die demselben Prinzip folgen, etwa serverlose Datenbanken, Objektspeicher und Nachrichtenwarteschlangen.
+
+### Leistungsumfang
+
+- **Ereignisgesteuerte Ausführung:** HTTP-Anfrage, Zeitplan, Nachricht in einer Warteschlange, Dateiupload, Datenbankänderung
+- **Automatische Skalierung ab null:** keine Instanz im Ruhezustand, viele parallele Instanzen unter Last
+- **Keine Kapazitätsplanung:** keine Instanzanzahl, keine Maschinengröße, keine Autoscaling-Regeln
+- **Abrechnung je Aufruf:** Ausführungszeit und Speicher, üblicherweise millisekundengenau
+- **Integriertes Logging und Monitoring** durch die Plattform
+
+### Verantwortlichkeiten
+
+**Kunde verwaltet:**
+
+- Den Funktionscode und seine Abhängigkeiten
+- Die Konfiguration: Auslöser, Berechtigungen, Umgebungsvariablen, Speicher und Zeitlimit
+- Daten und externen Zustand
+
+**Anbieter verwaltet:**
+
+- Laufzeitumgebung und deren Updates
+- Skalierung, einschließlich der Anzahl paralleler Instanzen
+- Middleware, Betriebssystem, Virtualisierung
+- Server, Speicher, Netzwerk
+
+### Eigenschaften
+
+| Eigenschaft        | Folge für den Entwurf                                                                                                                          |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| Zustandslos        | Eine Funktion behält zwischen zwei Aufrufen keinen Zustand. Zustand gehört in eine Datenbank, einen Cache oder einen Objektspeicher            |
+| Cold Start         | Der erste Aufruf nach einer Ruhephase benötigt zusätzliche Zeit für den Start der Laufzeitumgebung, was bei latenzkritischen Anfragen auffällt |
+| Ausführungslimit   | Ein Aufruf wird nach einer maximalen Laufzeit abgebrochen. Langlaufende Aufgaben müssen daher aufgeteilt werden                                |
+| Ereignisgesteuert  | Die Funktion läuft nur, wenn ein Ereignis sie auslöst, und kann nicht von selbst starten                                                       |
+| Skalierung ab null | Eine Lastspitze erzeugt viele parallele Cold Starts                                                                                            |
+
+### Anwendungsfälle
+
+- **APIs und Webhooks:** Endpunkte mit unregelmäßiger oder unvorhersehbarer Last
+- **Ereignisverarbeitung:** Reaktion auf einen Upload, eine Nachricht in einer Warteschlange oder eine Datenbankänderung
+- **Geplante Aufgaben:** Aufräumen, Berichte, Importe nach Zeitplan
+- **Verbindungscode:** kleine Transformationen zwischen zwei Diensten
+- **Bild- und Dateiverarbeitung:** Erzeugen von Vorschaubildern nach einem Upload
+
+### Vorteile
+
+- Keine Serveradministration und keine Kapazitätsplanung
+- Kosten skalieren genau mit der Last und Ruhezeit ist kostenlos
+- Sehr schnell von der Idee zum ausgelieferten Endpunkt
+- Die Skalierung übernimmt die Plattform
+
+### Nachteile
+
+- Cold Starts machen die Latenz weniger vorhersehbar
+- Begrenzte Laufzeit, Speichergröße und Paketgröße je Funktion
+- Starke Anbieterabhängigkeit, da Auslöser und Berechtigungsmodelle anbieterspezifisch sind
+- Debugging und lokales Testen sind aufwendiger als bei einer dauerhaft laufenden Anwendung
+- Viele kleine Funktionen verteilen die Logik und erschweren das Verständnis des Gesamtverhaltens
+- Bei dauerhaft hoher Last ist eine permanent laufende Instanz meist günstiger
+
+### Beispiele
+
+- AWS Lambda
+- Azure Functions
+- Google Cloud Functions / Cloud Run Functions
+- Cloudflare Workers
+- Vercel Functions, Netlify Functions
+
+---
+
 ## Software as a Service (SaaS)
 
 ### Definition
 
 SaaS liefert voll funktionsfähige Anwendungen über das Internet. Nutzer greifen auf Software über einen Webbrowser zu, ohne Installation oder Wartung.
 
-### Was du bekommst
+### Leistungsumfang
 
 - Sofort einsatzbereite Anwendungen
 - Automatische Updates
@@ -215,7 +294,7 @@ SaaS liefert voll funktionsfähige Anwendungen über das Internet. Nutzer greife
 
 ### Verantwortlichkeiten
 
-**Du verwaltest:**
+**Kunde verwaltet:**
 
 - Benutzerkonfiguration
 - Dateneingabe
@@ -227,27 +306,26 @@ SaaS liefert voll funktionsfähige Anwendungen über das Internet. Nutzer greife
 
 ### Anwendungsfälle
 
-- **E-Mail und Kommunikation**: Business-E-Mail, Messaging
+- **E-Mail und Kommunikation:** Business-E-Mail, Messaging
 - **Customer Relationship Management (CRM)**
-- **Kollaborationstools**: Dokumenten-Sharing, Projektmanagement
-- **Office-Produktivität**: Textverarbeitung, Tabellenkalkulation, Präsentationen
-- **Personalwesen**: Gehaltsabrechnung, Recruiting, Mitarbeiterverwaltung
+- **Kollaborationstools:** Dokumenten-Sharing, Projektmanagement
+- **Office-Produktivität:** Textverarbeitung, Tabellenkalkulation, Präsentationen
+- **Personalwesen:** Gehaltsabrechnung, Recruiting, Mitarbeiterverwaltung
 
 ### Vorteile
 
 - Keine Installation oder Wartung erforderlich
-- Überall mit Internet zugänglich
 - Automatische Updates
 - Niedrigere Anfangskosten
 - Einfach zu verwenden und zu skalieren
 
 ### Nachteile
 
-- Keine Kontrolle über die Infrastruktur, komplett abhängig von der betreibenden Firma
+- Keine Kontrolle über die Infrastruktur und vollständige Abhängigkeit von der betreibenden Firma
 - Begrenzte Anpassung
 - Datensicherheitsbedenken (Daten extern in der Cloud gespeichert)
 - Abonnementkosten können sich summieren
-- Abhängig von Internetverbindung
+- Abhängig von einer Internetverbindung
 
 ### Beispiele
 
@@ -262,24 +340,17 @@ SaaS liefert voll funktionsfähige Anwendungen über das Internet. Nutzer greife
 
 ## Die Pizza-Analogie
 
-Eine beliebte Analogie vergleicht Cloud-Service-Modelle mit Pizza-Bestellung:
-
-- **On-Premises**: Du machst Pizza zu Hause (du verwaltest alles)
-- **IaaS**: Du kaufst Pizzateig und Belag, backst selbst (Infrastruktur bereitgestellt)
-- **PaaS**: Du bestellst Pizza zur Lieferung (Plattform bereitgestellt, du wählst Belag)
-- **SaaS**: Du isst in einem Pizza-Restaurant (kompletter Service bereitgestellt)
+- **On-Premise:** Pizza zu Hause selbst machen
+- **IaaS:** Pizzateig und Belag kaufen und selbst backen
+- **PaaS:** Pizza mit selbst gewähltem Belag zur Lieferung bestellen
+- **FaaS:** Bei Hunger ein einzelnes Stück kaufen und pro Stück zahlen (nichts wird warmgehalten)
+- **SaaS:** In einem Pizza-Restaurant essen
 
 ---
 
 ## Zusätzliche Service-Modelle
 
-Über die drei Kernmodelle hinaus gibt es spezialisierte Service-Modelle:
-
-### Function as a Service (FaaS) / Serverless
-
-- Code ausführen ohne Server zu verwalten
-- Beispiele: AWS Lambda, Azure Functions, Google Cloud Functions
-- Bezahle nur für die Ausführungszeit
+Über die drei Kernmodelle und [FaaS](#function-as-a-service-faas--serverless) hinaus gibt es weitere spezialisierte Service-Modelle:
 
 ### Database as a Service (DBaaS)
 
@@ -298,5 +369,5 @@ Eine beliebte Analogie vergleicht Cloud-Service-Modelle mit Pizza-Bestellung:
 
 ### Backend as a Service (BaaS)
 
-- Das Backend wird verwaltet, während du dich um das Frontend kümmerst
+- Backend vom Anbieter verwaltet, Frontend vom Kunden
 - Beispiele: Supabase, Firebase
