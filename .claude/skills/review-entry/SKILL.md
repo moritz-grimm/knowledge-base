@@ -63,6 +63,7 @@ Go through every paragraph and bullet point. For each one, verify:
 - Typos in the translated text (e.g. missing letters, wrong umlauts)
 - Grammar errors (e.g. wrong adjective endings, missing capitalisation of nominalised verbs in German)
 - Check both files against **Writing Style** in `CLAUDE.md` — the form of address, and the neutrality of the entry. The latter is easy to miss because such a sentence reads as helpful: report every mention of an examination, a course or the occasion the entry was written for, in both locales, and propose the neutral wording or the deletion as the fix
+- Check both files against the sentence-level rules in **Writing Style** in `CLAUDE.md`, "No comma afterthoughts" and "No filler words". Both patterns read fluently and are easy to miss: report every sentence of the form "statement, short appended afterthought." with the rewritten, self-contained version as the fix, and every filler word whose removal does not change the statement
 - The locale-specific conventions in **Markdown Formatting** in `CLAUDE.md` (abbreviations, decimal separator, separators) — check all numbers and abbreviations in both files
 
 ## 5. Links & references
