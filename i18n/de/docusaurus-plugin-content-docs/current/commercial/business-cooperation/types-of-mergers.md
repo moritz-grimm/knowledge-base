@@ -46,8 +46,8 @@ Ein **diagonaler Zusammenschluss** (auch **konglomerater Zusammenschluss**) verb
 
 ## Vergleich
 
-| Art        | Beteiligte Unternehmen                    | Hauptziel                        |
-| ---------- | ----------------------------------------- | -------------------------------- |
-| Horizontal | Gleiche Branche, gleiche Stufe            | Marktanteile, Skaleneffekte      |
-| Vertikal   | Gleiche Branche, verschiedene Stufe       | Versorgungssicherheit, Kostenreduktion |
-| Diagonal   | Verschiedene Branchen                     | Diversifizierung                 |
+| Art        | Beteiligte Unternehmen              | Hauptziel                              |
+| ---------- | ----------------------------------- | -------------------------------------- |
+| Horizontal | Gleiche Branche, gleiche Stufe      | Marktanteile, Skaleneffekte            |
+| Vertikal   | Gleiche Branche, verschiedene Stufe | Versorgungssicherheit, Kostenreduktion |
+| Diagonal   | Verschiedene Branchen               | Diversifizierung                       |
