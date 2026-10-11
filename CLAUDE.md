@@ -189,7 +189,7 @@ Rules:
 - **No announcement sentences**: Start with the content instead of leading up to it. "The essential point: X" becomes "X"; "A common misunderstanding is the relationship to user stories. A user story is …" becomes "A user story is …". A list does not need a sentence announcing that it follows
 - **No opening restatement**: A section that expands on a table row does not open by paraphrasing that row. It starts with what the table could not carry
 - **No filler words**: Intensifiers and hedges that add no content are dropped, e.g. "actually", "at all", "really", "simply", "basically", "just", or in German "tatsächlich", "überhaupt", "eigentlich", "einfach", "letztlich". Such a word stays only where removing it changes the statement
-- **No comma afterthoughts**: Sentences of the form "statement, short appended afterthought." are rewritten as complete, self-contained sentences, e.g. not "`Check availability` is a step, not a partner" or "Drawn as X, it looks like Y"
+- **No comma afterthoughts**: An appended fragment such as "`Check availability` is a step, not a partner" or a participle opener such as "Drawn as X, it looks like Y" is rewritten. Subordinate and relative clauses are not afterthoughts and stay. Two consecutive sentences with the same subject are merged into one where the second continues the thought of the first; a second sentence that adds a separate thought stays separate
 
 ### Common Mistakes Section
 
