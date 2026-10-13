@@ -218,9 +218,10 @@ Rules:
 ## Commit Messages
 
 - **Format**: A single lowercase subject line in imperative mood, no Conventional Commits prefix (`feat:`, `docs:`), no trailing full stop, no body
-- **Verb**: `add` for a new entry, `update` for extending or correcting an existing one, `fix` for broken links, syntax or wording errors, otherwise `move`, `rename`, `remove`, `refactor`
-- **Entry name**: The file name in double quotes followed by `entry`, e.g. `add "sequence-diagram.md" entry`
-- **What changed**: `update` names the change with `to include …` or `to correct …`, never just the file name
+- **Verb**: A commit that changes an entry starts with `add` for a new entry, `update` for any change to an existing one, including small fixes of links, syntax or wording, or `remove` for a deleted entry, so the subject shows at a glance which entry is affected. Commits that do not change an entry's content use `move`, `rename` or `refactor`
+- **Entry name**: The file name in double quotes followed by `entry`, e.g. `add "sequence-diagram.md" entry (en, de)`
+- **Pattern**: `<action on the file> <entry name> <what was done in the file> (<locales>)`, e.g. `update "normalization.md" entry to remove redundant composite key note (en, de)`
+- **What changed**: `update` names the change with `to include …`, `to correct …` or `to remove …`, never just the file name
 - **Several changes**: Separate them with `;`, combine several files with `&`
 - **Locales**: End with the affected locales in parentheses, `(en, de)`, `(en)` or `(de)`
 
@@ -230,10 +231,11 @@ Examples:
 add "state-machine-diagram.md" entry (en, de)
 update "network-plan.md" entry to include total float & free float (en, de)
 update "social-market-economy.md" entry to correct Adam Smith characterisation (en, de)
-fix "Namensraum" wording in "dns.md" entry (de)
+update "dns.md" entry to correct "Namensraum" wording (de)
+update "activity-diagram.md" entry to remove class diagram comparison from overview (en, de)
 ```
 
-In case of doubt, check `git log --format=%s` for comparable commits and follow the existing pattern.
+In case of doubt, check `git log --format=%s` for comparable commits and follow the existing pattern. Older commits may still use `fix` or start with `remove` for content changes; the rules above take precedence.
 
 ## Technical Details
 
