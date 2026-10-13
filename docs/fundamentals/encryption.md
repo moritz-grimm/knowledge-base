@@ -150,7 +150,7 @@ A plain `SHA-256` is not enough for this for two reasons:
 
 ### Salt
 
-A salt is a random value that is generated per password and hashed together with it. The salt is not secret and is stored next to the hash.
+A salt is a random value that is generated anew per password and combined with the password during hashing. The salt is not secret and is additionally stored unchanged next to the hash, because a login recomputes the hash from the entered password and the same salt.
 
 ```text
 hash = H(salt + password)

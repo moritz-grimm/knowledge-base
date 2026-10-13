@@ -150,7 +150,7 @@ Ein einfaches `SHA-256` genügt dafür aus zwei Gründen nicht:
 
 ### Salt
 
-Ein Salt ist ein Zufallswert, der je Passwort erzeugt und zusammen mit ihm gehasht wird. Der Salt ist nicht geheim und wird neben dem Hash gespeichert.
+Ein Salt ist ein Zufallswert, der je Passwort neu erzeugt und beim Hashen mit dem Passwort verbunden wird. Der Salt ist nicht geheim und wird zusätzlich unverändert neben dem Hash abgelegt, weil bei der Anmeldung der Hash aus dem eingegebenen Passwort und demselben Salt erneut berechnet wird.
 
 ```text
 Hash = H(Salt + Passwort)
