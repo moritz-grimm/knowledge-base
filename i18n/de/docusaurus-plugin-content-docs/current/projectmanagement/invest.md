@@ -1,6 +1,6 @@
 ---
-title: "INVEST Modell"
-description: "Die INVEST Kriterien helfen Teams User Storys so zu formulieren dass sie Unabhängig, Verhandelbar, Wertvoll, Schätzbar, Klein und Testbar bleiben."
+title: "INVEST-Modell"
+description: "Die INVEST-Kriterien helfen Teams, User Storys so zu formulieren, dass sie unabhängig, verhandelbar, wertvoll, schätzbar, klein und testbar bleiben."
 keywords:
     - INVEST
     - User Stories
@@ -10,7 +10,7 @@ tags:
     - ap2
 ---
 
-# INVEST Modell
+# INVEST-Modell
 
 ## Überblick
 

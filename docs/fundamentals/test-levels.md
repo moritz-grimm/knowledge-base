@@ -150,15 +150,7 @@ Sequential and agile development use the same test levels with the same test bas
 
 ### V-Model
 
-In the [V-model](../projectmanagement/classic-vs-agile.md#v-model), development runs down the left branch from requirements to implementation, and testing runs up the right branch. Each specification document on the left is the test basis of the test level opposite it.
-
-```text
-Requirements analysis  ------------------------------->  Acceptance test
-    System design  ----------------------------->  System test
-        Architecture design  ----------->  Integration test
-            Module design  ----->  Component test
-                         Implementation
-```
+Each specification document on the left branch of the [V-model](../projectmanagement/classic-vs-agile.md#v-model) is the test basis of the test level opposite it.
 
 ### Agile Development
 

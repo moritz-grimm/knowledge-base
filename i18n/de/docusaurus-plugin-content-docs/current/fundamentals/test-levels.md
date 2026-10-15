@@ -150,15 +150,7 @@ Sequenzielle und agile Entwicklung verwenden dieselben Teststufen mit denselben 
 
 ### V-Modell
 
-Im [V-Modell](../projectmanagement/classic-vs-agile.md#v-modell) verläuft die Entwicklung den linken Ast hinab von den Anforderungen bis zur Implementierung, das Testen den rechten Ast hinauf. Jedes Spezifikationsdokument links ist die Testbasis der gegenüberliegenden Teststufe.
-
-```text
-Anforderungsanalyse  --------------------------------->  Abnahmetest
-    Systementwurf  ------------------------------->  Systemtest
-        Architekturentwurf  ------------->  Integrationstest
-            Modulentwurf  ------->  Komponententest
-                         Implementierung
-```
+Jedes Spezifikationsdokument auf dem linken Ast des [V-Modells](../projectmanagement/classic-vs-agile.md#v-modell) ist die Testbasis der gegenüberliegenden Teststufe.
 
 ### Agile Entwicklung
 
