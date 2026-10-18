@@ -74,5 +74,9 @@
   "sidebar.docs.category.TypeScript": {
     "message": "TypeScript",
     "description": "The label for category 'TypeScript' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Object-Oriented Programming": {
+    "message": "Objektorientierte Programmierung",
+    "description": "The label for category 'Object-Oriented Programming' in sidebar 'docs'"
   }
 }

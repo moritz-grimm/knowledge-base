@@ -1,0 +1,38 @@
+---
+title: "Object-Oriented Programming"
+description: "Object-oriented programming compared with procedural programming, the four pillars encapsulation, inheritance, polymorphism and abstraction, and coupling and cohesion as quality measures of a design."
+keywords:
+    - Object-Oriented Programming
+    - OOP
+    - Procedural Programming
+    - Pillars of OOP
+    - Coupling
+    - Cohesion
+tags:
+    - ap2
+---
+
+import DocCardList from '@theme/DocCardList';
+
+# Object-Oriented Programming
+
+## Overview
+
+Object-oriented programming (OOP) structures a program as a set of objects that bundle data and the operations on that data. In procedural programming, data structures and the functions processing them are separate, and any function can change any data. In OOP, an object controls its own data and offers operations to the outside world.
+
+Four principles are usually named as the pillars of OOP: [encapsulation](./encapsulation.md), [inheritance](./inheritance.md), [polymorphism](./polymorphism.md) and [abstraction](./abstraction.md). Some textbooks list only the first three and treat abstraction as the general goal behind them.
+
+Typical object-oriented languages are Java, C#, C++, Python, Kotlin and TypeScript. The code examples in this section use TypeScript.
+
+## Coupling and Cohesion
+
+Two measures describe the quality of an object-oriented design:
+
+- **Coupling:** How strongly classes depend on each other. Low coupling is the goal, because a change in one class then affects few others.
+- **Cohesion:** How closely the parts of one class belong together. High cohesion is the goal, because a class with one clear task is easier to understand, test and reuse.
+
+[Encapsulation](./encapsulation.md), [interfaces](./abstraction.md) and the [SOLID principles](./solid.md) all aim at low coupling and high cohesion. [Design patterns](./design-patterns/index.mdx) are established solutions that achieve both for recurring problems.
+
+## Entries
+
+<DocCardList />
