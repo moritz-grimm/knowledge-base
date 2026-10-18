@@ -169,18 +169,18 @@ The twelve principles behind the manifesto, in condensed form:
 
 ## Comparison
 
-| Aspect                                                     | Classic                                                  | Agile                                                                                        |
-| ---------------------------------------------------------- | -------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| Planning                                                   | Complete and detailed at the start                       | Rough for the whole product, detailed for the next iteration                                 |
-| Requirements                                               | Fixed before development                                 | Evolve during development                                                                    |
-| Fixed corners of the [magic triangle](./magic-triangle.md) | Scope; time and cost estimated from it                   | Time and cost; scope varies                                                                  |
-| Customer involvement                                       | At the start and at acceptance                           | Continuously, at least at the end of each iteration                                          |
-| Documentation                                              | Extensive, a result of every phase                       | As much as needed, working product has priority                                              |
-| Change handling                                            | Formal change request, changes are expensive             | Changes go into the backlog and are prioritised                                              |
-| Delivery                                                   | Once, at the end of the project                          | Frequently, in increments                                                                    |
-| Roles                                                      | Project manager plans and controls, team executes        | Self-organising team with roles such as Product Owner and Scrum Master                       |
-| Risk                                                       | Discovered late, e.g. during integration and testing     | Reduced early through frequent delivery and feedback                                         |
-| Contract                                                   | Contract for work with fixed price and scope (§ 631 BGB) | Often contract for services billed by effort (§ 611 BGB) or fixed budget with variable scope |
+| Aspect                                                                  | Classic                                                  | Agile                                                                                        |
+| ----------------------------------------------------------------------- | -------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| Planning                                                                | Complete and detailed at the start                       | Rough for the whole product, detailed for the next iteration                                 |
+| Requirements                                                            | Fixed before development                                 | Evolve during development                                                                    |
+| Fixed corners of the [project management triangle](./magic-triangle.md) | Scope; time and cost estimated from it                   | Time and cost; scope varies                                                                  |
+| Customer involvement                                                    | At the start and at acceptance                           | Continuously, at least at the end of each iteration                                          |
+| Documentation                                                           | Extensive, a result of every phase                       | As much as needed, working product has priority                                              |
+| Change handling                                                         | Formal change request, changes are expensive             | Changes go into the backlog and are prioritised                                              |
+| Delivery                                                                | Once, at the end of the project                          | Frequently, in increments                                                                    |
+| Roles                                                                   | Project manager plans and controls, team executes        | Self-organising team with roles such as Product Owner and Scrum Master                       |
+| Risk                                                                    | Discovered late, e.g. during integration and testing     | Reduced early through frequent delivery and feedback                                         |
+| Contract                                                                | Contract for work with fixed price and scope (§ 631 BGB) | Often contract for services billed by effort (§ 611 BGB) or fixed budget with variable scope |
 
 ## Selection Criteria
 
@@ -244,7 +244,7 @@ Hybrid approaches combine classic and agile elements in one project. They are co
 - [Requirement/Functional Specifications](./requirements-specification.md): the documents that fix the scope in a classic project
 - [Gantt Chart](./gantt.md): schedule visualisation for phase-based projects
 - [Network Plan](./network-plan.md): dependencies and critical path in a classic schedule
-- [Magic Triangle](./magic-triangle.md): scope, time and cost as competing targets and the corners each approach fixes
+- [Project Management Triangle](./magic-triangle.md): scope, time and cost as competing targets and the corners each approach fixes
 - [INVEST Model](./invest.md): quality criteria for user stories in an agile backlog
 - [Prototyping](../fundamentals/prototyping.md): kinds of prototypes and their use in classic and agile development
 - [Test Levels](../fundamentals/test-levels.md): the test levels paired with the development phases of the V-model
