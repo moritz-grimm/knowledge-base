@@ -78,5 +78,9 @@
   "sidebar.docs.category.Object-Oriented Programming": {
     "message": "Objektorientierte Programmierung",
     "description": "The label for category 'Object-Oriented Programming' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Software Ergonomics": {
+    "message": "Softwareergonomie",
+    "description": "The label for category 'Software Ergonomics' in sidebar 'docs'"
   }
 }
