@@ -52,9 +52,9 @@ Der Komponententest wird auch **Unit-Test** oder **Modultest** genannt.
 
 - **Isolation:** Jede Komponente wird für sich allein getestet. Abhängigkeiten zu anderen Komponenten, Datenbanken oder dem Netzwerk werden durch Testdoubles ersetzt.
 - **Automatisierung:** Ohne diese Abhängigkeiten läuft ein Komponententest in Millisekunden und liefert immer dasselbe Ergebnis. Komponententests lassen sich deshalb leicht automatisieren und bei jedem Build ausführen.
-- **White-Box-Test:** Die Testfälle werden aus dem Code und seiner inneren Struktur abgeleitet. Weil das Testobjekt klein ist und die Entwickler seinen Code kennen, ist der Komponententest die einzige Stufe, auf der White-Box-Tests mit gemessener Codeabdeckung üblich sind.
+- **White-Box-Test:** Die Testfälle werden aus dem Code und seiner inneren Struktur abgeleitet. Weil das Testobjekt klein ist und die Entwickler seinen Code kennen, ist der Komponententest die einzige Stufe, auf der White-Box-Tests mit gemessener [Codeabdeckung](./code-coverage.md) üblich sind.
 
-Aufbau, Arten, Testdoubles und die White-Box sind unter [Unit-Tests](./unit-tests.md) ausführlicher beschrieben.
+Aufbau, Arten, Testdoubles und die White-Box-View sind unter [Unit-Tests](./unit-tests.md) ausführlicher beschrieben.
 
 ## Integrationstest
 

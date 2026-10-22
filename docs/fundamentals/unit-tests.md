@@ -97,7 +97,7 @@ Writing the test before the code is the core of **test-driven development** (TDD
 | Black box | The specification, without knowing code | Equivalence classes, boundary values          |
 | White box | The source code and its control flow    | Statement coverage (C0), branch coverage (C1) |
 
-Unit tests are the test level at which the white-box view is used most, because the developer knows the code. Coverage tools show which statements and branches no test has executed but not whether the assertions check the right values or the decisive input values were tested. The [boundary value example](#boundary-value-tests) shows that even 100 % branch coverage does not prove correctness, as its defect remains undetected.
+Unit tests are the test level at which the white-box view is used most, because the developer knows the code. [Coverage tools](./code-coverage.md) show which statements and branches no test has executed but not whether the assertions check the right values or the decisive input values were tested. The [boundary value example](#boundary-value-tests) shows that even 100 % branch coverage does not prove correctness, as its defect remains undetected.
 
 ## Kinds of Unit Tests
 
@@ -252,6 +252,7 @@ Many teams combine them: sociable tests by default, solitary tests where a colla
 ## See Also
 
 - [Test Levels](./test-levels.md): integration, system and acceptance test and the test pyramid
+- [Code Coverage](./code-coverage.md): statement, branch, condition and path coverage on the control flow graph
 - [Error, Defect and Failure](./error-defect-failure.md): the `age <= 6` defect as a causal chain from error to failure
 - [Dependency Injection](./oop/dependency-injection.md): precondition for test doubles
 - [ISO/IEC 25010](../projectmanagement/iso-25010.md#maintainability): testability as a sub-characteristic of maintainability

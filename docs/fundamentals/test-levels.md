@@ -52,9 +52,9 @@ The component test is also called **unit test** or **module test**.
 
 - **Isolation:** Each component is tested on its own. Dependencies on other components, databases or the network are replaced by test doubles.
 - **Automation:** Without these dependencies, a component test runs in milliseconds and always delivers the same result. Component tests can therefore be easily automated and run on every build.
-- **White-box test:** The test cases are derived from the code and its internal structure. Because the test object is small and the developers know its code, the component test is the only level at which white-box tests with measured code coverage are standard practice.
+- **White-box test:** The test cases are derived from the code and its internal structure. Because the test object is small and the developers know its code, the component test is the only level at which white-box tests with measured [code coverage](./code-coverage.md) are standard practice.
 
-Structure, kinds, test doubles and the white-box are described in more detail in [Unit Tests](./unit-tests.md).
+Structure, kinds, test doubles and the white-box view are described in more detail in [Unit Tests](./unit-tests.md).
 
 ## Integration Test
 

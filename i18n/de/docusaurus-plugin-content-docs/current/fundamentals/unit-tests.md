@@ -97,7 +97,7 @@ Den Test vor dem Code zu schreiben ist der Kern der **testgetriebenen Entwicklun
 | Black Box | Der Spezifikation, ohne Kenntnis des Codes | Äquivalenzklassen, Grenzwerte                     |
 | White Box | Dem Quellcode und seinem Kontrollfluss     | Anweisungsüberdeckung (C0), Zweigüberdeckung (C1) |
 
-Unit-Tests sind die Teststufe, auf der die White-Box-Sicht am häufigsten eingesetzt wird, weil der Entwickler den Code kennt. Coverage-Werkzeuge zeigen, welche Anweisungen und Zweige kein Test ausgeführt hat, aber nicht, ob die Assertions die richtigen Werte prüfen oder die entscheidenden Eingabewerte getestet wurden. Das [Grenzwertbeispiel](#grenzwerttests) zeigt, dass selbst 100 % Zweigüberdeckung keine Korrektheit beweist, da sein Fehler unentdeckt bleibt.
+Unit-Tests sind die Teststufe, auf der die White-Box-Sicht am häufigsten eingesetzt wird, weil der Entwickler den Code kennt. [Coverage-Werkzeuge](./code-coverage.md) zeigen, welche Anweisungen und Zweige kein Test ausgeführt hat, aber nicht, ob die Assertions die richtigen Werte prüfen oder die entscheidenden Eingabewerte getestet wurden. Das [Grenzwertbeispiel](#grenzwerttests) zeigt, dass selbst 100 % Zweigüberdeckung keine Korrektheit beweist, da sein Fehler unentdeckt bleibt.
 
 ## Arten von Unit-Tests
 
@@ -252,6 +252,7 @@ Viele Teams kombinieren beide: soziable Tests als Standard, solitäre Tests dort
 ## Siehe auch
 
 - [Teststufen](./test-levels.md): Integrations-, System- und Abnahmetest sowie die Testpyramide
+- [Codeabdeckung](./code-coverage.md): Anweisungs-, Zweig-, Bedingungs- und Pfadüberdeckung am Kontrollflussgraphen
 - [Fehlhandlung, Fehlerzustand und Fehlerwirkung](./error-defect-failure.md): der Fehlerzustand `age <= 6` als Wirkungskette von der Fehlhandlung bis zur Fehlerwirkung
 - [Dependency Injection](./oop/dependency-injection.md): Voraussetzung für Testdoubles
 - [ISO/IEC 25010](../projectmanagement/iso-25010.md#maintainability-wartbarkeit): Testbarkeit als Untermerkmal der Wartbarkeit
