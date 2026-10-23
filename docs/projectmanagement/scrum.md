@@ -206,11 +206,6 @@ In practice, Scrum is often implemented incorrectly. This leads to common anti-p
 
 ---
 
-## Difference from traditional project management (e.g. waterfall model)
+## See Also
 
-| Waterfall                       | Scrum                              |
-| ------------------------------- | ---------------------------------- |
-| Fixed planning at the beginning | Iterative approach                 |
-| Changes are expensive           | Changes are planned for            |
-| One delivery                    | Regular updates through increments |
-| Strong hierarchy                | Self-managing                      |
+- [Classic vs. Agile Project Management](./classic-vs-agile.md): Scrum and other agile approaches compared with the waterfall model and other plan-driven process models

@@ -206,11 +206,6 @@ In der Praxis wird Scrum oft falsch umgesetzt. Das führt zu typischen Anti-Patt
 
 ---
 
-## Unterschied zum klassischen Projektmanagement (z.B. Wasserfallmodell)
+## Siehe auch
 
-| Wasserfall                        | Scrum                                        |
-| --------------------------------- | -------------------------------------------- |
-| Feste Planung zu Beginn           | Iteratives Vorgehen                          |
-| Änderungen sind teuer             | Änderungen sind eingeplant                   |
-| Eine einzige Auslieferung         | Regelmäßige Updates durch Inkremente         |
-| Starke Hierarchie                 | Selbstmanagend                               |
+- [Klassisches vs. agiles Projektmanagement](./classic-vs-agile.md): Scrum und andere agile Ansätze im Vergleich mit dem Wasserfallmodell und weiteren plangetriebenen Vorgehensmodellen
