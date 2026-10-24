@@ -1,13 +1,11 @@
 ---
 title: "Abstraction"
-description: "Abstraction in object-oriented programming: abstract classes and interfaces compared by state, implemented methods, constructor, multiplicity, keyword, relationship and UML notation."
+description: "Abstraction in object-oriented programming: abstract classes and interfaces compared by state, implemented methods, constructor, multiplicity, relationship and UML notation."
 keywords:
     - Abstraction
     - Abstract Class
     - Interface
     - Abstract Method
-    - extends
-    - implements
 sidebar_position: 5
 tags:
     - ap2
@@ -22,16 +20,15 @@ Two language constructs support abstraction:
 - **Abstract class:** A class marked `abstract` that cannot be instantiated. It can contain abstract methods without a body, which every concrete subclass must implement, as well as attributes and implemented methods.
 - **Interface:** A pure contract listing method signatures. A class that implements an interface promises to provide all its methods.
 
-| Criterion           | Abstract Class                    | Interface                                                        |
-| ------------------- | --------------------------------- | ---------------------------------------------------------------- |
-| Instantiable        | No                                | No                                                               |
-| Attributes (state)  | Yes                               | No, only constants (Java)                                        |
-| Implemented methods | Yes                               | Only `default` and `static` methods (Java 8+)                    |
-| Constructor         | Yes                               | No                                                               |
-| How many per class  | One (single inheritance)          | Any number                                                       |
-| Keyword             | `extends`                         | `implements`                                                     |
-| Relationship        | is-a, closely related classes     | can-do, capability shared by unrelated classes                   |
-| UML                 | Name in italics or `<<abstract>>` | `<<interface>>`, realisation as dashed line with hollow triangle |
+| Criterion           | Abstract Class                                                                                         | Interface                                                        |
+| ------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
+| Instantiable        | No                                                                                                     | No                                                               |
+| Attributes (state)  | Yes                                                                                                    | No, at most constants                                            |
+| Implemented methods | Yes                                                                                                    | Traditionally none, many languages allow default implementations |
+| Constructor         | Yes                                                                                                    | No                                                               |
+| How many per class  | Usually one, see [multiple inheritance](./inheritance.md#multiple-inheritance-and-the-diamond-problem) | Any number                                                       |
+| Relationship        | is-a, closely related classes                                                                          | can-do, capability shared by unrelated classes                   |
+| UML                 | Name in italics or `<<abstract>>`                                                                      | `<<interface>>`, realisation as dashed line with hollow triangle |
 
 An abstract class fits when several related classes share code and state, e.g. `Shape` with a shared `toString()`. An interface fits when unrelated classes share a capability, e.g. `Comparable` for anything that can be sorted, from `Invoice` to `Employee`.
 
