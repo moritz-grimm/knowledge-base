@@ -22,16 +22,16 @@ Zwei Sprachkonstrukte unterstützen Abstraktion:
 - **Abstrakte Klasse:** Eine mit `abstract` markierte Klasse, die nicht instanziiert werden kann. Sie kann abstrakte Methoden ohne Rumpf enthalten, die jede konkrete Unterklasse implementieren muss, außerdem Attribute und implementierte Methoden.
 - **Interface:** Ein reiner Vertrag aus Methodensignaturen. Eine Klasse, die ein Interface implementiert, sichert zu, alle seine Methoden bereitzustellen.
 
-| Kriterium               | Abstrakte Klasse                | Interface                                                               |
-| ----------------------- | ------------------------------- | ----------------------------------------------------------------------- |
-| Instanziierbar          | Nein                            | Nein                                                                    |
-| Attribute (Zustand)     | Ja                              | Nein, nur Konstanten (Java)                                             |
-| Implementierte Methoden | Ja                              | Nur `default`- und `static`-Methoden (ab Java 8)                        |
-| Konstruktor             | Ja                              | Nein                                                                    |
-| Wie viele pro Klasse    | Eine (Einfachvererbung)         | Beliebig viele                                                          |
-| Schlüsselwort           | `extends`                       | `implements`                                                            |
-| Beziehung               | ist-ein, eng verwandte Klassen  | kann-etwas, Fähigkeit nicht verwandter Klassen                          |
-| UML                     | Name kursiv oder `<<abstract>>` | `<<interface>>`, Realisierung als gestrichelte Linie mit hohlem Dreieck |
+| Kriterium               | Abstrakte Klasse                                                                                  | Interface                                                               |
+| ----------------------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| Instanziierbar          | Nein                                                                                              | Nein                                                                    |
+| Attribute (Zustand)     | Ja                                                                                                | Nein, höchstens Konstanten                                              |
+| Implementierte Methoden | Ja                                                                                                | Traditionell keine, viele Sprachen erlauben Standardimplementierungen   |
+| Konstruktor             | Ja                                                                                                | Nein                                                                    |
+| Wie viele pro Klasse    | Meist eine, siehe [Mehrfachvererbung](./inheritance.md#mehrfachvererbung-und-das-diamond-problem) | Beliebig viele                                                          |
+| Schlüsselwort           | `extends`                                                                                         | `implements`                                                            |
+| Beziehung               | ist-ein, eng verwandte Klassen                                                                    | kann-etwas, Fähigkeit nicht verwandter Klassen                          |
+| UML                     | Name kursiv oder `<<abstract>>`                                                                   | `<<interface>>`, Realisierung als gestrichelte Linie mit hohlem Dreieck |
 
 Eine abstrakte Klasse passt, wenn mehrere verwandte Klassen Code und Zustand teilen, z.B. `Shape` mit gemeinsamem `toString()`. Ein Interface passt, wenn nicht verwandte Klassen eine Fähigkeit teilen, z.B. `Comparable` für alles Sortierbare, von `Invoice` bis `Employee`.
 
