@@ -176,6 +176,7 @@ Rules:
 - Contents of fenced code blocks and inline code (backtick-wrapped) must NOT be translated
 - Link targets (URLs, relative paths) must not be translated; link display text should be translated
 - All links present in the source must also be present in the translation, and vice versa
+- Changes to the content of an entry are made in both locales, so EN and DE stay congruent. Purely language-specific corrections (wording, spelling, grammar) affect only the respective locale
 
 ### File Naming
 
