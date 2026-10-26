@@ -1,0 +1,49 @@
+---
+title: "Entwurfsmuster"
+description: "Klassische objektorientierte Entwurfsmuster: Definition, Katalog der Gang of Four, Erzeugungs-, Struktur- und Verhaltensmuster."
+keywords:
+    - Entwurfsmuster
+    - Design Patterns
+    - Gang of Four
+    - GoF
+    - Erzeugungsmuster
+    - Strukturmuster
+    - Verhaltensmuster
+tags:
+    - ap2
+---
+
+import DocCardList from '@theme/DocCardList';
+
+# Entwurfsmuster
+
+## Überblick
+
+Ein Entwurfsmuster (Design Pattern) ist eine benannte, bewährte Vorlage zur Lösung eines wiederkehrenden Entwurfsproblems in objektorientierter Software. Es ist kein fertiger Code, sondern eine Beschreibung von Klassen, ihren Verantwortlichkeiten und ihrem Zusammenspiel, die an die konkrete Situation angepasst wird.
+
+Der Begriff geht auf das Buch *Design Patterns: Elements of Reusable Object-Oriented Software* (1994) von Gamma, Helm, Johnson und Vlissides zurück, bekannt als „Gang of Four“ (GoF). Es beschreibt 23 Muster, jeweils mit Name, gelöstem Problem, Lösung und Konsequenzen.
+
+Muster liefern ein gemeinsames Vokabular: „Die Preisanzeige ist ein [Observer](./observer.md) des Börsentickers“ sagt einem anderen Entwickler, dass der Ticker eine Liste registrierter Anzeigen führt und jede davon bei jeder Kursänderung benachrichtigt, ohne diese Struktur ausdrücklich zu beschreiben.
+
+Ein Entwurfsmuster löst ein Problem innerhalb einer Klasse oder weniger zusammenarbeitender Klassen. Probleme, die die Struktur einer ganzen Anwendung betreffen, lösen Architekturmuster wie MVC, Schichtenarchitektur oder Microservices.
+
+## Kategorien
+
+| Kategorie                      | Frage                                                                  | GoF-Muster                                                                                                                                                                                                 |
+| ------------------------------ | ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Erzeugungsmuster (Creational)  | Wie werden Objekte erzeugt?                                            | [Singleton](./singleton.md), [Factory Method](./factory-method.md), Abstract Factory, [Builder](./builder.md), Prototype                                                                                   |
+| Strukturmuster (Structural)    | Wie werden Klassen und Objekte zu größeren Strukturen zusammengesetzt? | [Adapter](./adapter.md), Bridge, Composite, [Decorator](./decorator.md), [Facade](./facade.md), Flyweight, Proxy                                                                                           |
+| Verhaltensmuster (Behavioural) | Wie interagieren Objekte und wie verteilen sie Verantwortung?          | Chain of Responsibility, Command, Interpreter, [Iterator](./iterator.md), Mediator, Memento, [Observer](./observer.md), State, [Strategy](./strategy.md), [Template Method](./template-method.md), Visitor |
+
+Einträge unten, die nicht in der Tabelle oben vorkommen, gehören nicht zum GoF-Katalog.
+
+<DocCardList />
+
+## Häufige Fehler
+
+1. **Muster ohne Problem:** Ein [Strategy](./strategy.md)-Interface mit nur einer Implementierung oder eine [Factory](./factory-method.md), die immer nur eine Klasse erzeugt, bringt zusätzliche Klassen und Indirektion ohne Nutzen.
+
+## Siehe auch
+
+- [Objektorientierte Programmierung](../index.mdx): Kapselung, Vererbung, Polymorphie, Interfaces und SOLID, auf denen jedes Muster aufbaut
+- [Klassendiagramm](../../uml/class-diagram.md): die UML-Notation der Strukturdiagramme in den Mustereinträgen

@@ -82,5 +82,9 @@
   "sidebar.docs.category.Software Ergonomics": {
     "message": "Softwareergonomie",
     "description": "The label for category 'Software Ergonomics' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Design Patterns": {
+    "message": "Entwurfsmuster",
+    "description": "The label for category 'Design Patterns' in sidebar 'docs'"
   }
 }

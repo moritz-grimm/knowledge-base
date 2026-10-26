@@ -1,0 +1,48 @@
+---
+title: "Design Patterns"
+description: "Classic object-oriented design patterns: definition, Gang of Four catalogue, creational, structural and behavioural categories."
+keywords:
+    - Design Patterns
+    - Gang of Four
+    - GoF
+    - Creational Patterns
+    - Structural Patterns
+    - Behavioural Patterns
+tags:
+    - ap2
+---
+
+import DocCardList from '@theme/DocCardList';
+
+# Design Patterns
+
+## Overview
+
+A design pattern is a named, proven template for solving a recurring design problem in object-oriented software. It is not finished code but a description of classes, their responsibilities and their collaboration, which is adapted to the concrete situation.
+
+The term goes back to the book *Design Patterns: Elements of Reusable Object-Oriented Software* (1994) by Gamma, Helm, Johnson and Vlissides, known as the "Gang of Four" (GoF). It describes 23 patterns, each with a name, the problem it solves, the solution and its consequences.
+
+Patterns provide a shared vocabulary: "the price display is an [observer](./observer.md) of the stock ticker" tells another developer that the ticker keeps a list of registered displays and notifies each of them on every price change, without describing that structure explicitly.
+
+A design pattern solves a problem within one class or a few collaborating classes. Problems concerning the structure of an entire application are solved by architecture patterns such as MVC, layered architecture or microservices.
+
+## Categories
+
+| Category    | Question                                                     | GoF Patterns                                                                                                                                                                                               |
+| ----------- | ------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Creational  | How are objects created?                                     | [Singleton](./singleton.md), [Factory Method](./factory-method.md), Abstract Factory, [Builder](./builder.md), Prototype                                                                                   |
+| Structural  | How are classes and objects composed into larger structures? | [Adapter](./adapter.md), Bridge, Composite, [Decorator](./decorator.md), [Facade](./facade.md), Flyweight, Proxy                                                                                           |
+| Behavioural | How do objects interact and divide responsibilities?         | Chain of Responsibility, Command, Interpreter, [Iterator](./iterator.md), Mediator, Memento, [Observer](./observer.md), State, [Strategy](./strategy.md), [Template Method](./template-method.md), Visitor |
+
+Entries below that do not appear in the table above are not part of the GoF catalogue.
+
+<DocCardList />
+
+## Common Mistakes
+
+1. **Pattern without a problem:** A [strategy](./strategy.md) interface with a single implementation or a [factory](./factory-method.md) that only ever creates one class adds classes and indirection without benefit.
+
+## See Also
+
+- [Object-Oriented Programming](../index.mdx): encapsulation, inheritance, polymorphism, interfaces and SOLID, on which every pattern builds
+- [Class Diagram](../../uml/class-diagram.md): the UML notation used in the structure diagrams of the pattern entries
